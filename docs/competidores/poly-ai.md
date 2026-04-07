@@ -2,301 +2,246 @@
 title: "PolyAI"
 type: competidor
 status: completo
-tags: [competidor, voice-ai, enterprise, uk, series-d, hospitality]
+tags: [competidor, voice-ai, enterprise, uk, serie-d, hospitality, cx]
 updated: 2026-04-07
 ---
 
 # PolyAI
 
-## Resumen ejecutivo
-
-**PolyAI** es una plataforma enterprise de voice AI con sede en Londres, especializada en agentes de voz conversacionales que reemplazan agentes humanos a escala en customer service. Fundada en 2017 por alumni de Cambridge (Nikola Mrksic, Pei-Hao Su, Tsung-Hsien Wen), ha levantado **$200M+** ($86M Serie D en dic 2025, valoración estimada ~$750M) y opera con 2,000+ deployments en 25+ países. Destaca por su **calidad de voz líder** (modelo propietario Pheme), foco en **hospitality y financial services**, y modelo de **managed service** (sin self-serve). Nombrada "fastest-growing AI company in Europe" (FT 1000, marzo 2026).
-
-**Takeaway para Lola:** PolyAI es un player voice-first formidable con tracción enterprise real (Marriott, Allstate, PG&E), pero **débil en logística** y **sin presencia en España/Sur de Europa**. [HappyRobot](../empresa/happyrobot.md) diferencia en vertical logistics, multi-canal, developer autonomy, AI governance y expansión directa España.
-
-## Ficha de empresa
-
-| Campo | Dato | Confianza | Fuente |
-|-------|------|-----------|--------|
-| **Nombre** | PolyAI | A | [POLY-WEB] |
-| **Fundación** | 2017 | A | [POLY-WEB] |
-| **Founders** | Nikola Mrksic, Pei-Hao Su, Tsung-Hsien Wen (PhD Cambridge, Machine Intelligence Lab) | A | [POLY-FUND] |
-| **HQ** | Londres, UK (3 Sheldon Square, Paddington) | A | [POLY-WEB] |
-| **Otras oficinas** | New York, San Mateo | A | [POLY-WEB] |
-| **Empleados** | 340–360 (rango 248–361 según fuente) | B | [POLY-HC] |
-| **Funding total** | $200M+ | A | [POLY-CB] |
-| **Valoración** | ~$750M [estimate] | C | [POLY-LI] |
-| **Revenue** | ~$35M (2025) | C | [POLY-REV] |
-| **Producto** | Enterprise voice AI platform (managed service) | A | [POLY-WEB] |
-| **Canales** | Voz (teléfono), chat, SMS | A | [POLY-TECH] |
-| **Foco vertical** | Hospitality, financial services, healthcare, travel, telecom, utilities | A | [POLY-CASES] |
-| **Pricing** | $150K+/año mínimo; enterprise $30K+/mes | B | [POLY-PRICE] |
-| **España** | **Sin presencia** detectada | A | — |
+Plataforma enterprise de voice AI con sede en Londres, especializada en agentes de voz conversacionales que reemplazan agentes humanos a escala en customer service. Fundada en 2017 por tres PhD de Cambridge (Nikola Mrksic, Tsung-Hsien Wen, Pei-Hao Su), ha levantado **$200M+** ($86M Serie D en dic 2025, valoracion ~$750M). Opera con 2,000+ deployments en 25+ paises. Nombrada "fastest-growing AI company in Europe" (FT 1000, marzo 2026). Destaca por su **calidad de voz lider** (modelos propietarios Owl y Raven) y foco en **hospitality y financial services**. Relevante para [HappyRobot](../empresa/happyrobot.md) como referencia de voice AI enterprise pero **sin presencia en logistics ni en Espana**.
 
 ---
 
-## Funding e inversores
+## Ficha rapida
 
-| Ronda | Importe | Fecha | Lead / Inversores | Fuente |
-|-------|---------|-------|-------------------|--------|
-| **Seed–Serie C** | ~$114M | 2017–2024 | Khosla Ventures, Point72, Zendesk Ventures, Citi Ventures | [POLY-CB] |
-| **Serie D** | $86M | Dic 2025 | Georgian, Hedosophia, Khosla Ventures | [POLY-PR] |
-| **Total** | **$200M+** | — | 29 inversores totales | [POLY-CB] |
-
-**Inversores estratégicos destacados:** NVentures (NVIDIA VC), British Business Bank, Citi Ventures, Zendesk Ventures, Point72 Ventures.
-
-**Métricas de escala:**
-
-| Métrica | Valor | Fuente |
-|---------|-------|--------|
-| Clientes enterprise | 100+ | [POLY-WEB] |
-| Deployments live | 2,000+ | [POLY-WEB] |
-| Países | 25+ | [POLY-WEB] |
-| Idiomas | 45+ | [POLY-WEB] |
-
----
-
-## Producto y tecnología
-
-### Core: AI Voice Agents
-
-PolyAI construye agentes AI de voz enterprise-grade diseñados para reemplazar agentes humanos a escala en operaciones de customer service.
-
-### Componentes clave
-
-| Componente | Descripción |
-|-----------|-------------|
-| **Agent Studio** | Plataforma no-code para construir agentes de voz custom |
-| **Smart Analyst** | Monitoreo de performance y análisis de interacciones |
-| **Omnichannel Deployment** | Voz, chat, SMS |
-| **Pre-built Industry Solutions** | Flujos de booking, billing, FAQ, troubleshooting |
-
-### Stack tecnológico
-
-| Componente | Detalle |
-|-----------|---------|
-| **ASR (Speech Recognition)** | Propietario + modelos partner |
-| **NLP/NLU** | Combinación generative + retrieval AI con dialogue policy patentada |
-| **Voice Synthesis** | **Pheme** — modelo propietario de generación de voz (mezcla grabaciones humanas + síntesis neural) |
-| **Integraciones** | Conectores nativos a Salesforce, NICE, Genesys, Twilio |
-| **Idiomas** | 45+ como estándar |
-
-### Diferenciadores
-
-- Calidad de voz human-like (modelo Pheme)
-- Manejo de interrupciones, cambios de tema, señales emocionales
-- Compliance enterprise-grade (GDPR, SOC 2)
-- Modelo managed service (sin self-serve)
+| Dato | Valor | Conf. |
+|---|---|---|
+| **Web** | [poly.ai](https://poly.ai) | A |
+| **HQ** | Londres, UK (Paddington) | A |
+| **Oficinas** | Londres, New York, San Mateo | A |
+| **Fundacion** | 2017 | A |
+| **Fundadores** | Nikola Mrksic (CEO, PhD Cambridge, ex-Apple/VocalIQ), Tsung-Hsien Wen (CTO, PhD Cambridge, ex-Google), Pei-Hao Su (Chief Scientist, PhD Cambridge, ex-Facebook AI) | A |
+| **Empleados** | 340-360 | B |
+| **Funding total** | $200M+ | A |
+| **Ultima ronda** | $86M Serie D (dic 2025, Georgian lead) | A |
+| **Valoracion** | ~$750M | C |
+| **Revenue 2025** | ~$35M (camino a $40M+ ARR) | C |
+| **Crecimiento** | 3.5x YoY (2024->2025) | B |
+| **Clientes** | 200+ enterprises, 2,000+ deployments | A |
+| **Idiomas** | 45+ | A |
+| **Paises** | 25+ | A |
 
 ---
 
-## Pricing
+## Producto: Agent Studio
 
-| Tier | Rango precio | Notas |
-|------|-------------|-------|
-| **Entry point** | $150,000+/año | Contrato anual mínimo |
-| **Mid-tier** | $10,000–$20,000/mes | Integraciones enhanced, flujos sofisticados |
-| **Enterprise** | $30,000+/mes | Full customización, soporte dedicado |
-| **Implementación** | $20,000–$50,000+ | One-time setup (puede superar $100K para deployments complejos) |
-| **Usage-based** | Per-minute | Tarifas exactas no públicas |
+### Stack tecnologico propietario
 
-**Modelo:** Enterprise-only, pricing custom, sin free trial, sin self-serve.
+| Componente | Nombre | Descripcion | Conf. |
+|---|---|---|---|
+| **ASR** | **Owl** | ASR propietario. WER 0.122 (mejor que competidores). Maneja acentos, ruido, interrupciones. Vocabularios domain-specific intercambiables mid-conversation | A |
+| **LLM** | **Raven** | LLM propietario entrenado en billions de conversaciones. Sub-second responses. Exclusivo para customer service | A |
+| **Voice Synthesis** | Propietario | Mezcla grabaciones humanas + sintesis neural. Voces que "respiran como persona real". Customizables por marca | A |
+| **Runtime** | Agentic Runtime | Combina modelos generativos + retrieval AI + dialogue policy patentada | A |
+
+### Plataforma Agent Studio (abril 2025)
+
+- **Conversation Review:** Cada turno muestra que documentos de knowledge base uso el agente
+- **PolyScore:** Scoring automatico de calidad conversacional
+- **Call Categorization:** LLM para clasificar calls por tono, intent, compliance
+- **Test Cases:** Guardar conversaciones reales como test cases, re-ejecutar contra versiones draft
+- **Smart Analyst:** Sampling de hasta 500 conversaciones para patterns
+- **Connected Knowledge:** Retrieval de documentos con source preview inline
+- **conv.memory:** Persistencia de valores entre conversaciones
+
+### Agentic AI Team (sept 2025)
+
+| Agent | Funcion |
+|---|---|
+| **QA Agent** | Score automatico de cada call en 6 factores de calidad |
+| **Analyst Agent** | Interfaz conversacional para explorar millones de conversations |
+| **Builder Agent** | Guia onboarding, desarrollo y mantenimiento de agentes |
+
+### Canales e integraciones
+
+- **Voice:** SIP/PSTN, integracion nativa con CCaaS
+- **Text:** Soporte messaging (omnicanal pero voice-first)
+- **Integraciones:** Salesforce, NICE, Genesys, Twilio
+- **Deployment:** ~6 semanas (managed service)
+- **Partnerships:** Microsoft Azure, AWS Travel & Hospitality Competency
+
+### Compliance
+
+- SOC 2 Type II
+- HIPAA
+- [EU AI Act y GDPR no mencionados explicitamente en materiales publicos]
 
 ---
 
-## Métricas de clientes y ROI
+## Clientes y metricas
 
-| Métrica | Valor | Fuente |
-|---------|-------|--------|
-| **ROI (3 años)** | 391% | Estudio Forrester TEI |
-| **CSAT** | 93% | Self-reported (2023) |
-| **Resolution rate** | 97% | Self-reported (2023) |
-| **Call containment** | Hasta 95% | Website |
-| **Conversion rate (bookings)** | 76% (Cote Brasserie) | Case study |
+### Clientes confirmados
 
-### Resultados destacados de clientes
+| Cliente | Vertical | Detalle | Conf. |
+|---|---|---|---|
+| **Marriott** | Hospitality | Voice assistant 24/7/365 para reservas y servicio | A |
+| **Caesars Entertainment** | Hospitality/Gaming | Voice assistant para contact center | A |
+| **PG&E** | Energy/Utilities | Customer service automation | A |
+| **UniCredit** | Financial Services | Deployment europeo | A |
+| **Foot Locker** | Retail | -- | A |
+| **Allstate** | Insurance | -- | A |
+| **Hopper** | Travel | Voice assistant | B |
+| **Whitbread** | Hospitality (UK) | Voice assistant | B |
+| **The Melting Pot** | Restaurants | $250K bookings after-hours | A |
 
-- **Melting Pot:** $250K de bookings after-hours
-- **Peppermill Resort:** 187% ROI en ahorro de labor costs
-- **Hopper:** Escaló phone support a millones de clientes
+### Metricas agregadas
 
----
-
-## Verticales y clientes
+| Metrica | Valor | Conf. |
+|---|---|---|
+| ROI (Forrester TEI, 3 anos) | 391% | A |
+| Ahorro promedio por cliente | $10.3M | B |
+| Call containment rates | 50-87% segun deployment | B |
+| First-call resolution | 72% | B |
+| CSAT | 93% | B |
+| Resolution rate | 97% | B |
+| Conversion rate (Cote Brasserie) | 76% bookings | A |
 
 ### Verticales principales
 
-| Vertical | Clientes ejemplo |
-|----------|-----------------|
-| **Hospitality** | Marriott, Golden Nugget, Peppermill Resort, Melting Pot, Big Table Group, Cote Brasserie |
-| **Financial Services** | Quicken, Unicredit, Zagrebacka banka |
-| **Healthcare** | Howard Brown Health, Simplyhealth, Audibel |
-| **Travel** | Hopper |
-| **Insurance** | Allstate |
-| **Energy/Utilities** | PG&E |
-| **Restaurants** | Fogo de Chao |
+1. **Hospitality & Travel** (vertical estrella -- Marriott, Caesars, Hopper)
+2. **Financial Services** (UniCredit)
+3. **Energy & Utilities** (PG&E)
+4. **Retail** (Foot Locker)
+5. **Insurance** (Allstate)
+6. **Healthcare**
 
-### Casos de uso principales
-
-- Inbound customer service (billing, FAQs, troubleshooting)
-- Reservas restaurantes/hoteles
-- Appointment scheduling
-- Insurance claims processing
-- Banking account support
-- Outbound collections (mención limitada)
-
-**Sin presencia significativa en logistics/supply chain** — foco en hospitality, finserv, healthcare.
+!!! warning "Logistics NO es vertical de PolyAI"
+    PolyAI NO tiene presencia visible en logistics/supply chain/freight. Foco en customer experience inbound (hospitality, finserv, retail, utilities).
 
 ---
 
-## Presencia Europa / España
+## Modelo de negocio
 
-**UK:** Fuerte — HQ en Londres (Paddington). Nombrada **fastest-growing AI company in Europe** (FT 1000, marzo 2026).
-
-**España:** Sin evidencia de:
-
-- Oficina española
-- Clientes españoles públicos
-- Marketing en español
-- Anuncios de expansión a España
-
-**Clientes europeos:** Unicredit (Italia), Zagrebacka banka (Croacia), Simplyhealth (UK).
-
-**Assessment:** PolyAI es **UK-centric** con footprint limitado en Sur de Europa a pesar de su fuerte narrativa de crecimiento europeo.
+| Aspecto | Detalle | Conf. |
+|---|---|---|
+| **Modelo** | Platform fee fijo + usage-based (per-minute) | B |
+| **Contrato minimo** | ~$150,000/ano | B |
+| **Mid-tier** | $10,000-$20,000/mes | C |
+| **Enterprise** | $30,000+/mes | B |
+| **Implementacion** | $20,000-$50,000+ (one-time, puede superar $100K) | B |
+| **Trial/self-serve** | No disponible -- solo demo con sales | A |
+| **Deployment** | Managed service (~6 semanas) | B |
 
 ---
 
-## Reviews y sentimiento
+## HappyRobot vs PolyAI
 
-### G2
-
-**Score:** 5.0/5 (4 reviews) — muestra muy pequeña [POLY-G2]
-
-### Fortalezas (reviews)
-
-- **Calidad de voz:** "Human-like, warm, believable voices"
-- **Conversation handling:** Maneja interrupciones, cambios tema, señales emocionales mejor que competidores
-- **Facilidad integración:** "Very easy to use interface, easy to implement with any software"
-- **Soporte cliente:** "Excellent support, everything proceeded smoothly"
-
-### Debilidades (reviews y Reddit)
-
-- **Sin self-serve:** Todos los cambios pasan por equipo PolyAI, sin acceso directo
-- **Sin testing environment:** Sin sandbox, sin version control, sin preview calls
-- **Analytics limitados:** Sin deep LLM analytics, sin control de dashboard
-- **Ciclos desarrollo lentos:** No ideal para iteración rápida o equipos agile
-- **Performance issues:** Tiempos de carga lentos ocasionalmente
-- **Pricing opaco:** Sin pricing público, requiere sales engagement
-
-**Quote developer forum (Reddit):**
-
-> "There's no environment for testing new flows, no version control for prompts, and no UI to chain GPT calls or add fallback logic dynamically. All changes are funneled through PolyAI's team."
+| Dimension | HappyRobot | PolyAI |
+|---|---|---|
+| **Foco vertical** | Logistics & supply chain | CX horizontal (hospitality, finserv, retail, utilities) |
+| **Tipo interaccion** | Operations (scheduling, collections, sales, recruiting) | Inbound CX (soporte, reservas, billing) |
+| **Stack tecnologico** | Model-agnostic + razonamiento agentitico + logica determinista | Propietario end-to-end (Owl + Raven + sintesis) |
+| **Canales** | Multi-canal nativo (telefono, email, web chat) | Voice-first (+ text messaging) |
+| **Governance** | AI Auditor, evaluations, compliance framework | Agent Studio analytics + QA Agent |
+| **Idiomas** | Multi-idioma (numero no publicado) | 45+ |
+| **Clientes** | DHL, Circle, Samsara, MODE Global | Marriott, Caesars, PG&E, UniCredit |
+| **Revenue** | [no publico] | ~$35M (2025) |
+| **Funding** | $44M Serie B | $200M+, ~$750M valoracion |
+| **Deployment** | Forward-deployed engineers | Managed service (~6 semanas) |
+| **Pricing** | [no publicado] | $150K+ annual minimum |
+| **Espana** | Expandiendo (EAE, FDE, GTM Ops) | Sin presencia |
+| **Compliance** | SOC 2, GDPR, HIPAA, EU AI Act | SOC 2, HIPAA |
 
 ---
 
-## Comparativa directa: PolyAI vs HappyRobot
+## Debilidades y criticas
 
-| Dimensión | PolyAI | HappyRobot | Análisis |
-|-----------|--------|------------|----------|
-| **Posición mercado** | Managed enterprise voice AI | Self-serve + managed AI workers (multi-modal) | Modelos diferentes |
-| **Canal principal** | Voice-first (teléfono) | Multi-canal (phone, email, web chat) | HR más amplio |
-| **Modelo deployment** | Managed service (sin self-serve) | Plataforma + forward-deployed engineers | HR más flexible |
-| **Vertical principal** | Hospitality, finserv, healthcare | **Logistics & supply chain** | Sin solapamiento directo |
-| **Foco use case** | Inbound customer service | Operations automation (scheduling, collections, tracking) | Lanes diferentes |
-| **Developer experience** | Sin sandbox/testing, sin version control | Cloud/model-agnostic, integrations-first | HR más developer-friendly |
-| **Pricing** | $150K+/año entry, opaco | No divulgado (likely más accesible) | HR posible ventaja |
-| **AI Governance** | Enterprise compliance (GDPR, SOC 2) | **AI Auditor** + evaluations framework | HR más sofisticado |
-| **Shared memory** | No mencionado | **Native context & memory** entre agentes | HR ventaja |
-| **España** | Sin presencia | **Expanding** (GM, AE, FDE hiring) | **HR first-mover** |
-| **Funding** | $200M+ / ~$750M valoración | $44M Serie B | PolyAI más capital |
-| **Idiomas** | 45+ | [needs verification] | PolyAI ventaja |
-| **Calidad voz** | Líder (modelo Pheme propietario) | No benchmarkeado públicamente | PolyAI ventaja probable |
+### Debilidades por reviews
 
----
+| Debilidad | Detalle | Fuente |
+|---|---|---|
+| **Pricing opaco y caro** | $150K+ minimo anual, sin self-serve | SoftwareCurio |
+| **Deployment lento** | ~6 semanas managed service | Reviews |
+| **Analytics basicos** | Dashboards limitados, sin deep sentiment tracking | G2, SoftwareCurio |
+| **Sin sandbox/developer tools** | Sin prompt-level controls ni scripting para developers agiles | SoftwareCurio |
+| **Rigidez operativa** | Cambios requieren intervencion de account teams | Reddit, reviews |
+| **Latencia 700-900ms** | Buena pero no ideal para conversaciones de alta presion | Reviews |
+| **Voice-only en esencia** | Omnicanal en teoria pero disenado para voice inbound | Analisis competitivo |
+| **Solo CX inbound** | No optimizado para outbound sales, collections agresivos | Assembled |
+| **Sin vertical logistics** | Cero presencia en freight/supply chain | Busqueda propia |
+| **Reviews escasos** | 12 reviews G2, 2 Capterra -- bajo volumen validacion publica | G2, Capterra |
 
-## Fortalezas vs [HappyRobot](../empresa/happyrobot.md)
+### Cultura (Glassdoor)
 
-1. **Liderazgo en calidad de voz:** Modelo Pheme propietario entrega voces naturales líderes en la industria (reconocido por clientes y reviewers).
-2. **Escala enterprise probada:** 2,000+ deployments, 100+ clientes enterprise, tier Marriott/Allstate.
-3. **ROI validado por Forrester:** 391% ROI across 3 años (validación terceros).
-4. **Agent Studio no-code:** Permite a usuarios non-technical construir agentes (aunque limitado por modelo managed).
-5. **Profundidad vertical hospitality/finserv:** Case studies fuertes, playbooks establecidos.
-6. **Cobertura idiomas:** 45+ idiomas vs. coverage desconocido de HR (likely <45).
-7. **Brand recognition:** FT 1000 Europe, menciones Gartner, backing NVIDIA.
-
-## Debilidades vs HappyRobot
-
-1. **DNA logistics-first ausente:** HR construido para supply chain ops (DHL, Circle, Samsara); PolyAI tiene presencia logística débil.
-2. **Solo voz (mayormente):** AI Workers de HR cubren voice + email + web chat; PolyAI es voice-first only.
-3. **Sin developer autonomy:** HR ofrece plataforma self-serve + FDEs; PolyAI bloquea clientes en managed service.
-4. **Governance y auditability:** **AI Auditor** + evaluations framework de HR aborda compliance enterprise más allá de checkboxes GDPR.
-5. **Shared context & memory:** Agentes de HR comparten estado across canales/sesiones; PolyAI no lo publicita.
-6. **Forward-deployed engineers:** HR embebe engineers con clientes; modelo soporte de PolyAI menos claro.
-7. **Arquitectura agentic AI:** HR blends reasoning + deterministic logic; PolyAI usa dialogue policy patentada (probablemente más rígida).
-8. **Pricing flexibility:** PolyAI requiere $150K+ entry; modelo de HR no claro pero likely más accesible.
-9. **Expansión España:** HR hiring activo en España (GM, AE, FDE); PolyAI sin presencia España.
-10. **Use cases operacionales:** HR excels en scheduling, collections, shipment tracking; PolyAI se centra en FAQ/billing support.
+- **Positivo:** 92% recomendarian, culture 4.7/5, entorno colaborativo, talento de alta calidad
+- **Negativo:** Procesos internos inmaduros (Salesforce desordenado, reporting manual), tipico de hyper-growth
 
 ---
 
-## Relevancia para Lola (GM España)
+## Noticias recientes
 
-### Talking points para entrevista
-
-**Reconocer fortaleza:**
-
-> "PolyAI ha hecho un trabajo excelente en calidad de voz y customer service enterprise, especialmente en hospitality y financial services. Su ROI validado por Forrester es impresionante."
-
-**Posicionar ventajas de HappyRobot:**
-
-> "Pero son fundamentalmente un managed service voice-first para inbound support — booking, billing, FAQs. El sweet spot de HappyRobot son **AI Workers operacionales** en logística: scheduling envíos, chasing collections, tracking excepciones. Ahí es donde vive la complejidad real y el impacto en revenue. PolyAI no tiene el DNA multi-modal ni el modelo forward-deployed engineering para poseer ese espacio."
-
-**Angulo España:**
-
-> "Y críticamente, mientras PolyAI está laser-focused en Londres y UK, tenemos runway claro para dominar España y Sur de Europa. Su falta de presencia local, clientes españoles, o inversión GTM en la región es una oportunidad significativa para nosotros."
-
-### Diferenciación clave
-
-| Oportunidad HappyRobot | Detalle |
-|------------------------|---------|
-| **Vertical logística** | DHL, Circle, Samsara vs. foco hospitality de PolyAI |
-| **Multi-modal** | Voice + email + web vs. voice-only de PolyAI |
-| **Developer autonomy** | Self-serve + FDEs vs. managed lock-in de PolyAI |
-| **España first-mover** | Hiring activo mientras PolyAI permanece UK-centric |
+| Fecha | Evento | Fuente |
+|---|---|---|
+| Mar 2026 | #1 Enterprise AI en FT 1000 Europe | PR Newswire |
+| Mar 2026 | Stevie Award -- Best Customer Service Solution 2026 | PR Newswire |
+| Dic 2025 | $86M Serie D a ~$750M valoracion | SiliconANGLE |
+| Sept 2025 | Lanzamiento Agentic AI Team (QA, Analyst, Builder agents) | PR Newswire |
+| Jul 2025 | Partnership Microsoft Azure | Microsoft UK blog |
+| Abr 2025 | Lanzamiento Agent Studio | PR Newswire |
+| 2025 | AWS Travel & Hospitality Competency | Blog PolyAI |
 
 ---
 
-## Registro de fuentes
+## Presencia en Espana y Europa
 
-### Fuentes primarias (Confianza A)
+- **Oficinas Europa:** Solo HQ en Londres. Sin oficinas en Europa continental [B]
+- **Clientes europeos:** UniCredit (Italia), Whitbread (UK) [A]
+- **Espana:** Sin evidencia de oficina, clientes espanoles, marketing en espanol, ni anuncios de expansion [C]
+- **Assessment:** PolyAI es UK-centric con footprint limitado en Sur de Europa. Su vertical hospitality tiene relevancia en Espana (turismo) pero hoy no tiene presencia local.
 
-| ID | URL | Tipo |
-|----|-----|------|
-| [POLY-WEB] | https://poly.ai/about | Web empresa |
-| [POLY-TECH] | https://poly.ai/technology | Producto/tecnología |
-| [POLY-PHEME] | https://poly.ai/blog/introducing-pheme-a-new-speech-generation-model-from-polyai/ | Blog Pheme |
-| [POLY-CB] | https://www.crunchbase.com/organization/poly-ai | Crunchbase |
-| [POLY-PR] | PR Newswire Serie D announcement | Funding |
-| [POLY-CASES] | https://poly.ai/case-studies/ | Case studies |
-| [POLY-ROI] | https://poly.ai/blog/polyai-customers-391-percent-roi-total-economic-impact-study | Estudio Forrester TEI |
-| [POLY-G2] | https://www.g2.com/products/polyai/reviews | G2 (5.0/5, 4 reviews) |
-| [POLY-EU] | https://www.eu-startups.com/2025/12/london-based-polyai-raises-e73-2-million-to-scale-its-enterprise-conversational-ai-platform/ | EU-Startups |
-| [POLY-FUND] | https://wellfound.com/company/polyai/people | Founders info |
+---
 
-### Fuentes secundarias (Confianza B)
+## Relevancia para la entrevista
 
-| ID | URL | Tipo |
-|----|-----|------|
-| [POLY-PRICE] | https://www.nurix.ai/blogs/polyai-pricing-features-guide | Análisis pricing |
-| [POLY-PRICE2] | https://synthflow.ai/blog/polyai-review | Review/pricing |
-| [POLY-VERT] | https://synthflow.ai/blog/polyai-review | Review verticals |
-| [POLY-REDDIT] | https://synthflow.ai/blog/polyai-review | Aggregated reviews |
-| [POLY-HC] | https://leadiq.com/c/polyai/5b18369b360000b200e4be1f/employee-directory | Headcount |
-| [POLY-COMP] | https://www.retellai.com/blog/polyai-alternatives-compared | Comparativa |
+### Como posicionar HappyRobot vs PolyAI
 
-### Fuentes terciarias (Confianza C)
+1. **"PolyAI es lider en voice CX, pero no compite en nuestro core."** Su foco es inbound customer service (hospitality, finserv, utilities). HappyRobot opera en logistics operations, collections, scheduling -- procesos operacionales complejos, no solo CX.
 
-| ID | URL | Tipo |
-|----|-----|------|
-| [POLY-REV] | https://getlatka.com/companies/poly.ai | Revenue estimate ($35M) |
-| [POLY-LI] | LinkedIn | Valoración $750M (unverified) |
+2. **"Su stack propietario es impresionante pero rigido."** Owl + Raven son best-in-class en voice quality, pero ser model-agnostic (como HappyRobot) da flexibilidad ante evolucion rapida de LLMs.
+
+3. **"$750M de valoracion valida el mercado, no amenaza nuestro nicho."** Su crecimiento viene de hospitality y financial services, no de logistics.
+
+4. **"Su modelo managed service no escala como forward-deployed engineers."** 6 semanas de deployment vs. la flexibilidad de FDEs integrados con el cliente.
+
+5. **"En Espana, PolyAI no tiene presencia. Nosotros estamos entrando ahora."** Aunque podrian expandir (turismo/hospitality), hoy no tienen oficina ni equipo local.
+
+6. **"Governance es nuestra ventaja."** PolyAI tiene QA agents y analytics, pero HappyRobot tiene AI Auditor y compliance framework incluyendo EU AI Act -- critico en Europa.
+
+### Reconocer fortaleza
+
+> "PolyAI ha hecho un trabajo excelente en calidad de voz y customer service enterprise. Su ROI validado por Forrester (391%) es impresionante. Pero son fundamentalmente un managed service voice-first para inbound support. El sweet spot de HappyRobot son AI Workers operacionales en logistica."
+
+---
+
+## Fuentes
+
+| Codigo | URL | Tipo | Conf. |
+|---|---|---|---|
+| POLY-WEB | [poly.ai](https://poly.ai) | Web oficial | A |
+| POLY-TECH | [poly.ai/technology](https://poly.ai/technology) | Producto | A |
+| POLY-PR | [PR Serie D](https://www.prnewswire.com/news-releases/polyai-raises-86m-to-transform-how-enterprises-talk-to-their-customers-302641889.html) | PR oficial | A |
+| POLY-FT1000 | [PR FT 1000](https://www.prnewswire.com/news-releases/polyai-named-the-fastest-growing-ai-company-in-europe-in-ft-1000-rankings-302707736.html) | PR oficial | A |
+| POLY-AGENTIC | [PR Agentic AI Team](https://www.prnewswire.com/news-releases/polyai-launches-agentic-ai-team-to-drive-cx-insights-and-growth-qa-analyst-and-builder-agents-302554505.html) | PR oficial | A |
+| POLY-CB | [Crunchbase](https://www.crunchbase.com/organization/poly-ai) | Base datos | A |
+| POLY-CASES | [poly.ai/case-studies](https://poly.ai/case-studies/) | Case studies | A |
+| POLY-ROI | [Forrester TEI](https://poly.ai/blog/polyai-customers-391-percent-roi-total-economic-impact-study) | Estudio terceros | A |
+| POLY-SILICON | [SiliconANGLE $750M](https://siliconangle.com/2025/12/15/call-center-chatbot-startup-polyai-raises-86m-750m-valuation/) | Prensa | A |
+| POLY-SIFTED | [Sifted Serie D](https://sifted.eu/articles/polyai-series-d-86m) | Prensa | A |
+| POLY-G2 | [G2 Reviews](https://www.g2.com/products/polyai/reviews) | Reviews | B |
+| POLY-LATKA | [Latka Revenue](https://getlatka.com/companies/poly.ai) | Base datos | C |
+| POLY-AMADEUS | [Amadeus Founders story](https://www.amadeuscapital.com/success-stories-voice-ai-with-nikola-mrksic-and-polyai/) | Inversor | B |
+| POLY-GLASSDOOR | [Glassdoor](https://www.glassdoor.com/Reviews/PolyAI-Reviews-E2360836.htm) | Empleados | B |
+
+---
+
+*Ver tambien: [HappyRobot](../empresa/happyrobot.md), [Parloa](parloa.md), [Sierra AI](sierra-ai.md), [Voice AI](../tecnologia/voice-ai.md)*

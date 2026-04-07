@@ -43,18 +43,18 @@
 
 | Nodo | Research | Escrito | QA | Líneas | Última sesión |
 |------|----------|---------|-----|--------|---------------|
-| augment.md | pendiente | pendiente | — | 10 | competidores-v2 |
-| sierra-ai.md | pendiente | pendiente | — | 342 | competidores-v2 |
-| parloa.md | pendiente | pendiente | — | 322 | competidores-v2 |
-| wonderful-ai.md | pendiente | pendiente | — | 10 | competidores-v2 |
-| decagon.md | pendiente | pendiente | — | 10 | competidores-v2 |
-| poly-ai.md | pendiente | pendiente | — | 302 | competidores-v2 |
-| bland-ai.md | pendiente | pendiente | — | 383 | competidores-v2 |
-| synthflow.md | pendiente | pendiente | — | 272 | competidores-v2 |
-| retell-ai.md | pendiente | pendiente | — | 304 | competidores-v2 |
-| lanesurf.md | pendiente | pendiente | — | 10 | competidores-v2 |
-| fleetworks.md | pendiente | pendiente | — | 10 | competidores-v2 |
-| pallet.md | pendiente | pendiente | — | 10 | competidores-v2 |
+| augment.md | launched | pendiente | — | 10 | competidores-v2 |
+| sierra-ai.md | launched | pendiente | — | 342 | competidores-v2 |
+| parloa.md | launched | pendiente | — | 322 | competidores-v2 |
+| wonderful-ai.md | launched | pendiente | — | 10 | competidores-v2 |
+| decagon.md | launched | pendiente | — | 10 | competidores-v2 |
+| poly-ai.md | launched | pendiente | — | 302 | competidores-v2 |
+| bland-ai.md | launched | pendiente | — | 383 | competidores-v2 |
+| synthflow.md | launched | pendiente | — | 272 | competidores-v2 |
+| retell-ai.md | launched | pendiente | — | 304 | competidores-v2 |
+| lanesurf.md | launched | pendiente | — | 10 | competidores-v2 |
+| fleetworks.md | launched | pendiente | — | 10 | competidores-v2 |
+| pallet.md | launched | pendiente | — | 10 | competidores-v2 |
 
 ### mercado/
 

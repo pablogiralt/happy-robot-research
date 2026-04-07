@@ -8,265 +8,244 @@ updated: 2026-04-07
 
 # Synthflow
 
-## Resumen ejecutivo
-
-**Synthflow** es una plataforma de voice AI no-code con sede en Berlín, enfocada en automatización de llamadas telefónicas para BPOs, call centers y mid-market. Fundada en 2023 por Hakob Astabatsyan, Sassun Mirzakhan-Saky y Albert Astabatsyan, ha levantado $30M (Serie A liderada por Accel, junio 2025) y gestiona 45M+ llamadas con 1,000+ clientes. Compite con [HappyRobot](../empresa/happyrobot.md) en un **segmento diferente**: Synthflow es *voice-first, no-code* (SME → mid-market), mientras que HappyRobot es *enterprise agentic AI, multi-canal* con foco vertical en logística.
-
-**Takeaway para Lola:** Synthflow no representa amenaza directa en el vertical logístico (cero clientes logísticos). Su fortaleza en no-code y BPOs es irrelevante para el posicionamiento de HappyRobot en logistics & supply chain. Además, enfrenta restricciones regulatorias para outbound calls en la UE.
-
-## Ficha de empresa
-
-| Campo | Dato | Confianza | Fuente |
-|-------|------|-----------|--------|
-| **Nombre** | Synthflow AI | A | [SYNTH-CB] |
-| **Fundación** | 2023 | A | [SYNTH-CB] |
-| **Founders** | Hakob Astabatsyan, Sassun Mirzakhan-Saky, Albert Astabatsyan | A | [SYNTH-CB] |
-| **HQ** | Berlín, Alemania (Kurfürstendamm 15) | A | [SYNTH-CB] |
-| **Empleados** | ~72 (feb 2026) [derived estimate: Tracxn 72, PitchBook 60, Gartner 51–200] | B | [SYNTH-CB] |
-| **Producto** | Voice AI platform no-code para llamadas telefónicas | A | [SYNTH-WEB] |
-| **Canales** | Voz (principal), chat, SMS, WhatsApp | A | [SYNTH-WEB] |
-| **Foco vertical** | BPO/Call centers (principal), healthcare, real estate, finserv, retail | A | [SYNTH-WEB] |
-| **Pricing** | PAYG $0.08/min; enterprise $0.07/min (10K+ min/mes) | A | [SYNTH-PRICE] |
-| **España/Europa** | HQ en Berlín; soporte español (50+ idiomas); sin oficina en España | B | [SYNTH-EU] |
+Plataforma de voice AI no-code con sede en **Berlin, Alemania**, que permite crear y desplegar agentes de voz para automatización de llamadas telefónicas. Fundada en 2023 por los hermanos Astabatsyan (ex-BCG, Rocket Internet) y Sassun Mirzakhan-Saky, ha levantado **$30M** (Serie A liderada por Accel, junio 2025). Gestiona **45M+ llamadas** con **1,000+ clientes**. Compite con [HappyRobot](../empresa/happyrobot.md) en voice AI pero en **segmentos diferentes**: Synthflow es *voice-first, no-code* (SMB/mid-market, BPO/call centers); HappyRobot es *enterprise agentic AI, multi-canal* con foco vertical en logistics.
 
 ---
 
-## Funding e inversores
+## Ficha rápida
 
-| Ronda | Importe | Fecha | Lead / Inversores | Fuente |
-|-------|---------|-------|-------------------|--------|
-| **Pre-seed** | $1.7M | Ago 2023 | Atlantic Labs | [SYNTH-CB] |
-| **Seed** | $7.4M | 2024 | Singular (lead), Atlantic Labs | [SYNTH-CB] |
-| **Serie A** | $20M | Jun 2025 | **Accel** (lead), Singular, Atlantic Labs | [SYNTH-CB] |
-| **Total** | **$30M** | — | 3 inversores principales | [SYNTH-CB] |
+| Dato | Valor | Conf. |
+|---|---|---|
+| **Web** | [synthflow.ai](https://synthflow.ai/) | A |
+| **HQ** | Berlin, Alemania (Kurfürstendamm 15) | A |
+| **Fundadores** | Hakob Astabatsyan (CEO, ex-BCG/Rocket Internet), Albert Astabatsyan (CPO, hermano, ex-BCG/Rocket Internet), Sassun Mirzakhan-Saky (CTO) | A |
+| **Empleados** | ~72 (feb 2026) | B |
+| **Funding total** | $30M (3 rondas) | A |
+| **Última ronda** | $20M Serie A (jun 2025, Accel lead) | A |
+| **Valoración** | No publicada; estimación $80–150M post-money Serie A | C |
+| **ARR estimado** | $1.1M (sept 2025) | B |
+| **Clientes** | 1,000+ de pago (30,000+ cuentas registradas); BPO multinacional, Smartcat, Freshworks (partnership) | A/B |
+
+!!! warning "Dato en conflicto: Cuentas vs Clientes"
+    Synthflow reporta "30,000+ accounts" en su web pero "1,000+ customers" en PR de Serie A. La diferencia sugiere que ~29,000 son cuentas free/trial y ~1,000 son clientes de pago.
 
 ---
 
 ## Producto
 
-**Categoría:** Plataforma voice AI no-code con visual flow designer para agentes de llamadas.
+### Plataforma core
 
-### Capacidades clave
+- **Visual Flow Designer:** Constructor drag-and-drop node-based para diseñar flujos de llamada sin código. Cada nodo maneja una tarea específica.
+- **BELL Framework:** Metodología enterprise para deployment — Build, Evaluate, Launch, Learn. Lanzado en 2026 [B: SYNTH-BLOG].
+- **Test Center:** Testing automatizado de agentes a escala — señala ambición enterprise [B: SOFTAILED-REVIEW].
 
-- **Visual Flow Designer:** Constructor drag-and-drop modular de lógica de llamada (no-code)
-- **BELL Framework:** Metodología de deployment — Build, Evaluate, Launch, Learn
-- **Telefonía in-house:** Ultra-low latency <100ms, 99.99% uptime (infraestructura propietaria, no carriers terceros)
-- **Multi-canal:** Voz, chat, SMS, WhatsApp
-- **Multi-idioma:** 50+ idiomas con acentos regionales (integración ElevenLabs)
-- **Auto-QA & Monitoring:** Análisis continuo de conversaciones
-- **200+ integraciones:** GoHighLevel, HubSpot, Salesforce, Zapier, Cisco, Avaya, Genesys, RingCentral
-- **Forward-deployed engineers** (modelo similar a HappyRobot)
+### Voice & Language
+
+| Capacidad | Detalle | Conf. |
+|-----------|---------|-------|
+| **Latencia** | <100ms con infraestructura de telefonía propietaria | B |
+| **Multi-idioma** | 30-50+ idiomas con acentos regionales via **ElevenLabs** | A |
+| **Modelo BYOK** | Bring Your Own Keys — usuario paga separadamente por ElevenLabs, LLM, transcriber | A |
+
+### Integraciones
+
+- **200+ integraciones:** Salesforce (AppExchange listing), HubSpot, Freshworks (partnership estratégica), GoHighLevel, Zapier, Make
+- **CCaaS:** Five9, Genesys, RingCentral, Cisco, Avaya
+- **Calendarios:** Google Calendar, herramientas de datos
+
+### White-label capabilities
+
+- Branding custom, dominios custom, subaccounts, Stripe rebilling integrado
+- Coste: $2,000/mes como add-on [A: SYNTH-PRICING]
+- **Calidad reportada:** Reviews mixtas — usuarios reportan que branding de Synthflow persiste a pesar de promesas [B: Trustpilot]
 
 ### Compliance
 
-| Certificación | Estado |
-|---------------|--------|
-| SOC 2 | Sí |
-| HIPAA | Sí |
-| PCI DSS | Sí |
-| GDPR | Sí |
-| EU AI Act | No mencionado |
-
-**Diferenciador clave vs HappyRobot:** Foco no-code + telefonía propietaria vs. **agentic reasoning + deterministic logic + model-agnostic** de HappyRobot.
-
----
-
-## Pricing
-
-| Tier | Coste | Detalles |
-|------|-------|----------|
-| **Free Trial** | $0 | Diseño y build de agentes gratis con templates |
-| **Pay-as-you-go** | $0.08/min | Modelo estándar |
-| **Enterprise** (10K+ min/mes) | $0.07/min | Llamadas concurrentes ilimitadas, SLA 99.99%, solution architect dedicado, HIPAA, pricing custom |
-
-**Ejemplos de coste:**
-
-- Volumen bajo (<250 llamadas): $15–75/mes
-- Volumen alto (2,500+ llamadas): $750–1,150/mes
-
-**vs HappyRobot:** Synthflow usa pricing per-minute (como Bland AI, Retell AI). HappyRobot no publica precios pero probablemente usa pricing basado en uso/acciones. El modelo de Synthflow es más simple pero **puede encarecerse a escala**.
+| Certificación | Estado | Conf. |
+|---------------|--------|-------|
+| SOC 2 | Sí | A |
+| HIPAA | Sí | A |
+| PCI DSS | Sí | B |
+| GDPR | Sí | A |
+| ISO 27001 | Sí | A |
+| EU AI Act | **No mencionado** | B |
 
 ---
 
-## Verticales y casos de uso
+## Clientes y métricas
 
-**Verticales principales:** BPO & Call Centers (más fuerte), Healthcare, Real Estate, Financial Services & Insurance, Retail, Tech & Consulting, Software, Telecom.
+### Métricas agregadas
 
-**NO tiene foco en logística** — Zero mención de logistics/supply chain como vertical core. Búsqueda de "Synthflow AI logistics DHL" devuelve cero partnerships; en cambio, DHL usa activamente [HappyRobot](../empresa/happyrobot.md).
+| Métrica | Valor | Conf. | Fuente |
+|---------|-------|-------|--------|
+| Clientes de pago | 1,000+ | A | [SYNTH-SERIES-A] |
+| Llamadas acumuladas | 45M+ | A | [TECHCRUNCH] |
+| Llamadas mensuales | 5M/mes | B | [SYNTH-SERIES-A] |
+| Crecimiento YoY | 15x | B | [SYNTH-SERIES-A] |
+| Retención enterprise | 90%+ | B | [SYNTH-SERIES-A] |
+| Revenue | $1.1M (sept 2025) | B | [GETLATKA] |
+| G2 rating | 4.9/5 (999 reviews) | A | [G2] |
 
----
+### Case studies conocidos
 
-## Clientes conocidos y case studies
+| Cliente/Caso | Sector | Métricas | Conf. |
+|-------------|--------|----------|-------|
+| BPO multinacional ($230M revenue) | BPO | 600K+ llamadas/mes, 40+ agentes, 15+ idiomas, deployment en 60 días | A |
+| Top U.S. CRM platform (anónimo) | SaaS | 500K+ llamadas/mes, voice AI white-labeled embebido | B |
+| Smartcat | Language AI | -70% coste booking, +24% llamadas contestadas | A |
+| **Freshworks** (partnership) | CRM/CCaaS | 65% rutina automatizada, -75% wait times | A |
+| Medbelle | Healthcare | +60% eficiencia scheduling, 2.5x citas cualificadas | A |
 
-| Cliente/Caso | Sector | Métricas | Fuente |
-|-------------|--------|----------|--------|
-| BPO Operator ($230M multinational) | BPO | 600K+ llamadas/mes automatizadas en 60 días, 40+ agentes white-label, 15+ idiomas | [SYNTH-CASE] |
-| Top U.S. CRM platform | SaaS | 500K+ llamadas/mes, voice AI white-labeled embebido en producto | [SYNTH-CASE] |
-| Smartcat | SaaS | -70% coste booking, +24% llamadas contestadas | [SYNTH-CASE] |
-| **Freshworks** (partnership) | CRM | 65% rutina automatizada, -75% wait times (dentro de Freshcaller/Freshdesk/Freshservice) | [SYNTH-CASE] |
-| Medbelle | Healthcare | +60% eficiencia scheduling, 2.5x citas cualificadas | [SYNTH-CASE] |
-
-**Escala total:** 1,000+ clientes, 45M+ llamadas gestionadas, 90%+ retención enterprise, crecimiento 15x último año.
-
-**Sin clientes logísticos/supply chain** — HappyRobot tiene DHL, Circle Logistics, MODE Global, Samsara, Syfan Logistics.
-
----
-
-## Presencia Europa / España
-
-- **HQ en Berlín** — Base europea fuerte (vs. HQ en SF de HappyRobot con expansión España)
-- **Soporte español:** Disponible (50+ idiomas incluyendo español)
-- **Sin oficina en España** — Planificando nueva oficina en EE.UU., sin expansión a España anunciada
-- **Restricción regulatoria UE:** "Automated marketing calls are effectively illegal in most of Europe without prior explicit consent" — **No puede legalmente usar agentes outbound en UE para marketing** (limitación significativa vs. approach compliant de HappyRobot)
+**Dato clave para Lola:** Synthflow tiene **cero clientes logísticos/supply chain**. Ninguna mención de logistics como vertical.
 
 ---
 
-## Reviews y sentimiento
+## Modelo de negocio
 
-### G2
+### Pricing (abril 2026)
 
-**Score:** 4.9/5 (999 reviews) — **Muy alto** [SYNTH-G2]
+| Tier | Coste base | Features clave | Conf. |
+|------|-----------|----------------|-------|
+| **Pay-as-you-go** | $0.09/min (voice engine) | 5 concurrent calls, unlimited agents, API & integraciones | A |
+| **Enterprise** | Custom ($0.07-0.08/min) | 10,000+ min/mes, SLA 99.99%, SIP Trunking, solution architect dedicado | A |
 
-**Trustpilot:** 4.5/5 (fuente secundaria)
+### Costes adicionales (BYOK)
 
-### Sentimiento positivo
+| Componente | Coste | Conf. |
+|------------|-------|-------|
+| Voice engine (Synthflow) | $0.09/min | A |
+| LLM (GPT-4.1 mini) | $0.02/min | A |
+| LLM (GPT-4.1) | $0.05/min | A |
+| Telephony (Synthflow-managed Twilio) | $0.02/min | A |
+| **Total all-in típico** | **$0.11–$0.24/min** | B |
 
-- Facilidad del visual builder
-- Calidad de voz
-- Despliegue rápido
+### Add-ons
 
-### Sentimiento negativo (Reddit/G2/Trustpilot)
+| Add-On | Coste | Conf. |
+|--------|-------|-------|
+| Performance Routing | $0.04/min | A |
+| Global Low Latency Edge | $0.04/min | A |
+| **White-Label & Reseller** | **$2,000/mes** | A |
+| Concurrent call adicional | $20/call/mes (max 50) | A |
 
-- **Soporte lento:** Tiempos de respuesta de 24+ horas, "more questions than solutions" [SYNTH-REDDIT]
-- **Plataforma limitada en tiers bajos:** "Half the platform crippled unless you're on enterprise tier", testing real de llamadas limitado [SYNTH-REDDIT]
-- **Problemas de billing:** Cargos repetidos tras cancelación, "bait and switch" pricing [SYNTH-REDDIT]
-- **Problemas de performance:** Agentes pierden hilo cuando llamadas salen del script [SYNTH-REDDIT]
-- **Problemas white-label:** Branding de Synthflow persiste a pesar de promesas de white-label [SYNTH-REDDIT]
-- **Coste a escala:** "Total cost of ownership rising quickly at higher call volumes" [SYNTH-REDDIT]
+### Modelo de negocio
 
----
-
-## Comparativa directa: Synthflow vs HappyRobot
-
-| Dimensión | Synthflow | HappyRobot | Análisis |
-|-----------|-----------|------------|----------|
-| **Foco producto** | Voice AI no-code, visual flow builder | AI agents multi-canal, agentic reasoning | Synthflow = simplicidad; HR = complejidad enterprise |
-| **Vertical** | BPO/call centers, healthcare, real estate | **Logistics & supply chain** | Sin solapamiento vertical significativo |
-| **Modelo lógica** | Flow-based determinista only | **Agentic AI + determinista (híbrido)** | HR maneja workflows complejos multi-step |
-| **Canales** | Voz (principal), chat, SMS, WhatsApp | Teléfono, email, web chat (peso igual) | HR = true omnichannel enterprise |
-| **No-code** | Muy maduro (visual builder) | Forward-deployed engineers (menos no-code) | Synthflow ventaja para usuarios no-técnicos simples |
-| **Latencia** | <100ms (telefonía propietaria) | No benchmarkeado públicamente | Synthflow ventaja en latencia voz |
-| **Clientes logística** | **Cero** | DHL, Circle, Samsara, MODE, Syfan | HR domina completamente |
-| **Europa** | HQ Berlín | Hiring en España, founders españoles | Ambos con presencia EU, pero HR más fuerte en España |
-| **Compliance** | SOC 2, HIPAA, PCI DSS, GDPR | SOC 2, HIPAA, GDPR, **EU AI Act** | HR incluye EU AI Act |
-| **Outbound UE** | **Restricción legal** para marketing | Approach compliant | Ventaja regulatoria significativa de HR |
-| **Governance** | No mencionado AI auditor | AI Auditor, evaluations framework | HR ventaja en governance enterprise |
-| **Shared context** | No mencionado | Shared context & memory entre agentes | HR ventaja |
+- **Product-led growth (PLG):** Free builder + PAYG convierte SMBs sin fricción
+- **White-label/agency:** Revenue stream adicional para resellers y BPOs
+- **Partnership CRM:** Integración embebida en Freshworks (distribución a escala)
 
 ---
 
-## Fortalezas vs [HappyRobot](../empresa/happyrobot.md)
+## HappyRobot vs Synthflow
 
-1. **Madurez no-code:** Visual flow builder más maduro — usuarios no-técnicos lanzan agentes simples más rápido.
-2. **Telefonía propietaria:** Infraestructura propia → latencia <100ms, SLA 99.99% uptime.
-3. **Foco BPO/call center:** Más fuerte en high-volume voice-first use cases (600K llamadas/mes en case studies).
-4. **White-label:** Permite a resellers/agencias rebranding (aunque con problemas reportados).
-5. **Integración Freshworks:** Embebido en plataforma CRM major (distribución estratégica).
-6. **Multi-idioma maduro:** 50+ idiomas con integración ElevenLabs (vs. soporte de idiomas desconocido de HappyRobot).
-7. **Base europea (Berlín):** Ventaja cultural y regulatoria en EU vs. competidores puramente americanos.
+| Dimensión | HappyRobot | Synthflow |
+|---|---|---|
+| **Segmento target** | Enterprise-first | SMB → mid-market → enterprise (PLG) |
+| **Vertical foco** | **Logistics & supply chain** | BPO/call centers, healthcare, real estate |
+| **Modelo lógica** | **Agentic AI + determinista (híbrido)** | Flow-based determinista only |
+| **Canales** | Teléfono, email, web chat (peso igual) | Voz (principal), chat, SMS, WhatsApp |
+| **No-code** | Forward-deployed engineers | Muy maduro (visual builder) |
+| **Latencia voz** | No benchmarkeado públicamente | <100ms (telefonía propietaria) |
+| **Governance** | **AI Auditor + evaluations framework** | No tiene AI auditor |
+| **Shared context** | **Shared context & memory entre agentes** | No mencionado |
+| **Compliance** | SOC 2, HIPAA, GDPR, **EU AI Act** | SOC 2, HIPAA, PCI DSS, GDPR, ISO 27001 |
+| **Outbound UE** | Approach compliant | **Restricción legal** marketing calls |
+| **Clientes logística** | DHL, Circle, Samsara, MODE, Syfan | **Cero** |
+| **Europa** | Hiring en España, founders españoles | HQ Berlin |
+| **Funding** | $44M+ (Serie B) | $30M (Serie A) |
+| **Empleados** | 150-200 (est.) | ~72 |
 
-## Debilidades vs HappyRobot
-
-1. **Zero expertise logístico:** Sin clientes ni case studies en logistics/supply chain (vs. DHL, Circle, MODE de HR).
-2. **Sin agentic reasoning:** Lógica flow-based determinista only — carece del approach **agentic AI + determinista híbrido** de HR.
-3. **Flexibilidad developer limitada:** Foco no-code restringe integraciones custom, equipos técnicos se sienten limitados.
-4. **Sin capa de governance/auditing:** No menciona AI auditor ni framework de evaluación (crítico para compliance enterprise).
-5. **Voice-centric:** Multi-canal pero **centrado en voz** (vs. omni-channel equilibrado de HR).
-6. **Restricción regulatoria UE:** No puede hacer outbound marketing calls en UE sin consentimiento explícito — **limitación mayor para expansión España**.
-7. **Problemas de escalabilidad:** "Response consistency varies with call volume", "pricing increases quickly at higher volumes".
-8. **Limitaciones workflows complejos:** "Rigid when setting up advanced branching or passing dynamic variables".
-9. **Sin shared context/memory:** HR enfatiza contexto compartido entre agentes — Synthflow no.
-10. **Calidad de soporte:** Tiempos de respuesta lentos, fricción en billing.
+**Sin solapamiento significativo.** Synthflow es voice-first, no-code para BPOs/SMBs. HappyRobot es enterprise agentic AI multi-canal con expertise vertical en logistics.
 
 ---
 
-## Relevancia para Lola (GM España)
+## Debilidades y críticas
 
-### Talking points para entrevista
+### Problemas reportados (G2, Reddit, Trustpilot)
 
-1. **"Categoría diferente"** — Synthflow es **voice-first, no-code** (SME → mid-market). HappyRobot es **enterprise agentic AI, multi-canal** con expertise vertical en logística. No compiten directamente.
+| Problema | Detalle | Frecuencia |
+|----------|---------|------------|
+| **Soporte lento** | Respuestas 24+ horas, "more questions than solutions" | Frecuente |
+| **Testing limitado** | Probar llamadas reales consume minutos pagados | Frecuente |
+| **Plataforma capada en tiers bajos** | "Half the platform crippled unless on enterprise" | Frecuente |
+| **Billing problemático** | Cargos tras cancelación, "bait and switch" pricing | Moderado |
+| **Performance inconsistente** | Latency spikes, agentes pierden hilo fuera de script | Moderado |
+| **White-label incompleto** | Branding Synthflow persiste a pesar de promesas | Moderado |
+| **Workflows complejos limitados** | "Rigid when setting up advanced branching or passing dynamic variables" | Moderado |
+| **Límite llamadas diarias** | ~1,000 calls/día en planes standard | Importante |
 
-2. **"Sweet spot diferente"** — Synthflow brilla en high-volume voice-only (BPO, call centers, scheduling healthcare). HappyRobot brilla en **operaciones complejas cross-channel** (logística, supply chain, collections).
+### Debilidades estructurales
 
-3. **"Sin amenaza logística"** — Synthflow tiene **cero clientes logísticos**. HappyRobot posee el vertical (partnership DHL es prueba).
-
-4. **"Riesgo regulatorio UE"** — Synthflow enfrenta restricciones legales para outbound calls en UE. **El approach compliance-first de HappyRobot (GDPR, EU AI Act) es ventaja competitiva en España**.
-
-5. **"No-code vs agentic"** — El no-code de Synthflow es más fácil para flujos simples pero **limitado para operaciones enterprise multi-step complejas**. El agentic reasoning + deterministic logic + forward-deployed engineers de HappyRobot = **mejor para complejidad enterprise**.
-
-6. **"Dato interesante: Berlín"** — Synthflow tiene base en Berlín, lo cual demuestra que el mercado europeo de voice AI tiene demanda. Pero su foco BPO no amenaza la posición de HappyRobot en logistics enterprise.
-
-### Posicionamiento de mercado
-
-| | Synthflow | HappyRobot |
-|--|-----------|------------|
-| **Segmento** | SME → mid-market → enterprise (product-led growth) | Enterprise-first con vertical logistics |
-| **TAM objetivo** | $168B conversational AI global (claim de Synthflow) | Enterprise AI agents para operaciones complejas |
-| **Gana cuando** | BPOs necesitando voice automation alta volumen, SMEs sin equipo técnico, simple scheduling | Enterprise logística/supply chain, workflows multi-canal complejos, mercado España/EU |
+1. **Revenue muy bajo vs funding:** $1.1M revenue con $30M levantados sugiere burn rate elevado [B: GETLATKA]
+2. **Dependencia BYOK:** No controla componentes core de su stack (ElevenLabs + OpenAI)
+3. **Restricción outbound UE:** Marketing calls automatizadas ilegales sin consentimiento explícito previo
+4. **No-code ceiling:** Ventaja para simplicidad pero limitación para complejidad enterprise
+5. **Sin vertical depth:** Horizontal play sin expertise profundo en ningún vertical
 
 ---
 
-## Registro de fuentes
+## Noticias recientes
 
-### Funding y empresa
+| Fecha | Evento | Fuente |
+|-------|--------|--------|
+| **Q1 2026** | Lanzamiento **BELL Framework** + Test Center | SYNTH-BLOG [A] |
+| **Q1 2026** | Partnership **Freshworks** — voice AI embebido en Freshcaller/Freshdesk | SYNTH-FRESHWORKS [A] |
+| **Nov 2025** | Contratación **Joe Havlik** como VP Global Revenue (ex-Nokia, RingCentral, Cognigy) | BusinessWire [A] |
+| **Jun 2025** | **Serie A $20M** liderada por Accel | BusinessWire, TechCrunch [A] |
+| **2026** | Expansión a EE.UU. con oficina en Dallas | BusinessWire [B] |
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-CB] | https://www.crunchbase.com/organization/synthflow-ai | Crunchbase | A |
-| [SYNTH-CB] | https://synthflow.ai/news/synthflow-raises-20m-series-a | Press release Serie A | A |
+### Presencia en Europa
 
-### Producto y pricing
+| Aspecto | Detalle | Conf. |
+|---------|---------|-------|
+| **HQ** | Berlin, Alemania | A |
+| **Entidad legal** | AgentFlow AI GmbH | A |
+| **Idioma español** | Soportado (50+ idiomas) | A |
+| **Oficina en España** | No | B |
+| **GDPR** | Compliant | A |
+| **EU AI Act** | No mencionado | B |
+| **Restricción outbound UE** | Marketing calls automatizadas ilegales sin consentimiento explícito | A |
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-WEB] | https://synthflow.ai/ | Web producto | A |
-| [SYNTH-PRICE] | https://synthflow.ai/pricing | Pricing page | A |
-| [SYNTH-PRICE] | https://www.ringly.io/blog/synthflow-pricing | Análisis pricing | A |
+---
 
-### Reviews y sentimiento
+## Relevancia para la entrevista
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-G2] | https://www.g2.com/products/synthflow/reviews | G2 reviews | A |
-| [SYNTH-REDDIT] | https://www.trustpilot.com/review/synthflow.ai | Trustpilot | B |
-| [SYNTH-REDDIT] | https://www.dialora.ai/blog/synthflow-ai-reviews | Review aggregation | B |
-| [SYNTH-REDDIT] | https://www.toksta.com/products/synthflow | Sentimiento | B |
+### Talking points concretos para Lola
 
-### Análisis competitivo
+1. **"Categoría diferente, no competidor directo"** — Synthflow es voice-first, no-code, enfocado en BPOs y SMBs. HappyRobot es enterprise agentic AI multi-canal con expertise vertical en logistics.
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-COMP] | https://aiagentstore.ai/compare-ai-agents/happyrobot-ai-vs-synthflow-ai | Comparativa | B |
-| [SYNTH-COMP] | https://www.ringly.io/comparison/bland-vs-synthflow | Comparativa | B |
-| [SYNTH-LIMIT] | https://www.retellai.com/blog/synhtflow-ai-review | Review competidor | B |
-| [SYNTH-LIMIT] | https://synthflow.ai/enterprise-comparison | Comparativa enterprise | B |
+2. **"Zero amenaza en logistics"** — Synthflow tiene cero clientes logísticos. Ni una mención de logistics como vertical. HappyRobot posee el vertical con DHL, Circle, Samsara, MODE, Syfan.
 
-### Case studies
+3. **"Ventaja regulatoria de HappyRobot en UE"** — Synthflow enfrenta restricciones legales para outbound calls en UE. HappyRobot cumple EU AI Act y tiene approach compliance-first.
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-CASE] | https://synthflow.ai/success-stories/bpo-operator | Case study BPO | A |
+4. **"No-code vs agentic = complejidad diferente"** — El no-code de Synthflow es perfecto para flujos simples. Pero para operaciones enterprise multi-step (tracking de envíos, collections, scheduling logístico), el agentic reasoning de HappyRobot es necesario.
 
-### Europa/España
+5. **"Base Berlin valida el mercado europeo"** — Synthflow con funding europeo (Atlantic Labs, Accel) demuestra demanda real de voice AI enterprise en Europa. Buena señal para la expansión de HappyRobot en España.
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-EU] | https://www.eu-startups.com/2025/06/indistinguishable-from-a-human-voice-berlin-based-synthflow-ai-raise-e17-2-million-for-its-ai-voice-agent/ | Prensa EU | B |
-| [SYNTH-EU] | https://www.vestbee.com/insights/articles/synthflow-secures-7-4-m | Prensa funding | B |
+6. **"Revenue gap sugiere oportunidad"** — Synthflow tiene $1.1M revenue con $30M levantados — todavía buscando PMF enterprise. HappyRobot con $44M+ y DHL ya tiene tracción enterprise demostrada.
 
-### Prensa y mercado
+---
 
-| ID | URL | Tipo | Confianza |
-|----|-----|------|-----------|
-| [SYNTH-MARKET] | https://techcrunch.com/2025/06/24/how-synthflow-ai-is-cutting-through-the-noise-in-a-loud-ai-voice-category/ | TechCrunch | B |
-| [SYNTH-MARKET] | https://www.accel.com/noteworthies/our-investment-in-synthflow-transforming-enterprise-communications-with-voice-ai | Accel investment note | B |
+## Fuentes
+
+| Código | URL | Tipo | Conf. |
+|--------|-----|------|-------|
+| BUSINESSWIRE | https://www.businesswire.com/news/home/20250624442670/en/ | PR Serie A | A |
+| TECHCRUNCH | https://techcrunch.com/2025/06/24/how-synthflow-ai-is-cutting-through-the-noise-in-a-loud-ai-voice-category/ | TechCrunch | A |
+| SYNTH-SERIES-A | https://synthflow.ai/news/synthflow-raises-20m-series-a | PR oficial | A |
+| CRUNCHBASE | https://www.crunchbase.com/organization/synthflow-ai | Crunchbase | A |
+| SYNTH-WEB | https://synthflow.ai/ | Web principal | A |
+| SYNTH-PRICING | https://synthflow.ai/pricing | Pricing | A |
+| G2 | https://www.g2.com/products/synthflow/reviews | Reviews | A |
+| GETLATKA | https://getlatka.com/companies/synthflow-ai | Revenue data | B |
+| UNITE-AI | https://www.unite.ai/hakob-astabatsyan-co-founder-ceo-of-synthflow-interview-series/ | Entrevista CEO | A |
+| BUSINESSWIRE-VP | https://www.businesswire.com/news/home/20251103012543/en/ | VP Revenue hire | A |
+| ACCEL-INVESTMENT | https://www.accel.com/noteworthies/our-investment-in-synthflow... | Accel note | A |
+| SYNTH-FRESHWORKS | https://synthflow.ai/success-stories/ | Partnership Freshworks | A |
+| TRUSTPILOT | https://www.trustpilot.com/review/synthflow.ai | Trustpilot reviews | B |
+| RINGLY-PRICING | https://www.ringly.io/blog/synthflow-pricing | Análisis pricing | B |
+| RETELL-REVIEW | https://www.retellai.com/blog/synhtflow-ai-review | Review competidor | B |
+
+---
+
+*Ver también: [HappyRobot](../empresa/happyrobot.md), [Bland AI](bland-ai.md), [Retell AI](retell-ai.md), [Tabla comparativa competidores](index.md)*
