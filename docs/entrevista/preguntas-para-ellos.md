@@ -100,7 +100,7 @@ Estas preguntas están diseñadas para demostrar profundidad de research, pensam
 
 Después de las preguntas, cerrar con algo genuino y directo:
 
-> *"He estudiado HappyRobot a fondo estas semanas y estoy genuinamente convencida de que la oportunidad en España es extraordinaria. Un mercado logístico de $72B, una plataforma con resultados probados, y fundadores españoles que entienden el mercado. Lo que falta es alguien que construya la operación. Creo que soy esa persona y me encantaría demostrarlo."*
+> *"He estudiado HappyRobot a fondo estas semanas y estoy genuinamente convencida de que la oportunidad en España es extraordinaria. Un mercado logístico de $72B como beachhead, pero con potencial inmediato en utilities, financial services y airlines — una plataforma multi-vertical con resultados probados como 119x ROI en collections y 1M+ entrevistas AI con Job&Talent, y fundadores españoles que entienden el mercado. Lo que falta es alguien que construya la operación. Creo que soy esa persona y me encantaría demostrarlo."*
 
 ---
 

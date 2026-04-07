@@ -333,6 +333,7 @@ Ver: [GDPR/LOPDGDD](../regulacion/gdpr-lopdgdd.md), [EU AI Act](../regulacion/eu
 - Rating: 5/5
 - *"Revolutionizing the logistics industry"*
 - Highlights: call handling, email, text, TMS integrations
+- Nota: review de época logistics-first; el producto ya opera en recruiting (Job&Talent), finance, HR, sales cross-industry
 
 ### Pros (agregados) [B: FUTUREPEDIA]
 
@@ -355,7 +356,7 @@ Ver: [GDPR/LOPDGDD](../regulacion/gdpr-lopdgdd.md), [EU AI Act](../regulacion/eu
 
 ### Reddit / Community
 
-Sin threads específicos con user reviews encontrados. Circle Logistics descubrió la empresa a través de un demo compartido en un **Discord server**, sugiriendo community-driven discovery en círculos freight/logistics [A: HR-UPSTARTS].
+Sin threads específicos con user reviews encontrados. Circle Logistics descubrió la empresa a través de un demo compartido en un **Discord server**, sugiriendo community-driven discovery en círculos freight/logistics [A: HR-UPSTARTS]. Con la expansión multi-vertical (Job&Talent en recruiting, finance cross-industry), es probable que la community discovery se extienda a nuevos círculos.
 
 ---
 
@@ -381,6 +382,8 @@ Sin threads específicos con user reviews encontrados. Circle Logistics descubri
 | [Collections](../casos-de-uso/collections.md) ROI | 119x | A | HR-SERIEB |
 | [Outbound sales](../casos-de-uso/sales-inbound.md) ROI | 19x | A | HR-SERIEB |
 | Carrier sales operations | 5x+ returns | A | HR-SERIEB |
+| Finance/Collections | 119x ROI, 18% more cash collected, 10x cost reduction doc recovery | B | HR-BLOG-FIN |
+| HR/Recruiting (Job&Talent) | 1M+ AI interviews, 20K+ hires, 60% vacancies filled by AI | B | HR-BLOG-JT |
 
 ### Company-wide
 
@@ -425,7 +428,7 @@ Blog URL: [happyrobot.ai/blog](https://www.happyrobot.ai/blog)
 6. **Cloud & model agnostic** — Routing por tenant/call; no locked a un solo LLM vendor
 7. **Compliance enterprise** — SOC 2, GDPR, HIPAA, EU AI Act, NIST CSF, DORA
 8. **Production scale proof** — DHL (millones voice minutes), Circle (300K+ calls, 18% fully autonomous freight booking)
-9. **Profundidad vertical en logistics** — 8 de 10 top freight brokers, TMS integrations, fine-tuning industry-specific
+9. **Beachhead logistics validado, arquitectura multi-vertical** — 8 de 10 top freight brokers, TMS integrations, fine-tuning industry-specific. Arquitectura aplicable a otras verticales: Airlines, Retail, Financial Services, Utilities [B: HR-WEB-APR26]. Funciones cross-industry: Customer Support, Sales, Finance, Operations, HR & Recruiting [B: HR-BLOG-MAR26]
 10. **Crecimiento acelerado** — 10x revenue desde Serie A, ~$500M valoración, 70+ enterprise customers
 
 ---
@@ -464,3 +467,7 @@ Blog URL: [happyrobot.ai/blog](https://www.happyrobot.ai/blog)
 | [HR-PROD-TEMPLATE] | [happyrobot.ai/product-template](https://www.happyrobot.ai/product-template) | Oficial |
 | [HR-PRICING] | [docs.happyrobot.ai/pricing](https://docs.happyrobot.ai/general/pricing) | Oficial |
 | [FUTUREPEDIA] | [futurepedia.io/tool/happyrobot](https://www.futurepedia.io/tool/happyrobot) | Comunidad |
+| [HR-WEB-APR26] | [happyrobot.ai](https://www.happyrobot.ai) (consultado abril 2026) | Oficial |
+| [HR-BLOG-FIN] | [blog/finance-automation](https://www.happyrobot.ai/blog/finance-automation-with-happyrobot) | Oficial |
+| [HR-BLOG-JT] | [blog/job-and-talent-case-study](https://www.happyrobot.ai/blog/job-and-talent-case-study) | Oficial |
+| [HR-BLOG-MAR26] | Blog posts Mar 2026 (Finance, HR, Operations, Sales) | Oficial |

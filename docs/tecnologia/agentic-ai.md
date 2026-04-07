@@ -77,9 +77,9 @@ El debate central en AI enterprise es: **¿agentes inteligentes que razonan (age
 | [Bland AI](../competidores/bland-ai.md) | Flow-based (más determinista) | Menos flexible para conversaciones complejas |
 | [Synthflow](../competidores/synthflow.md) | No-code visual builder (determinista) | Visual builder = scripts visuales, poca agilidad agéntica |
 | [Retell AI](../competidores/retell-ai.md) | API-first, LLM-driven | Más agéntico pero menos governance |
-| [Sierra AI](../competidores/sierra-ai.md) | Agentic enterprise | Fuerte en razonamiento, sin vertical logistics |
-| [Parloa](../competidores/parloa.md) | Agentic enterprise (contact center) | Similar en approach, pero sin modelo FDE ni logistics depth |
-| **HappyRobot** | **Hybrid agentic + deterministic** | **Único en combinar ambos con governance + FDE** |
+| [Sierra AI](../competidores/sierra-ai.md) | Agentic enterprise | Fuerte en razonamiento, sin vertical depth en operaciones complejas |
+| [Parloa](../competidores/parloa.md) | Agentic enterprise (contact center) | Similar en approach, pero sin modelo FDE ni vertical depth multi-sector |
+| **HappyRobot** | **Hybrid agentic + deterministic** | **Único en combinar ambos con governance + FDE + vertical depth (logistics beachhead → multi-vertical)** |
 
 ### Tendencia del mercado 2025-2026
 

@@ -141,7 +141,7 @@ Plataforma de voice AI no-code con sede en **Berlin, Alemania**, que permite cre
 | Dimensión | HappyRobot | Synthflow |
 |---|---|---|
 | **Segmento target** | Enterprise-first | SMB → mid-market → enterprise (PLG) |
-| **Vertical foco** | **Logistics & supply chain** | BPO/call centers, healthcare, real estate |
+| **Vertical foco** | Multi-vertical (logistics beachhead) | BPO/call centers, healthcare, real estate |
 | **Modelo lógica** | **Agentic AI + determinista (híbrido)** | Flow-based determinista only |
 | **Canales** | Teléfono, email, web chat (peso igual) | Voz (principal), chat, SMS, WhatsApp |
 | **No-code** | Forward-deployed engineers | Muy maduro (visual builder) |

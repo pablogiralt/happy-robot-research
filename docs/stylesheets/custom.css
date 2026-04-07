@@ -1,0 +1,15 @@
+.md-nav__icon { display: none !important; }
+.md-status { display: none !important; }
+
+/* Section titles in nav */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > label.md-nav__link {
+  font-weight: 700 !important;
+  font-size: 0.72rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: var(--md-primary-fg-color) !important;
+  margin-top: 1em !important;
+  padding-bottom: 0.2em !important;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest) !important;
+}

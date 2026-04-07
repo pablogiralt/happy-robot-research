@@ -16,8 +16,11 @@ updated: 2026-04-07
 | Fundadores | [Pablo Palafox](../personas/pablo-palafox.md) (CEO), [Javier Palafox](../personas/javier-palafox.md) (COO), Luis Paarup (CTO) | A | [UPS-HR] [DG-PP] |
 | HQ | San Francisco, California | A | [HR-WEB] [UPS-HR] |
 | Oficina Europa | Chamberí, Madrid | B | [LUMA-HACK] |
-| Producto | Plataforma enterprise AI: [AI Workers](producto.md) autónomos para operaciones | A | [HR-WEB] |
+| Producto | Plataforma enterprise AI: [AI Workers](producto.md) autónomos para operaciones — *"AI workers handle end-to-end tasks at scale"* | A | [HR-WEB] |
+| Verticales | Multi-vertical: Airlines, Retail, Financial Services, Utilities, Logistics (beachhead en logistics, expandiendo) | B | [HR-WEB-APR26] |
+| Funciones | Customer Support, Sales, Finance, Operations, HR & Recruiting | B | [HR-WEB-APR26] |
 | Modelo | [Forward-deployed engineers](../tecnologia/forward-deployed.md) embebidos en cliente | A | [HR-SERIEA] [TFN-HR] |
+| MD EMEA | Mia Bjorkenstam (desde Feb 2026) | B | [HR-WEB-APR26] |
 | Programa | Y Combinator S23 | A | [HR-SERIEB] [DG-PP] |
 | Web | [happyrobot.ai](https://www.happyrobot.ai/) | A | [HR-WEB] |
 
@@ -83,6 +86,7 @@ Los tres co-fundadores son españoles con base en Silicon Valley [A: UPS-HR, DG-
 | [Samsara](../clientes/samsara.md) | IoT/Fleet | Samsara Ventures invirtió en Serie B | [HR-SERIEB] |
 | [MODE Global](../clientes/mode-global.md) | Logistics | [pendiente detalles] | [HR-WEB] |
 | [Syfan Logistics](../clientes/syfan-logistics.md) | Logistics | [pendiente detalles] | [HR-WEB] |
+| Job&Talent | Workforce management | 1M+ AI interviews, 20K+ hires, 60% vacancies filled by AI | [HR-BLOG-JT] |
 
 ## Casos de uso cuantificados
 
@@ -94,6 +98,8 @@ Los tres co-fundadores son españoles con base en Silicon Valley [A: UPS-HR, DG-
 | [Carrier Sales](../casos-de-uso/logistics-operations.md) | 5x returns | B | [HR-SERIEB] |
 | [Customer Service](../casos-de-uso/customer-service.md) | 100% response rate, 0min FRT, 50%+ autónomo | B | [HR-WEB] |
 | [Recruiting](../casos-de-uso/recruiting.md) | +20% candidates, +60% shift confirmation | B | [HR-WEB] |
+| Finance/Collections | 119x ROI, 18% more cash collected, 10x cost reduction in document recovery | B | [HR-BLOG-FIN] |
+| Workforce management (Job&Talent) | 1M+ AI interviews, 20K+ hires, 60% vacancies filled by AI | B | [HR-BLOG-JT] |
 | Rate negotiation | 10% mejor margen vs humanos | B | [DG-PP] |
 | Circle Logistics calls | 100K+ llamadas ago 2024 → 300K+ cierre 2024 | A | [HR-SERIEA] [HR-WEB] |
 
@@ -106,7 +112,7 @@ Los tres co-fundadores son españoles con base en Silicon Valley [A: UPS-HR, DG-
 | **Y Combinator** | Aceleradora | YC S23 — red global, marca, deal flow |
 | **Samsara Ventures** | Strategic | Samsara es cliente + inversor = strong signal |
 | **RyderVentures** | Strategic | Ryder (fleet management) invirtió en Serie A |
-| **Tokio Marine** | Corporate VC | Aseguradora japonesa — señal de expansión Asia |
+| **Tokio Marine** | Corporate VC / Strategic | Aseguradora japonesa — señal de expansión a **insurance/finserv** vertical + Asia |
 | **WiL** (World Innovation Lab) | VC Japan-SF | Más señal de interés japonés |
 
 ## Fortalezas
@@ -117,11 +123,11 @@ Los tres co-fundadores son españoles con base en Silicon Valley [A: UPS-HR, DG-
 4. **Investors tier 1** — a16z + YC + Base10. Validación máxima
 5. **Compounding intelligence** — Cada instancia que aprende beneficia a todas las demás (network effect de datos)
 6. **Multi-channel** — Teléfono + email + chat + WhatsApp (no solo voz)
-7. **Vertical focus** — Logistics como beachhead, con expansión a utilities y energy planeada
+7. **Multi-vertical con beachhead validado** — Logistics como beachhead ya dominado (8/10 top brokers), ahora expandiendo a Airlines, Retail, Financial Services, Utilities. Blog posts Mar 2026 cubren Finance, HR, Operations, Sales de forma cross-industry [B: HR-WEB-APR26]
 
 ## Gaps / riesgos potenciales
 
-1. **Dependencia de logistics** — La mayoría de clientes son freight brokers/carriers. Diversificación a otros verticales aún temprana
+1. **Diversificación multi-vertical en curso** — Logistics sigue siendo el grueso de clientes, pero la web ya posiciona Airlines, Retail, Financial Services, Utilities. Casos no-logistics (Job&Talent, Tokio Marine) aún pocos [B: HR-WEB-APR26]
 2. **Competencia creciente** — [Bland AI](../competidores/bland-ai.md), [Vapi](../competidores/vapi.md), [Sierra AI](../competidores/sierra-ai.md) todos bien financiados
 3. **Europa = tierra nueva** — La oficina Madrid es reciente. No hay track record EU todavía
 4. **Compliance EU** — [EU AI Act](../regulacion/eu-ai-act.md) y [GDPR](../regulacion/gdpr-lopdgdd.md) añaden complejidad vs mercado US
@@ -139,4 +145,4 @@ Del manifesto oficial [B: HR-MANIF]:
 
 ---
 
-*Fuentes: [HR-WEB] happyrobot.ai, [HR-SERIEA] blog/series-a-announcement, [HR-SERIEB] blog/series-b-announcement, [HR-MANIF] blog/manifesto, [UPS-HR] upstartsmedia.com, [TFN-HR] techfundingnews.com, [TECHEU-HR] tech.eu, [DG-PP] deepgram.com podcast, [YC-TWEET] x.com/ycombinator, [GD-HR] glassdoor.com, [LUMA-HACK] lu.ma hackathon event, [CB-AP] crunchbase.com*
+*Fuentes: [HR-WEB] happyrobot.ai, [HR-WEB-APR26] happyrobot.ai (consultado abril 2026 — nueva estructura multi-vertical), [HR-SERIEA] blog/series-a-announcement, [HR-SERIEB] blog/series-b-announcement, [HR-MANIF] blog/manifesto, [HR-BLOG-FIN] blog/finance-automation, [HR-BLOG-JT] blog/job-and-talent-case-study, [UPS-HR] upstartsmedia.com, [TFN-HR] techfundingnews.com, [TECHEU-HR] tech.eu, [DG-PP] deepgram.com podcast, [YC-TWEET] x.com/ycombinator, [GD-HR] glassdoor.com, [LUMA-HACK] lu.ma hackathon event, [CB-AP] crunchbase.com*

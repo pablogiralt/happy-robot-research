@@ -38,9 +38,9 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 
 | Acción | Detalle | Outcome esperado |
 |--------|---------|-----------------|
-| **Activar red personal** | Contactar 20-30 personas clave en logistics/transporte de mi red (Uber, Amazon, eventos) | 8-10 conversaciones warm con decisores de operadores logísticos españoles |
+| **Activar red personal** | Contactar 20-30 personas clave en logistics/transporte + enterprise (finserv, utilities, retail) de mi red (Uber, Amazon, eventos) | 8-10 conversaciones warm con decisores de operadores logísticos + 3-5 contactos exploratorios en otros verticales |
 | **DHL España** | Coordinar con equipo global de HappyRobot para conectar con DHL Express Spain / DHL Supply Chain Spain | Reunión de exploración con contraparte española de DHL |
-| **Mapeo de targets** | Listar 30 target accounts prioritarios con ICP scoring | Pipeline board inicial en CRM |
+| **Mapeo de targets** | Listar 30 target accounts prioritarios con ICP scoring (20 logistics + 10 multi-vertical: finserv, utilities, HR/recruiting) | Pipeline board inicial en CRM — logistics como core, multi-vertical como pipeline exploratorio |
 | **Análisis competitivo local** | Verificar qué están haciendo Sierra AI y Parloa en Madrid, qué clientes atacan | Estrategia de diferenciación adaptada al mercado real |
 
 ### Equipo
@@ -73,7 +73,7 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 | **Primeras demos** | Demos personalizadas a 10-15 target accounts de Tier 1-2 | 5-8 empresas interesadas en POC |
 | **Reference selling** | Usar caso DHL global + Circle Logistics como proof points | Superar la barrera de "¿quién más lo usa?" |
 | **CEL / asociaciones** | Presentarme en CEL (Centro Español de Logística), explorar colaboración | Credibilidad sectorial, acceso a directorio de miembros |
-| **Evento propio** | Organizar un breakfast ejecutivo con 10-15 C-levels de logistics | Pipeline calificado, posicionamiento como thought leader |
+| **Evento propio** | Organizar un breakfast ejecutivo con 10-15 C-levels (mayoría logistics + 3-4 invitados de finserv/utilities para empezar a sembrar multi-vertical) | Pipeline calificado, posicionamiento como thought leader cross-industry |
 
 ### POCs
 
@@ -114,11 +114,19 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 | **Expandir pipeline** | Con AE en funciones, generar pipeline de siguiente ola | EUR 1-2M de pipeline |
 | **Caso de éxito español** | Documentar resultados del primer cliente español (métricas, testimonial) | Material de ventas local, press release |
 
+### Multi-vertical scouting
+
+| Acción | Detalle | Outcome esperado |
+|--------|---------|-----------------|
+| **Identificar 2-3 prospects finserv/utilities** | Conversaciones exploratorias con entidades financieras (collections) y utilities (customer service). Usar el caso de 119x ROI en collections y Tokio Marine como señal | Lista corta de prospects no-logistics con interés preliminar |
+| **Mapear oportunidad HR/recruiting** | Evaluar ETTs españolas (Adecco, Randstad) usando Job&Talent como referencia (1M+ AI interviews) | Sizing de oportunidad para incluir en plan Q2 |
+| **Reportar a HQ** | Compartir señales multi-vertical con Pablo/Javier para alinear timing de expansión con roadmap global | Alineamiento sobre qué vertical activar primero en España tras logistics |
+
 ### Posicionamiento
 
 | Acción | Detalle | Outcome esperado |
 |--------|---------|-----------------|
-| **Media & PR** | Artículo en Cadena de Suministro, Logística Profesional, o El Economista sobre AI en logistics española | Brand awareness en sector target |
+| **Media & PR** | Artículo en Cadena de Suministro o Logística Profesional (sector logistics) + artículo en El Economista o Expansión posicionando HR como plataforma multi-vertical AI Workers | Brand awareness en logistics + narrativa multi-vertical para mercado amplio |
 | **Presentación en evento sectorial** | Speaker en evento CEL, AECOC, o similar | Credibilidad y pipeline |
 | **Compliance como diferenciador** | Publicar caso de uso de compliance EU AI Act + GDPR en contexto español | Argumento de venta vs competidores US-only |
 
@@ -128,7 +136,7 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 |--------|---------|-----------------|
 | **SDR contratado** | SDR en funciones alimentando pipeline del AE | Pipeline generation machine operativa |
 | **Procesos establecidos** | CRM, cadencia de ventas, reporting, QBR con HQ | Operación predecible y medible |
-| **Plan Q2 aprobado** | Plan detallado para meses 4-6 basado en datos reales | Alineamiento con HQ para escalar |
+| **Plan Q2 aprobado** | Plan detallado para meses 4-6 basado en datos reales, incluyendo recomendación sobre primer vertical no-logistics | Alineamiento con HQ para escalar logistics + explorar multi-vertical |
 
 ### KPIs Fase 3
 
@@ -137,8 +145,9 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 - [x] Pipeline EUR 1-2M
 - [x] 3-4 personas en equipo España
 - [x] 1+ caso de éxito español documentado
-- [x] Media/PR hit en sector logístico
-- [x] Plan Q2 presentado y aprobado
+- [x] Media/PR hit en sector logístico + 1 pieza en medio business generalista (posicionamiento multi-vertical)
+- [x] 2-3 prospects no-logistics identificados (finserv/utilities/HR)
+- [x] Plan Q2 presentado y aprobado (con recomendación multi-vertical)
 
 ---
 
@@ -158,6 +167,8 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 
 ## Target accounts: primera ola
 
+### Logistics (core — 80% del esfuerzo año 1)
+
 | Empresa | Tier | Por qué | Approach |
 |---------|------|---------|----------|
 | **DHL Express Spain** | 1 | Ya cliente global de HR | Introducción vía equipo global HR |
@@ -169,6 +180,15 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 | **GLS Spain** | 2 | Crecimiento fuerte, ya usa chatbot Aunoa | Upgrade de chatbot a AI agents |
 | **Moldtrans Group** | 2 | 100% capital español, freight forwarding | Afinidad cultural |
 | **2-3 freight brokers medianos** | 3 | Ágiles, decisiones rápidas, validan modelo | Quick wins para caso de éxito |
+
+### Multi-vertical (pipeline exploratorio — 20% del esfuerzo, conversaciones desde mes 2-3)
+
+| Empresa | Vertical | Por qué | Approach |
+|---------|----------|---------|----------|
+| **Job&Talent** | HR/Recruiting | Ya cliente HR (1M+ AI interviews, 20K+ hires) — referencia local | Caso existente; explorar ampliación España |
+| **Santander / BBVA / CaixaBank** | Financial Services | Collections (119x ROI), document recovery (10x cost reduction) | Tokio Marine como señal de vertical; contactar vía red enterprise |
+| **Iberdrola / Endesa** | Utilities | Customer service a volumen, scheduling | Contactos de red Uber/Amazon |
+| **Adecco / Randstad España** | HR/ETTs | Screening masivo; Job&Talent como proof point | Reference selling con caso Job&Talent |
 
 ---
 
@@ -189,7 +209,7 @@ Este plan sirve como **propuesta de valor en la entrevista** — demuestra que L
 | **Ciclo de venta más largo de lo esperado** | Alta | Empezar 15+ conversaciones en paralelo; quick wins con medianos |
 | **Escasez de FDEs para Europa** | Media | Solicitar asignación desde día 1; plan de contratación local |
 | **Producto necesita adaptación para España** | Media | Feedback temprano a producto; WhatsApp priority, documentación cross-border |
-| **Sierra AI / Parloa se adelantan** | Media | Diferenciación por vertical (logistics), no por horizontal. Rapidez de ejecución |
+| **Sierra AI / Parloa se adelantan** | Media | Diferenciación por vertical depth (logistics beachhead) + multi-vertical con resultados reales (Job&Talent, collections). FDEs y hybrid architecture como moat. Rapidez de ejecución |
 | **Talent war por senior AI** | Alta | Propuesta de valor: equity + misión + impacto. No competir solo en salario |
 
 ---

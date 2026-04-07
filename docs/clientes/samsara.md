@@ -65,7 +65,10 @@ Relación dual con [HappyRobot](../empresa/happyrobot.md): **inversor estratégi
 
 > **Samsara:** "We're investing in HappyRobot because they're digitizing the logistics industry, and we believe their AI agents are poised to become the standard."
 
-La inversión aborda el reto de la industria de reducir la dependencia de negociaciones humanas intensivas en tiempo, en operaciones de alto volumen y bajo margen.
+!!! note "Contexto actualizado"
+    Esta cita es del anuncio de inversión (sep 2025), cuando HappyRobot estaba enfocado casi exclusivamente en logistics. Desde entonces, la plataforma se ha expandido a múltiples verticales (Airlines, Retail, Financial Services, Utilities), aunque la relación Samsara sigue centrada en el ecosistema logistics/fleet management.
+
+La inversión aborda el reto de reducir la dependencia de negociaciones humanas intensivas en tiempo, en operaciones de alto volumen y bajo margen.
 
 ### Perspectiva de HappyRobot
 

@@ -7,6 +7,7 @@ import asyncio
 import hashlib
 import json
 import os
+import re
 import secrets
 import subprocess
 import sys
@@ -288,6 +289,72 @@ NUNCA uses rutas a archivos .md como docs/competidores/sierra-ai.md. Siempre lin
 --- FIN DOCUMENTACIÓN ---"""
 
 
+MKDOCS_YML = PROJECT_DIR / "mkdocs.yml"
+
+# Map folder names to nav section names
+SECTION_MAP = {
+    "competidores": "Competidores",
+    "mercado": "Mercado",
+    "tecnologia": "Tecnología",
+    "casos-de-uso": "Casos de Uso",
+    "clientes": "Clientes",
+    "personas": "Personas",
+    "empresa": "Empresa",
+    "regulacion": "Regulación",
+    "entrevista": "Entrevista",
+    "fuentes": "Fuentes",
+}
+
+
+def add_to_nav(md_file: Path):
+    """Add a new .md file to mkdocs.yml nav if not already present."""
+    rel = md_file.relative_to(DOCS_DIR)
+    rel_str = str(rel)
+    folder = rel.parts[0] if len(rel.parts) > 1 else None
+
+    if not folder or folder not in SECTION_MAP:
+        return
+
+    yml_text = MKDOCS_YML.read_text(encoding="utf-8")
+
+    # Already in nav?
+    if rel_str in yml_text:
+        return
+
+    # Derive a title from the frontmatter or filename
+    title = None
+    content = md_file.read_text(encoding="utf-8", errors="replace")
+    m = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', content, re.MULTILINE)
+    if m:
+        title = m.group(1).strip()
+    if not title:
+        title = md_file.stem.replace("-", " ").title()
+
+    section_name = SECTION_MAP[folder]
+    nav_entry = f"    - {title}: {rel_str}"
+
+    # Find the section and insert before the next section
+    lines = yml_text.split("\n")
+    insert_idx = None
+    in_section = False
+    for i, line in enumerate(lines):
+        if f"- {section_name}:" in line:
+            in_section = True
+            continue
+        if in_section:
+            # Still in the section if line starts with enough indent + "-"
+            stripped = line.lstrip()
+            if stripped.startswith("- ") and line.startswith("    "):
+                insert_idx = i + 1
+            elif stripped.startswith("- ") and not line.startswith("    "):
+                # New top-level section
+                break
+
+    if insert_idx:
+        lines.insert(insert_idx, nav_entry)
+        MKDOCS_YML.write_text("\n".join(lines), encoding="utf-8")
+
+
 async def run_research(job_id: str, topic: str):
     """Run research in background using claude CLI with tools."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -344,9 +411,9 @@ Los documentos van en: {DOCS_DIR}
 
         await proc.wait()
 
-        # Find any new .md files created
+        # Find any new .md files created and add to nav
         for md_file in DOCS_DIR.rglob("*.md"):
-            if md_file.name.startswith("_"):
+            if md_file.name.startswith("_") or md_file.name == "index.md":
                 continue
             mtime = md_file.stat().st_mtime
             started = research_jobs[job_id]["started_ts"]
@@ -354,11 +421,12 @@ Los documentos van en: {DOCS_DIR}
                 rel = md_file.relative_to(DOCS_DIR)
                 doc_path = str(rel).replace(".md", "/")
                 research_jobs[job_id]["doc_path"] = f"/{doc_path}"
+                add_to_nav(md_file)
                 break
 
         # Rebuild mkdocs
         subprocess.run(
-            ["mkdocs", "build"],
+            ["/opt/homebrew/bin/mkdocs", "build"],
             cwd=str(PROJECT_DIR),
             capture_output=True,
             timeout=30,

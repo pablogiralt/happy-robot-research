@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 # Collections (Cobros)
 
-Use case con el **ROI más impactante** de [HappyRobot](../empresa/happyrobot.md): más de 100x retorno sobre inversión en cobros automatizados.
+Use case con el **ROI más impactante** de [HappyRobot](../empresa/happyrobot.md): **119x** retorno sobre inversión en cobros automatizados. Aunque inicialmente desplegado en logistics, collections es un **caso de uso cross-industry** — aplicable a cualquier empresa con cuentas por cobrar: financial services, utilities, retail, airlines, etc.
 
 ---
 
@@ -16,7 +16,11 @@ Use case con el **ROI más impactante** de [HappyRobot](../empresa/happyrobot.md
 
 | Métrica | Valor | Conf | Fuente |
 |---------|-------|------|--------|
-| ROI (cash collected vs cost to collect) | **>100x** (119x en materiales de Serie A, >100x en Serie B) | A | HR-SERIEB, HR-SERIEA |
+| ROI (cash collected vs cost to collect) | **119x** | A | HR-SERIEB, HR-SERIEA, HR-BLOG-FINANCE |
+| Incremento en cash collected | **+18%** | B | HR-BLOG-FINANCE |
+| Reducción de coste por documento de cobro | **10x** (decrease) | B | HR-BLOG-FINANCE |
+| Mejora en tasa de recuperación | **+45%** | B | HR-BLOG-FINANCE |
+| Incremento en recaudación de duties | **+13%** | B | HR-BLOG-FINANCE |
 | [Circle Logistics](../clientes/circle-logistics.md) ROI total | **5x+** (across all use cases) | A | HR-CIRCLE |
 
 ---
@@ -35,6 +39,9 @@ Gestión automatizada de cobros: el AI Worker llama a clientes/carriers con fact
 | 4. Confirmación | Envía confirmación del acuerdo por email/SMS | Email + SMS |
 | 5. Follow-up | Recordatorios automáticos según calendario acordado | Multi-canal |
 | 6. Escalación | Si no hay contacto o acuerdo → escala a equipo humano de collections con contexto completo | Interno |
+
+!!! info "Blog Finance/Collections (marzo 2026)"
+    En marzo 2026 HappyRobot publicó un blog post de finance automation que consolida las métricas de collections: 119x ROI, +18% cash collected, 10x reducción en coste por documento, +45% mejora en recovery rates, y +13% en recaudación de duties [B: HR-BLOG-FINANCE]. Estas métricas posicionan collections como el caso de uso con mayor ROI demostrable del portfolio, y un argumento de venta potente para verticales más allá de logistics (financial services, utilities, retail).
 
 ### Por qué el ROI es tan alto
 
@@ -123,12 +130,28 @@ Gestión automatizada de cobros: el AI Worker llama a clientes/carriers con fact
 
 ### Dato clave
 
-**>100x ROI** es la métrica más impactante de todo el portfolio de HappyRobot. Si Lola solo puede mencionar un número, debería ser este.
+**119x ROI** es la métrica más impactante de todo el portfolio de HappyRobot. Si Lola solo puede mencionar un número, debería ser este.
 
 ### Talking point
 
-> "Collections es probablemente el quick win más potente para el mercado español. España tiene una cultura de pago lento — 80 días promedio vs 60 en Europa. El ROI de HappyRobot en collections es más de 100x en EEUU. En un mercado donde los márgenes de transporte son del 2-5%, cobrar tus facturas 15% más rápido puede ser la diferencia entre crecer y cerrar."
+> "Collections es probablemente el quick win más potente para el mercado español — y no solo en logistics. España tiene una cultura de pago lento: 80 días promedio vs 60 en Europa. El ROI de HappyRobot en collections es 119x, con un 45% de mejora en tasas de recuperación y 10x de reducción en coste por documento. En logistics, donde los márgenes son del 2-5%, esto es transformador. Pero el mismo modelo aplica a utilities, financial services, retail — cualquier empresa con cuentas por cobrar."
 
 ---
 
-*Fuentes: [HR-SERIEB] GlobeNewswire Serie B, [HR-SERIEA] Serie A PR, [HR-CIRCLE] case study Circle Logistics, [HR-FINANCE] happyrobot.ai/blog/finance-automation, Intrum European Payment Report*
+## Collections como caso de uso multi-vertical
+
+Aunque el track record de HappyRobot en collections viene del sector logistics, las métricas son **agnósticas al sector**. Cualquier empresa con cuentas por cobrar puede beneficiarse:
+
+| Vertical | Aplicación típica | Potencial |
+|----------|-------------------|-----------|
+| **Financial Services** | Cobro de préstamos, tarjetas, seguros impagados | Alto — volumen masivo, regulación conocida |
+| **Utilities** | Cobro de facturas de energía, agua, telecomunicaciones | Alto — base de clientes enorme, tickets medios |
+| **Retail** | Cobro B2B a distribuidores, pagos aplazados | Medio — depende del modelo B2B |
+| **Airlines** | Cobro de servicios corporativos, cargo, duties | Medio — nicho pero alto valor por transacción |
+| **Logistics** | Facturas de transporte, almacenaje, servicios | Probado — 119x ROI demostrado |
+
+La web de HappyRobot (abril 2026) ya lista **5 industrias** en su homepage: Airlines, Retail, Financial Services, Utilities, Logistics [B: HR-WEB-2026]. Collections es el puente natural entre el beachhead logístico y estas nuevas verticales.
+
+---
+
+*Fuentes: [HR-SERIEB] GlobeNewswire Serie B, [HR-SERIEA] Serie A PR, [HR-CIRCLE] case study Circle Logistics, [HR-BLOG-FINANCE] happyrobot.ai/blog/finance-automation (marzo 2026), [HR-WEB-2026] happyrobot.ai homepage (abril 2026), Intrum European Payment Report*

@@ -13,7 +13,7 @@ Plataforma de AI enterprise que permite construir, desplegar y gestionar agentes
 | **HQ** | San Francisco, CA |
 | **Fundadores** | [Pablo Palafox](../personas/pablo-palafox.md), [Javier Palafox](../personas/javier-palafox.md) |
 | **Funding** | $44M Serie B (Sept 2025) + rondas previas |
-| **Vertical** | Logistics & Supply Chain (principal) |
+| **Vertical** | Multi-vertical: Logistics (beachhead), Airlines, Retail, Financial Services, Utilities |
 | **Web** | [happyrobot.ai](https://www.happyrobot.ai/) |
 | **Careers** | [jobs.ashbyhq.com](https://jobs.ashbyhq.com/happyrobot.ai) |
 

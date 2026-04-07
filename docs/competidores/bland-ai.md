@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 # Bland AI
 
-Plataforma voice-first de AI para automatización de llamadas telefónicas enterprise. Fundada en 2023 por Isaiah Granet y Sobhan Nejad (YC S23), ha crecido de forma explosiva — $65M de funding total en 3 rondas, ~75 empleados y millones de llamadas automatizadas. Se posiciona como "Twilio for AI phone calls" — API-first, developer-focused. Compite con [HappyRobot](../empresa/happyrobot.md) en un **solapamiento limitado** (atención telefónica, collections, scheduling) pero **diverge estratégicamente**: Bland es *infraestructura para voz*, HappyRobot es *orquestación de workflows multi-canal*.
+Plataforma voice-first de AI para automatización de llamadas telefónicas enterprise. Fundada en 2023 por Isaiah Granet y Sobhan Nejad (YC S23), ha crecido de forma explosiva — $65M de funding total en 3 rondas, ~75 empleados y millones de llamadas automatizadas. Se posiciona como "Twilio for AI phone calls" — API-first, developer-focused. Compite con [HappyRobot](../empresa/happyrobot.md) en un **solapamiento limitado** (atención telefónica, collections, scheduling) pero **diverge estratégicamente**: Bland es *infraestructura para voz*, HappyRobot es *orquestación de workflows multi-canal y multi-vertical*.
 
 ---
 
@@ -136,7 +136,7 @@ Introducido diciembre 2025, reemplazando tarifa flat anterior de $0.09/min [A: B
 |---|---|---|
 | **Foco producto** | AI agents multi-canal (teléfono, email, web chat) | Voice AI infrastructure (llamadas) |
 | **Approach** | Platform + forward-deployed engineers | API-first, DIY, developer builds |
-| **Vertical** | **Logistics & supply chain** (principal) | Horizontal (finserv, insurance, health, hospitality) |
+| **Vertical** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | Horizontal (finserv, insurance, health, hospitality) |
 | **Canales** | Teléfono, email, web chat (peso igual) | Voz (primario), SMS/chat (reciente, secundario) |
 | **Modelo delivery** | Forward-deployed engineers in situ | Self-service + soporte enterprise |
 | **Governance** | AI Auditor + evaluations + EU AI Act | Compliance (SOC2, HIPAA, GDPR) + guardrails básicos |
@@ -144,7 +144,7 @@ Introducido diciembre 2025, reemplazando tarifa flat anterior de $0.09/min [A: B
 | **Europa** | Founders españoles, hiring activo España/Europa | Sin presencia; solo números +1 (US) |
 | **Latencia** | No benchmarkeado públicamente | 900ms–1.4s real (pain point) |
 | **Pricing** | No divulgado (enterprise contracts) | $0.11–$0.14/min + suscripción; volátil |
-| **Clientes logística** | DHL, Circle, Samsara, MODE, Syfan | Débil (Samsara compartido, sin cases logísticos) |
+| **Clientes enterprise** | 70+ (logistics: DHL, Circle, Samsara, MODE, Syfan; recruiting: Job&Talent) | Débil (Samsara compartido, sin cases logistics) |
 | **Funding** | $44M Serie B + anteriores | $65M total ($40M Serie B) |
 | **Equipo** | 150-200 personas (est.) | ~75 personas |
 
@@ -153,7 +153,7 @@ Introducido diciembre 2025, reemplazando tarifa flat anterior de $0.09/min [A: B
 Bland y HappyRobot operan en **lanes distintas** con solapamiento limitado:
 
 - **Bland** = infraestructura de voz para empresas tech-savvy que quieren embeber AI telefónico via API
-- **HappyRobot** = orquestación end-to-end de workflows multi-canal para logistics/supply chain con implementación managed
+- **HappyRobot** = orquestación end-to-end de workflows multi-canal y multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) con implementación managed
 
 **Zona de solapamiento:** Customer service telefónico, collections, scheduling — particularmente visible en el cliente compartido Samsara.
 
@@ -219,17 +219,17 @@ Bland y HappyRobot operan en **lanes distintas** con solapamiento limitado:
 
 ### Talking points concretos para Lola
 
-1. **"Bland es un player fuerte en infraestructura de voz, pero operar en España requiere multi-canal (email para BOLs, web chat, voz) — exactamente donde HappyRobot tiene ventaja."**
+1. **"Bland es un player fuerte en infraestructura de voz, pero operar en España requiere multi-canal (email, web chat, voz) y profundidad vertical — exactamente donde HappyRobot tiene ventaja con 70+ enterprise customers en logistics, airlines, retail, finserv y utilities."**
 
-2. **"El modelo developer-first de Bland genera fricción para empresas logísticas españolas sin equipos internos de AI. Nuestros forward-deployed engineers eliminan esa barrera."**
+2. **"El modelo developer-first de Bland genera fricción para enterprises españoles sin equipos internos de AI — ya sean logísticos, retail o utilities. Nuestros forward-deployed engineers eliminan esa barrera."**
 
 3. **"Bland no tiene presencia en Europa, solo soporta números +1, y no menciona EU AI Act. Para el mercado español, eso es un deal-breaker regulatorio."**
 
 4. **"La volatilidad de pricing de Bland (55% de subida en dic 2025) crea incertidumbre presupuestaria. Enterprise buyers en España prefieren contratos predecibles."**
 
-5. **"Nuestro foco vertical en logística nos da ventajas unfair: DHL, Circle Logistics, MODE Global, Syfan. Bland tiene zero case studies logísticos significativos."**
+5. **"Nuestra profundidad vertical nos da ventajas unfair: en logistics (DHL, Circle, MODE, Syfan), en recruiting (Job&Talent — 1M+ AI interviews, 20K+ hires), y expandiendo a airlines, retail, finserv, utilities. Bland tiene zero case studies en ninguna de estas verticales."**
 
-6. **(Honestidad intelectual)** **"Reconozco que la expertise voice-native de Bland es fuerte para pure phone use cases, y sus $65M de funding les dan runway para expandir. Pero la mayoría de workflows enterprise logístico son multi-canal."**
+6. **(Honestidad intelectual)** **"Reconozco que la expertise voice-native de Bland es fuerte para pure phone use cases, y sus $65M de funding les dan runway para expandir. Pero la mayoría de workflows enterprise — logistics, recruiting, customer service — son multi-canal."**
 
 7. **"El riesgo competitivo de Bland es a medio plazo: si expanden a Europa y mejoran soporte no-inglés. Mi rol como GM España sería consolidar la ventaja de HappyRobot antes de que eso ocurra."**
 

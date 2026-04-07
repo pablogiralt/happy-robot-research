@@ -26,9 +26,10 @@ updated: 2026-04-07
 | Top 10 freight brokers | **8 de 10** son clientes | B |
 | Top 3 ocean carriers | **2 de 3** | B |
 | Empleados | **~130** (feb 2026), creciendo rápido | B |
-| Clientes flagship | [DHL](clientes/dhl.md), [Circle Logistics](clientes/circle-logistics.md), [Samsara](clientes/samsara.md), [MODE Global](clientes/mode-global.md), Ryder, Schneider, Werner, **Naturgy** (ES), **CMA CGM** (FR) | A |
+| Clientes flagship | [DHL](clientes/dhl.md), [Circle Logistics](clientes/circle-logistics.md), [Samsara](clientes/samsara.md), [MODE Global](clientes/mode-global.md), Ryder, Schneider, Werner, **Naturgy** (ES), **CMA CGM** (FR), **[Job&Talent](clientes/job-and-talent.md)** (ES — workforce mgmt) | A |
 | MD EMEA | **Mia Bjorkenstam** (ex-Palantir, nombrada feb 2026) — GM España reportaría a ella o a founders | B |
-| Vertical principal | Logistics & Supply Chain | A |
+| Verticales | **Multi-vertical** (logistics beachhead): Airlines, Retail, Financial Services, Utilities, Logistics | B |
+| Funciones en web | Customer Support, Sales, Finance, Operations, HR & Recruiting | B |
 | Compliance | SOC 2, GDPR, HIPAA, EU AI Act, NIST CSF, DORA | A |
 
 ### Métricas de impacto
@@ -36,8 +37,10 @@ updated: 2026-04-07
 | Use case | Métrica | Conf |
 |----------|---------|------|
 | Scheduling | De >1 semana a **<30 min** | A |
-| Collections | **>100x ROI** | A |
+| Collections | **119x ROI**, +18% cash, 10x cost reduction, +45% recovery | A/B |
 | Outbound Sales | **~19-20x ROI** | B |
+| Sales (dormant reactivation) | **28x ROI**, 75% cost reduction per lead, 4.75x more qualified leads | B |
+| HR/Recruiting ([Job&Talent](clientes/job-and-talent.md)) | **1M+ AI interviews**, 60% vacancies by AI, 20K+ hires, +60% shift confirmation | B |
 | Carrier Sales | **5x returns** | B |
 | Rate negotiation | **10% mejor margen** vs humanos | B |
 | Customer Service | 100% response rate, 0min FRT, 50%+ autónomo | B |
@@ -105,10 +108,10 @@ updated: 2026-04-07
 | [Enterprise AI Europa](mercado/enterprise-ai-europa.md) | Adopción AI enterprise en Europa | **completo** |
 | [Talento Tech España](mercado/talento-tech-espana.md) | Salarios, hubs, talent pool | **completo** |
 | [Casos de Uso](casos-de-uso/logistics-operations.md) | Logistics, CS, Collections, Sales, Recruiting | **completo** |
-| [Clientes](clientes/dhl.md) | DHL, Circle, Samsara, MODE, Syfan | **completo** |
+| [Clientes](clientes/dhl.md) | DHL, Circle, Samsara, MODE, Syfan, **Job&Talent** | **completo** |
 | [Regulación](regulacion/eu-ai-act.md) | EU AI Act, GDPR/LOPDGDD | **completo** |
 | [Entrevista](entrevista/index.md) | 18 Q&A + 8 preguntas para ellos + Plan 90 días | **completo** |
 
 ---
 
-*Research date: 2026-04-07 | Status: CONTENT GRAPH COMPLETO — 55 nodos, 14 secciones, todas completas*
+*Research date: 2026-04-07 | Status: CONTENT GRAPH COMPLETO — 56 nodos, 14 secciones, todas completas*

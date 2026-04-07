@@ -138,7 +138,7 @@ Plataforma enterprise de voice AI con sede en Londres, especializada en agentes 
 
 | Dimension | HappyRobot | PolyAI |
 |---|---|---|
-| **Foco vertical** | Logistics & supply chain | CX horizontal (hospitality, finserv, retail, utilities) |
+| **Foco vertical** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | CX horizontal (hospitality, finserv, retail, utilities) |
 | **Tipo interaccion** | Operations (scheduling, collections, sales, recruiting) | Inbound CX (soporte, reservas, billing) |
 | **Stack tecnologico** | Model-agnostic + razonamiento agentitico + logica determinista | Propietario end-to-end (Owl + Raven + sintesis) |
 | **Canales** | Multi-canal nativo (telefono, email, web chat) | Voice-first (+ text messaging) |

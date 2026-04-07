@@ -86,7 +86,7 @@ updated: 2026-04-07
 | Factor | Detalle |
 |---|---|
 | **Tecnología robusta** | Plataforma AI Workers enterprise-grade |
-| **Conocimiento profundo de la industria** | Logística-nativo, no genérico |
+| **Conocimiento profundo de la industria** | Vertical depth en logistics (beachhead) + expansión a airlines, retail, financial services, utilities |
 | **Forward-deployed engineering** | Equipos de ingeniería colaborando on-site |
 | **Escalabilidad** | Capacidad de desplegar en las 230 oficinas |
 | **Modelo de partnership** | HappyRobot posicionado como "extensión del equipo de MODE" |

@@ -23,12 +23,15 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
-    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
     - toc.integrate
+    - toc.follow
+
+extra_css:
+  - stylesheets/custom.css
 
 plugins:
   - search:
@@ -39,7 +42,11 @@ markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -52,59 +59,69 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Tags: tags.md
   - Empresa:
     - empresa/index.md
-    - Overview: empresa/happyrobot.md
-    - Producto: empresa/producto.md
+    - Overview ★: empresa/happyrobot.md
+    - Producto ★: empresa/producto.md
+    - Expansión España ★: empresa/expansion-espana.md
     - Cultura: empresa/cultura.md
-    - Expansión España: empresa/expansion-espana.md
   - Personas:
     - personas/index.md
+    - Aquilino Peña ★: personas/aquilino-pena.md
     - Lola Vilas: personas/lola-vilas.md
-    - Aquilino Peña: personas/aquilino-pena.md
     - Pablo Palafox: personas/pablo-palafox.md
     - Javier Palafox: personas/javier-palafox.md
   - Competidores:
     - competidores/index.md
-    - Augment: competidores/augment.md
-    - Parloa: competidores/parloa.md
-    - Sierra AI: competidores/sierra-ai.md
+    - Sierra AI ★: competidores/sierra-ai.md
+    - Parloa ★: competidores/parloa.md
+    - Augment ★: competidores/augment.md
     - Retell AI: competidores/retell-ai.md
     - Wonderful AI: competidores/wonderful-ai.md
-    - PolyAI: competidores/poly-ai.md
-    - Decagon: competidores/decagon.md
     - Bland AI: competidores/bland-ai.md
-    - Synthflow: competidores/synthflow.md
-    - Lanesurf: competidores/lanesurf.md
-    - FleetWorks: competidores/fleetworks.md
-    - Pallet: competidores/pallet.md
+    - Otros: competidores/otros.md
   - Mercado:
     - mercado/index.md
-    - AI Agents Global: mercado/ai-agents-global.md
-    - Logistics España: mercado/logistics-espana.md
+    - Logistics España ★: mercado/logistics-espana.md
+    - AI Agents Global ★: mercado/ai-agents-global.md
     - Enterprise AI Europa: mercado/enterprise-ai-europa.md
     - Talento Tech España: mercado/talento-tech-espana.md
+    - AI Healthcare: mercado/ai-healthcare.md
   - Tecnología:
     - tecnologia/index.md
-    - Voice AI: tecnologia/voice-ai.md
+    - Forward-Deployed ★: tecnologia/forward-deployed.md
+    - AI Governance ★: tecnologia/ai-governance.md
     - Agentic AI: tecnologia/agentic-ai.md
-    - Forward-Deployed: tecnologia/forward-deployed.md
-    - AI Governance: tecnologia/ai-governance.md
+    - Voice AI: tecnologia/voice-ai.md
   - Casos de Uso:
     - casos-de-uso/index.md
-    - Logistics Operations: casos-de-uso/logistics-operations.md
+    - Logistics Operations ★: casos-de-uso/logistics-operations.md
+    - Collections ★: casos-de-uso/collections.md
     - Customer Service: casos-de-uso/customer-service.md
-    - Collections: casos-de-uso/collections.md
     - Sales Inbound: casos-de-uso/sales-inbound.md
     - Recruiting: casos-de-uso/recruiting.md
   - Clientes:
     - clientes/index.md
-    - DHL: clientes/dhl.md
-    - Circle Logistics: clientes/circle-logistics.md
+    - DHL ★: clientes/dhl.md
+    - Circle Logistics ★: clientes/circle-logistics.md
+    - Syfan Logistics: clientes/syfan-logistics.md
     - Samsara: clientes/samsara.md
     - MODE Global: clientes/mode-global.md
-    - Syfan Logistics: clientes/syfan-logistics.md
+    - Job&Talent ★: clientes/job-and-talent.md
+    - Maersk (A.P. Møller – Mærsk): clientes/maersk.md
+  - Regulación:
+    - regulacion/index.md
+    - EU AI Act ★: regulacion/eu-ai-act.md
+    - GDPR & LOPDGDD ★: regulacion/gdpr-lopdgdd.md
+  - Entrevista:
+    - entrevista/index.md
+    - Fit Candidata ★: entrevista/fit-candidata.md
+    - Primeros 90 Días ★: entrevista/primeros-90-dias.md
+    - Visión Estratégica: entrevista/preguntas-vision.md
+    - GTM España: entrevista/preguntas-gtm.md
+    - Mercado y Producto: entrevista/preguntas-mercado.md
+    - Liderazgo: entrevista/preguntas-liderazgo.md
+    - Preguntas para Ellos: entrevista/preguntas-para-ellos.md
   - Fuentes:
     - fuentes/index.md
     - Oficiales: fuentes/oficiales.md
@@ -112,16 +129,3 @@ nav:
     - Datos: fuentes/datos.md
     - Comunidad: fuentes/comunidad.md
     - Informes: fuentes/informes.md
-  - Regulación:
-    - regulacion/index.md
-    - EU AI Act: regulacion/eu-ai-act.md
-    - GDPR & LOPDGDD: regulacion/gdpr-lopdgdd.md
-  - Entrevista:
-    - entrevista/index.md
-    - Fit Candidata: entrevista/fit-candidata.md
-    - Visión Estratégica: entrevista/preguntas-vision.md
-    - GTM España: entrevista/preguntas-gtm.md
-    - Mercado y Producto: entrevista/preguntas-mercado.md
-    - Liderazgo: entrevista/preguntas-liderazgo.md
-    - Preguntas para Ellos: entrevista/preguntas-para-ellos.md
-    - Primeros 90 Días: entrevista/primeros-90-dias.md

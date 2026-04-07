@@ -88,7 +88,7 @@ HappyRobot mide el **agreement entre AI auditors y auditoría humana** por tipo 
 | [Synthflow](../competidores/synthflow.md) | Básico (SOC2, GDPR, HIPAA) | Sin auditoría multi-capa |
 | [Retell AI](../competidores/retell-ai.md) | Mínimo | Sin framework governance enterprise |
 | [Vapi](../competidores/vapi.md) | Developer-focused, limitado | Sin enterprise compliance |
-| [Sierra AI](../competidores/sierra-ai.md) | Enterprise-grade | Competidor directo en governance, pero sin FDE ni logistics vertical |
+| [Sierra AI](../competidores/sierra-ai.md) | Enterprise-grade | Competidor directo en governance, pero sin FDE ni vertical depth multi-sector |
 | [Parloa](../competidores/parloa.md) | Enterprise-grade (ISO 27001) | Competidor fuerte — ISO 27001 que HappyRobot no tiene |
 
 ### Governance como argumento de venta

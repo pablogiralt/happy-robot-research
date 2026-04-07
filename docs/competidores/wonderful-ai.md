@@ -133,7 +133,7 @@ Telecom, financial services, manufacturing, healthcare [A: INSIGHT-SERIEB]. Use 
 
 | Dimension | HappyRobot | Wonderful AI |
 |---|---|---|
-| **Foco vertical** | Logistics & supply chain (principal) | Horizontal -- telecom, finance, manufacturing, healthcare |
+| **Foco vertical** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | Horizontal -- telecom, finance, manufacturing, healthcare |
 | **Foco funcional** | Operations completas -- scheduling, collections, sales, CS | Customer service (principalmente) |
 | **Multilingue** | Soportado pero no es pitch principal | Core differentiator -- docenas de idiomas, localizacion cultural |
 | **Geografia** | SF HQ, expandiendo a Espana | 30+ paises, 350->900 empleados, HQ Europa en Amsterdam |
@@ -185,11 +185,11 @@ Telecom, financial services, manufacturing, healthcare [A: INSIGHT-SERIEB]. Use 
 
 ### Talking points si mencionan a Wonderful como competidor
 
-1. **"Wonderful valida la oportunidad pero no compite en nuestro vertical."** Demuestra demanda masiva de AI agents enterprise multilingues en Europa ($2B valoracion en 14 meses), pero no tiene presencia en logistics. HappyRobot tiene product-market fit en logistics y puede aprovechar ese TAM sin competir directamente.
+1. **"Wonderful valida la oportunidad — y el solapamiento crece."** Demuestra demanda masiva de AI agents enterprise multilingues en Europa ($2B valoracion en 14 meses). No tiene presencia en logistics (nuestro beachhead), pero ambos operamos en customer service, finserv y recruiting enterprise. HappyRobot tiene product-market fit validado con 70+ enterprise customers (desde DHL en logistics hasta Job&Talent con 1M+ AI interviews) y puede competir con profundidad vertical donde Wonderful ofrece amplitud geografica.
 
-2. **"Su approach horizontal tiene limites."** Despliega en 30+ paises pero con profundidad limitada per-vertical. En logistics, donde integraciones con TMS, carrier management y workflows operativos son criticas, la especializacion de HappyRobot es barrera de entrada.
+2. **"Su approach horizontal tiene limites."** Despliega en 30+ paises pero con profundidad limitada per-vertical. En logistics, donde integraciones con TMS, carrier management y workflows operativos son criticas, la especializacion de HappyRobot es barrera de entrada. Lo mismo aplica en recruiting (Job&Talent: 1M+ AI interviews, 20K+ hires) y en las nuevas verticales (airlines, retail, utilities) donde HR construye depth real por vertical.
 
-3. **"Su modelo de capital es insostenible para un vertical player -- pero sus lecciones de GTM son relevantes."** Ha demostrado que forward-deployed teams locales funcionan en Europa. HappyRobot puede replicar el modelo con menos capital y mas foco.
+3. **"Su modelo de capital es insostenible para un horizontal player -- pero sus lecciones de GTM son relevantes."** Ha demostrado que forward-deployed teams locales funcionan en Europa. HappyRobot puede replicar el modelo con menos capital y mas foco vertical-first.
 
 4. **"Cloud-agnostic es ventaja enterprise real."** Wonderful esta atada a Google Cloud; HappyRobot ofrece flexibilidad multi-cloud que muchos enterprises europeos demandan.
 

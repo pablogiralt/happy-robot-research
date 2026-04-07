@@ -59,7 +59,7 @@ Ingenieros embebidos directamente en las operaciones del cliente — modelo insp
 
 | Ventaja | Detalle |
 |---------|---------|
-| **Implementación profunda** | Integración real con sistemas del cliente (Transport Pro, McLeod, DAT, Truckstop, Highway) |
+| **Implementación profunda** | Integración real con sistemas del cliente — en logistics: Transport Pro, McLeod, DAT, Truckstop, Highway; en otras verticales: ERPs, CRMs, sistemas sectoriales específicos |
 | **Time-to-value rápido** | El FDE acelera la configuración vs self-serve donde el cliente lucha solo |
 | **Feedback loop directo** | Los FDEs transmiten necesidades reales al equipo de producto — el producto mejora con cada deployment |
 | **Barrera de salida alta** | Una vez integrado profundamente, cambiar de proveedor es costoso = stickiness |
@@ -110,7 +110,7 @@ Ingenieros embebidos directamente en las operaciones del cliente — modelo insp
 El GM necesita:
 
 1. **Coordinar FDEs para primeros POCs** — los primeros deployments en España necesitan FDEs (probablemente desde SF inicialmente)
-2. **Contratar FDEs locales** — para escalar, necesitas FDEs que hablen español y entiendan el contexto logístico local
+2. **Contratar FDEs locales** — para escalar, necesitas FDEs que hablen español y entiendan el contexto operativo local (logistics, utilities, financial services, etc.)
 3. **Gestionar la tensión cantidad vs calidad** — la tentación de firmar muchos clientes choca con la disponibilidad limitada de FDEs
 4. **Usar FDEs como argumento de venta** — "no te vendemos un software, te ponemos un ingeniero en tu oficina"
 

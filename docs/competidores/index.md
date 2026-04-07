@@ -10,7 +10,7 @@ updated: 2026-04-07
 
 | Company | Funding | HQ | Foco | Diferenciador | G2/Reviews | España | Logistics |
 |---------|---------|-----|------|---------------|------------|--------|-----------|
-| **[HappyRobot](../empresa/happyrobot.md)** | $62M (Serie B) | SF, CA | Enterprise logistics | FDE + governance + agentic+deterministic | 4.75/5 (Futurepedia) | Oficina Chamberí, Madrid | 8/10 top brokers, DHL |
+| **[HappyRobot](../empresa/happyrobot.md)** | $62M (Serie B) | SF, CA | Multi-vertical AI Workers (logistics beachhead) | FDE + governance + agentic+deterministic | 4.75/5 (Futurepedia) | Oficina Chamberí, Madrid | 70+ enterprise (DHL, Job&Talent, 8/10 top brokers) |
 | **[Bland AI](bland-ai.md)** | $65M (Serie A) | SF, CA | Enterprise voice (horizontal) | Infraestructura propia, ultra-baja latencia | ~4.0/5 (G2) | Sin presencia | No |
 | **[Synthflow](synthflow.md)** | $30M (Serie A) | Berlin | No-code voice AI, BPO | Telephony propia <100ms, visual builder | 4.9/5 (G2, 999 reviews) | Sin oficina, idioma soportado | No |
 | **[Retell AI](retell-ai.md)** | ~$5M+ | SF, CA | Developer-first voice API | API simple, baja latencia, playground | ~4.5/5 (G2) | Sin presencia | Tiene página logistics |
@@ -33,7 +33,7 @@ updated: 2026-04-07
 
 | Dimensión | HappyRobot | Bland AI | Synthflow | Sierra AI | Parloa |
 |-----------|------------|----------|-----------|-----------|--------|
-| **Vertical logistics** | Profundo (8/10 brokers) | No | No | No | No |
+| **Vertical depth** | Multi-vertical (logistics: 8/10 brokers; recruiting: Job&Talent 1M+ interviews; + airlines, retail, finserv, utilities) | No | No | No | No |
 | **Multi-canal** | Voz+email+chat+SMS+WhatsApp | Solo voz | Voz+chat+SMS | Chat+voz | Voz+chat |
 | **Governance/Auditor** | AI Auditor dedicado | Básico | Básico | Enterprise | Enterprise |
 | **FDE model** | Core differentiator | No | No | No | No |
@@ -46,13 +46,13 @@ updated: 2026-04-07
 
 ### Para Lola — Competidores que importan en España
 
-1. **Sierra AI** — La amenaza más seria. $10B valoración, Bret Taylor (ex-CEO Salesforce) como CEO, ya con oficina en Madrid. Sin embargo, NO tienen vertical logistics ni modelo FDE.
+1. **Sierra AI** — La amenaza más seria. $10B valoración, Bret Taylor (ex-CEO Salesforce) como CEO, ya con oficina en Madrid. No tienen vertical logistics, pero HR ya opera en CX enterprise multi-vertical (Airlines, Retail, Financial Services, Utilities) — **el terreno de solapamiento es real y creciente**. La ventaja de HR: métricas de producción de 70+ enterprise customers (logistics + Job&Talent 1M+ AI interviews), compliance EU (incluyendo EU AI Act), modelo FDE.
 
-2. **Parloa** — Fuerte en enterprise EU (base alemana), $3B valoración, abriendo Madrid. Contact center focus pero sin logistics expertise.
+2. **Parloa** — Fuerte en enterprise EU (base alemana), $3B valoración, abriendo Madrid. Contact center focus — y con HR operando en Customer Support enterprise y multiples verticales, **la competencia es directa**. Parloa no tiene logistics ni recruiting, pero en CX enterprise compiten cabeza a cabeza.
 
 3. **Synthflow** — Base en Berlin, buen producto no-code, pero sin presencia España y sin enterprise depth. Restricción legal: outbound marketing calls ilegales en EU sin consentimiento previo.
 
-4. **PolyAI** — London-based, fuerte en hospitality/banking, pero sin presencia española directa.
+4. **PolyAI** — London-based, fuerte en hospitality/banking/utilities (PG&E). Con HR expandiéndose a Utilities, hay solapamiento emergente. Sin presencia española directa.
 
 ### Competidores que NO importan para España
 
@@ -64,7 +64,7 @@ updated: 2026-04-07
 
 El moat de HappyRobot frente a toda la competencia se basa en tres pilares:
 
-1. **Vertical logistics depth** — Ningún competidor tiene 8/10 top freight brokers, DHL, ni integración con TMS (Transport Pro, McLeod, DAT, Truckstop, Highway)
+1. **Vertical depth (logistics beachhead) + multi-vertical expansion** — En logistics, ningún competidor tiene 8/10 top freight brokers, DHL, ni integración con TMS (Transport Pro, McLeod, DAT, Truckstop, Highway). Fuera de logistics, Job&Talent (1M+ AI interviews, 20K+ hires) demuestra que el modelo escala a otras verticales. HR opera ya en Airlines, Retail, Financial Services, Utilities, con funciones de Customer Support, Sales, Finance, HR y Operations. Logistics es el beachhead validado, no el techo
 2. **Forward-Deployed Engineers** — Modelo Palantir de ingenieros embebidos en cliente. 95%+ pilot→contrato. Nadie más lo ofrece en voice AI.
 3. **Hybrid agentic + deterministic** — Combinación única de razonamiento agéntico (maneja excepciones) + lógica determinista (garantiza compliance). Ver [Producto](../empresa/producto.md) y [Forward-Deployed](../tecnologia/forward-deployed.md).
 

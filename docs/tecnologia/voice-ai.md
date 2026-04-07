@@ -10,7 +10,7 @@ updated: 2026-04-07
 
 ## Qué es
 
-Agentes de AI capaces de mantener conversaciones telefónicas naturales en tiempo real, gestionando llamadas inbound y outbound para empresas. Es el canal más complejo técnicamente (latencia, turn-taking, ruido, emociones) y el más valioso en industrias como [logistics](../casos-de-uso/logistics-operations.md) donde el teléfono sigue siendo el medio principal de coordinación.
+Agentes de AI capaces de mantener conversaciones telefónicas naturales en tiempo real, gestionando llamadas inbound y outbound para empresas. Es el canal más complejo técnicamente (latencia, turn-taking, ruido, emociones) y de alto valor en industrias donde el teléfono sigue siendo el medio principal de coordinación operativa: [logistics](../casos-de-uso/logistics-operations.md), utilities, financial services, airlines, staffing/HR.
 
 ---
 
@@ -59,7 +59,7 @@ HappyRobot ha construido componentes de speech **in-house**, no depende de APIs 
 | Reto | Detalle |
 |------|---------|
 | **Turn-taking** | Saber cuándo el humano ha terminado de hablar vs pausa natural. El EOT de HappyRobot aborda esto |
-| **Ruido ambiental** | Conductores en cabinas de camión, almacenes ruidosos — escenarios reales de logistics |
+| **Ruido ambiental** | Conductores en cabinas de camión, almacenes ruidosos, call centers concurridos — escenarios reales de operaciones enterprise |
 | **Dialectos y acentos** | Especialmente relevante para España (castellano, andaluz, catalán, gallego) y LATAM |
 | **Llamadas multi-party** | Conferencias con 3+ participantes — edge case complejo |
 | **Latencia de red** | En llamadas internacionales o con mala cobertura (conductores en ruta) |
@@ -91,7 +91,7 @@ HappyRobot ha construido componentes de speech **in-house**, no depende de APIs 
 
 **Diferenciación clave:** HappyRobot no compite en "mejor voice AI" sino en **"mejor AI agent para operaciones enterprise"** donde la voz es un canal más. Ningún competidor voice-first tiene:
 
-1. Vertical logistics depth (8/10 top freight brokers)
+1. Vertical depth en logistics (8/10 top freight brokers) + expansión multi-vertical (airlines, retail, financial services, utilities)
 2. Modelo [forward-deployed](forward-deployed.md) (95%+ pilot→contrato)
 3. [Governance](ai-governance.md) con AI Auditor
 4. Ejecución multi-canal real (voz + email + chat + SMS + WhatsApp + browser agents)
@@ -105,18 +105,25 @@ HappyRobot ha construido componentes de speech **in-house**, no depende de APIs 
 | Factor | Detalle |
 |--------|---------|
 | **Sector contact centers** | España es hub de contact centers para EMEA (idioma + costes + timezone) |
-| **Logistics = teléfono** | 160K+ empresas logísticas, 53.8% single-vehicle, coordinación masiva por teléfono |
-| **Sin competencia agentic** | Solo chatbots básicos (Aunoa, CallBotIA). No hay voice AI agents en logistics española |
+| **Operaciones = teléfono** | Logistics (160K+ empresas), utilities, financial services — coordinación masiva por teléfono en múltiples verticales |
+| **Sin competencia agentic** | Solo chatbots básicos (Aunoa, CallBotIA). No hay voice AI agents enterprise en España (ni en logistics ni en otras verticales) |
 | **Regulación** | [EU AI Act](../regulacion/eu-ai-act.md) Art. 50 exige disclosure de AI en llamadas (ago 2026). HappyRobot ya lo implementa |
 | **Idioma** | Español como segundo idioma más hablado del mundo = escalabilidad a LATAM |
 
 ### Pain points addressables por voice AI
 
+**Logistics (beachhead):**
+
 1. **Scheduling de citas/entregas** — Volumen masivo de llamadas para coordinar ventanas horarias
 2. **Carrier sales** — Llamadas de negociación de tarifas con carriers
 3. **Tracking calls** — "¿Dónde está mi paquete?" repetitivo y de alto volumen
 4. **Driver follow-up** — Confirmaciones de disponibilidad, estado de ruta
-5. **Collections** — Seguimiento de pagos por teléfono
+
+**Cross-vertical:**
+
+5. **Collections** — Seguimiento de pagos por teléfono (logistics, utilities, financial services)
+6. **Recruiting** — Screening de candidatos, confirmación de turnos (staffing, retail, airlines)
+7. **Customer service** — Soporte 24/7 multi-idioma (todas las verticales)
 
 ---
 

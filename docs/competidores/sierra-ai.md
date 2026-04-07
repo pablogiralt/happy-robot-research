@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 # Sierra AI
 
-Plataforma de conversational AI enterprise de mayor valoracion del mercado ($10B), fundada por **Bret Taylor** (ex co-CEO Salesforce, ex CTO Facebook, Chairman OpenAI) y **Clay Bavor** (18 anos en Google, VP Labs/AR/VR). Ha levantado **$635M total** y alcanza **$150M ARR estimado** (ene 2026). Sirve al 40% del Fortune 50 con agentes AI para customer experience generalista. Tiene **oficina en Madrid** (inaugurada marzo 2026). Es el competidor mas formidable en Europa para [HappyRobot](../empresa/happyrobot.md), pero opera en un **lane diferente**: Sierra = CX generalista multi-industria; HappyRobot = operaciones logistics/supply chain. Sierra no tiene **ningun cliente logistico publico**.
+Plataforma de conversational AI enterprise de mayor valoracion del mercado ($10B), fundada por **Bret Taylor** (ex co-CEO Salesforce, ex CTO Facebook, Chairman OpenAI) y **Clay Bavor** (18 anos en Google, VP Labs/AR/VR). Ha levantado **$635M total** y alcanza **$150M ARR estimado** (ene 2026). Sirve al 40% del Fortune 50 con agentes AI para customer experience generalista. Tiene **oficina en Madrid** (inaugurada marzo 2026). Es el competidor mas formidable en Europa para [HappyRobot](../empresa/happyrobot.md). Historicamente operaban en **lanes diferentes** (Sierra = CX generalista; HappyRobot = logistics), pero con HR expandiendose a multi-vertical (Airlines, Retail, Financial Services, Utilities, Customer Support), **el terreno de solapamiento crece significativamente**. Sierra no tiene ningun cliente logistico publico, pero ambos compiten ahora en enterprise CX. La ventaja de HR: metricas de produccion de 70+ clientes, compliance EU (incluyendo EU AI Act), y modelo FDE. El moat de logistics es real pero time-bounded (18-24 meses) — Sierra es la amenaza mas seria por capital + marca + presencia Madrid.
 
 ---
 
@@ -152,7 +152,7 @@ Cobra solo cuando los agentes logran outcomes especificos: conversacion resuelta
 - Hiring activamente (sierra.ai/careers?location=es-madrid) [A]
 - Bret Taylor visito Barcelona y Madrid, reuniones en Instituto Elcano [B]
 
-**Amenaza competitiva directa** para expansion de HappyRobot en Espana. Sierra tiene head start en Madrid pero su foco es CX generalista, no logistica.
+**Amenaza competitiva directa** para expansion de HappyRobot en Espana. Sierra tiene head start en Madrid pero su foco es CX generalista. Con HR expandiendose a multi-vertical (CX, Retail, Financial Services, etc.), el solapamiento en Madrid es real y creciente.
 
 ---
 
@@ -163,11 +163,11 @@ Cobra solo cuando los agentes logran outcomes especificos: conversacion resuelta
 | **Valoracion** | ~$100-300M (est.) | $10B |
 | **Funding** | $44M Serie B | $635M |
 | **Revenue** | No divulgado | $150M ARR |
-| **Foco vertical** | Logistics & supply chain | Horizontal CX (finserv, retail, telecom, health) |
-| **Clientes logisticos** | DHL, Circle, Samsara, MODE, Syfan | **Zero publicos** |
+| **Foco vertical** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | Horizontal CX (finserv, retail, telecom, health) |
+| **Clientes enterprise** | 70+ (DHL, Circle, Samsara, MODE, Syfan, Job&Talent) | **Zero publicos** |
 | **Espana** | Hiring (GM, AE, FDE) | Oficina Madrid activa (mar 2026) |
 | **Pricing** | Mas accesible (usage-based) | $200K-$350K+ ano 1 (outcome-based) |
-| **Deployment** | Mas rapido (pre-tuned logistics) | 3-6 meses |
+| **Deployment** | Mas rapido (pre-tuned vertical workflows) | 3-6 meses |
 | **Multi-canal** | Phone, email, web chat | Chat, SMS, WhatsApp, email, voice, ChatGPT |
 | **Compliance** | SOC 2, GDPR, HIPAA, **EU AI Act** | SOC 2, ISO 27001/42001, HIPAA, GDPR |
 | **ROI metrics** | 119x collections, 1000x scheduling | CSAT, resolution rates (genericos) |
@@ -225,13 +225,13 @@ Ghostwriter intenta resolver debilidades (dependencia FDE, deployment lento, cos
 
 ### Si preguntan: "Como compites con Sierra en Espana?"
 
-1. **"No competimos directamente -- operamos en lanes distintos."** Sierra vende a CMOs/Heads of CX de Fortune 500 (SoFi, Brex, WeightWatchers). Nosotros vendemos a COOs/VPs de Operations de empresas logisticas (DHL, Circle, Samsara). Buyer persona, use cases y KPIs completamente diferentes.
+1. **"Ya competimos directamente -- y con ventaja."** Sierra vende a CMOs/Heads of CX de Fortune 500 (SoFi, Brex, WeightWatchers). HappyRobot opera en Airlines, Retail, Financial Services, Utilities, Customer Support — terreno donde Sierra es fuerte. La diferencia es que nosotros llegamos con metricas de produccion reales de 70+ enterprise customers (incluyendo Job&Talent con 1M+ AI interviews y 20K+ hires), no con demos. En logistics, donde tenemos depth unica con DHL, Circle o Samsara, Sierra no tiene presencia.
 
-2. **"Sierra tiene zero clientes logisticos."** De 40+ clientes publicos, ninguno es logistics/freight/supply chain. Nuestros agentes hablan el lenguaje de freight brokers -- lane rates, load matching, carrier compliance.
+2. **"Nuestro moat de logistics es real pero time-bounded."** Sierra podria entrar en logistics, y nosotros ya estamos en su terreno de CX enterprise. La ventaja competitiva no es solo vertical — es execution speed, FDE model, y compliance (EU AI Act, que Sierra no menciona).
 
-3. **"Su pricing excluye mid-market logistico espanol."** Sierra cobra $200K-$350K+ en ano 1. Logistica espanola es mid-market heavy (3PLs, carriers regionales). Nosotros servimos tanto enterprise (DHL) como mid-market.
+3. **"Su pricing excluye mid-market."** Sierra cobra $200K-$350K+ en ano 1. En Espana, en logistica, retail, utilities y staffing, el mid-market es enorme. Nosotros servimos enterprise (DHL, Job&Talent) y mid-market.
 
-4. **"Ganamos en time-to-value y ROI specificity."** Sierra: 3-6 meses deployment, CSAT generico. Nosotros: agentes pre-tuned, 119x ROI collections, 1000x scheduling speed -- hard dollars para CFOs logisticos.
+4. **"Ganamos en time-to-value y ROI specificity."** Sierra: 3-6 meses deployment, CSAT generico. Nosotros: agentes pre-tuned por vertical, 119x ROI collections, 1000x scheduling speed, 1M+ AI interviews para Job&Talent con 20K+ hires -- hard dollars para CFOs, no vanity metrics.
 
 5. **"Nuestros founders son espanoles."** Pablo y Javier Palafox entienden regulacion espanola, cultura business, dinamicas laborales. Sierra es Silicon Valley parachuting en Madrid -- nosotros estamos construyendo desde dentro.
 
@@ -245,7 +245,7 @@ Ghostwriter intenta resolver debilidades (dependencia FDE, deployment lento, cos
 
 ### Si preguntan: "Sierra podria entrar en logistics?"
 
-> "Podrian, pero no les conviene a corto plazo. Estan enfocados en escalar CX horizontal (5 oficinas internacionales en 6 meses, Ghostwriter, Opera Tech en Japon). Logistics requiere domain expertise profundo -- datasets de llamadas reales, integracion con TMS/WMS, comprension de workflows operacionales. Tendrian que construir desde cero mientras nosotros tenemos 70+ clientes logisticos y anos de datos anotados."
+> "Podrian, pero les costaria 18-24 meses construir la profundidad que nosotros tenemos. Logistics requiere domain expertise profundo -- datasets de llamadas reales, integracion con TMS/WMS, comprension de workflows operacionales. Tendrian que construir desde cero mientras nosotros tenemos 70+ enterprise customers, incluyendo clientes logisticos como DHL y Circle, y anos de datos anotados. Y ya no estamos solo en logistics: operamos en Airlines, Retail, Financial Services, Utilities — Job&Talent (1M+ AI interviews, 20K+ hires) demuestra que el modelo escala a otras verticales. Llegamos a su terreno de CX enterprise con production metrics reales, no solo producto."
 
 ---
 

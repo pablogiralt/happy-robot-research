@@ -17,8 +17,9 @@ updated: 2026-04-07
 | **Hub para Europa** | Madrid como base para expansión EU. Regulación [EU AI Act](../regulacion/eu-ai-act.md) homogénea | A | [HR-SERIEB] |
 | **Talento competitivo** | 60-70% ahorro salarial vs SF para ingenieros senior | B | [MANF-26] [FDE-26] |
 | **Mercado logístico enorme** | España = $72B sector logístico, ~10% PIB, 160K+ empresas | A | [MORDOR-LOG] [INVESTSP] |
+| **Multi-vertical opportunity** | HappyRobot ya no es solo logistics: Airlines, Retail, Financial Services, Utilities. España tiene banca líder EU (Santander, BBVA, CaixaBank), utilities consolidadas (Iberdrola, Endesa, Naturgy), retail fuerte (Inditex, Mercadona) | B | [HR-WEB-APR26] |
 | **AI adoption alta** | 78% de profesionales españoles usan AI (líder Europa), 53% empresas logísticas tienen estrategia AI | A | [BCG-ES] [CEL-AI] |
-| **Sin competencia AI agentic** | No hay plataformas de AI agents en logística española. Solo chatbots básicos | B | [AUNOA-LOG] |
+| **Sin competencia AI agentic multi-vertical** | No hay plataformas de AI Workers multi-vertical con vertical depth en España. Solo chatbots básicos y horizontales (Sierra, Parloa) sin FDEs ni domain expertise | B | [AUNOA-LOG] |
 | **Gateway a LATAM** | Idioma español + timezone + ties culturales = expansión natural | B | inferido |
 | **Subsidios gobierno** | EUR 150M en subsidios para integración AI empresarial (2025) | A | [EUWEEK-AI] |
 | **DHL ya es cliente** | Referencia directa para el mercado español — DHL opera extensivamente en España | A | [DHL-HR] |
@@ -43,7 +44,7 @@ updated: 2026-04-07
 **Careers:** [jobs.ashbyhq.com/happyrobot.ai](https://jobs.ashbyhq.com/happyrobot.ai)
 
 !!! tip "Dato clave para Lola"
-    El rol de GM España no está publicado. Es un puesto de liderazgo que engloba todos estos roles y los define. Lola sería la persona que construya y lidere el equipo España completo.
+    El rol de GM España no está publicado. Es un puesto de liderazgo **multi-vertical** que engloba todos estos roles y los define. Lola sería la persona que construya y lidere el equipo España completo — prospectando no solo logistics sino también finserv, utilities, retail y airlines. Mia Bjorkenstam (MD EMEA desde Feb 2026) es la contraparte a nivel regional [B: HR-WEB-APR26].
 
 ## Competencia en Madrid
 
@@ -52,7 +53,7 @@ updated: 2026-04-07
 
     - **[Sierra AI](../competidores/sierra-ai.md)** — $635M raised, ~$10B valoración, CEO Bret Taylor (ex-CEO Salesforce). **Ya tiene oficina en Madrid.** Customer experience AI para enterprise.
     - **[Parloa](../competidores/parloa.md)** — $350M raised, ~$3B valoración, base alemana. **Planea abrir oficina Madrid en 2026.** Contact center AI enterprise.
-    - **Ninguno de los dos tiene vertical logistics** ni modelo FDE.
+    - **Ninguno de los dos tiene vertical logistics depth** (TMS integrations, 8/10 top brokers), ni modelo FDE, ni la combinación de multi-vertical platform con resultados reales cross-industry (Job&Talent en recruiting, 119x ROI en collections).
 
 Ver [tabla competitiva completa](../competidores/index.md).
 
@@ -67,7 +68,7 @@ Ver [tabla competitiva completa](../competidores/index.md).
 5. **España es primer país EU con agencia de supervisión AI (AESIA)** [A: REGSAI-SPAIN] — Regulatory clarity para vender enterprise
 6. **AEPD publicó guía específica de AI agéntica** (feb 2026) [A: AEPD-AGENTIC] — El compliance framework existe, HappyRobot ya lo cumple
 
-### Target accounts — Tier 1 (grandes operadores logísticos)
+### Target accounts — Tier 1 Logistics (beachhead — grandes operadores logísticos)
 
 | Empresa | Tipo | Revenue | Por qué |
 |---------|------|---------|---------|
@@ -80,26 +81,40 @@ Ver [tabla competitiva completa](../competidores/index.md).
 | DSV Spain | International 3PL | 80+ países | Multimodal |
 | Grupo Carreras | Nacional | Major | FMCG specialist |
 
-### Target accounts — Tier 2 (freight brokers + transportistas)
+### Target accounts — Tier 1 Multi-vertical (expansión beyond logistics)
+
+| Empresa | Vertical | Revenue | Por qué |
+|---------|----------|---------|---------|
+| Santander / BBVA / CaixaBank | Financial Services | Top-3 banca España | Collections (119x ROI), document recovery (10x cost reduction), customer service |
+| Iberdrola / Endesa / Naturgy | Utilities | Top-3 utilities España | Customer support a escala, scheduling, collections |
+| Iberia / Vueling / Air Europa | Airlines | Main carriers España | Customer service, operations automation |
+| Inditex / Mercadona / El Corte Inglés | Retail | Top retailers | Customer support, HR/recruiting, sales |
+| Job&Talent | Workforce management | Unicornio español | **Ya cliente HR** — 1M+ AI interviews, 20K+ hires [B: HR-BLOG-JT] |
+| Mapfre / Línea Directa | Insurance | Top aseguradoras | Tokio Marine (inversor estratégico) valida vertical insurance [B: HR-SERIEB] |
+
+### Target accounts — Tier 2 Logistics (freight brokers + transportistas)
 
 El sector español es extremadamente atomizado: **53.8% de empresas tienen un solo vehículo**. Esto crea un long tail masivo de operadores dependientes de procesos manuales/telefónicos — exactamente el target de HappyRobot.
 
 ### Use cases prioritarios para España
 
-| Use case | Pain point español | Métrica HappyRobot (US) | Oportunidad |
-|----------|-------------------|------------------------|-------------|
-| **Scheduling de citas** | Coordinación manual de entregas, last-mile = 53% del coste | De >1 semana a <30 min | Muy alta |
-| **Collections** | Retrasos crónicos de pago en logística española | >100x ROI | Alta |
-| **Customer service (tracking)** | "¿Dónde está mi paquete?" a volumen masivo | 100% response, 0min FRT | Alta |
-| **Carrier sales / negociación** | Miles de llamadas diarias para confirmar cargas | 10% mejor margen, 5x ROI | Muy alta |
-| **Recruitment / conductores** | 30,000 vacantes, edad media 50+ | +20% candidates, +60% confirmación | Alta |
-| **Cross-border / documentación** | España = gateway EU-África-LATAM, trámites aduaneros | Multilingüe + doc parsing | Media-alta |
+| Use case | Pain point español | Métrica HappyRobot (US) | Vertical | Oportunidad |
+|----------|-------------------|------------------------|----------|-------------|
+| **Scheduling de citas** | Coordinación manual de entregas, last-mile = 53% del coste | De >1 semana a <30 min | Logistics | Muy alta |
+| **Collections** | Retrasos crónicos de pago — logistics + banca + utilities | 119x ROI, 18% more cash collected [B: HR-BLOG-FIN] | Cross-industry | Muy alta |
+| **Customer service** | "¿Dónde está mi paquete/mi factura/mi vuelo?" a volumen masivo | 100% response, 0min FRT | Cross-industry | Muy alta |
+| **Carrier sales / negociación** | Miles de llamadas diarias para confirmar cargas | 10% mejor margen, 5x ROI | Logistics | Muy alta |
+| **HR & Recruiting** | Alta rotación en retail, logistics, hospitality | 1M+ AI interviews, 60% vacancies filled (Job&Tant) [B: HR-BLOG-JT] | Cross-industry | Alta |
+| **Finance / document recovery** | Recobro manual de documentos en grandes corporaciones | 10x cost reduction [B: HR-BLOG-FIN] | Financial Services | Alta |
+| **Recruitment / conductores** | 30,000 vacantes, edad media 50+ | +20% candidates, +60% confirmación | Logistics | Alta |
+| **Cross-border / documentación** | España = gateway EU-África-LATAM, trámites aduaneros | Multilingüe + doc parsing | Logistics | Media-alta |
 
 ## Ventaja competitiva en España
 
 | Dimensión | HappyRobot | Sierra AI | Parloa | Chatbots locales (Aunoa, etc.) |
 |-----------|------------|-----------|--------|-------------------------------|
-| **Vertical logistics** | Profundo | No | No | No |
+| **Vertical logistics (beachhead)** | Profundo | No | No | No |
+| **Multi-vertical** | Airlines, Retail, FinServ, Utilities | Customer experience | Contact center | No |
 | **FDE en cliente** | Core model | No | No | No |
 | **DHL como referencia** | Cliente global | No | No | No |
 | **Compliance EU** | SOC2+GDPR+HIPAA+EU AI Act | SOC2+GDPR | SOC2+GDPR+ISO | Básico |
@@ -134,7 +149,7 @@ España es un mercado donde la regulación **favorece** a HappyRobot:
 | **Escaló Uber de 7 a 19 ciudades** | Conoce cómo abrir mercados ciudad a ciudad en España |
 | **Triplicó revenue Uber España** | Experiencia de growth agresivo en mercado español |
 | **Equipo de 50 personas** | Sabe construir equipos en el mercado laboral español |
-| **Amazon: lanzó Apparel** | Experiencia de lanzar categoría nueva (= lanzar AI agents en logistics) |
+| **Amazon: lanzó Apparel** | Experiencia de lanzar categoría nueva (= lanzar AI agents multi-vertical, no solo logistics) |
 | **Vendor Management Playbook** | Sabe crear procesos de venta enterprise escalables |
 | **Red en transporte/movilidad** | Contactos directos en el ecosistema logístico español |
 | **30+ apariciones medios tier-1** | Puede posicionar HappyRobot en medios españoles |
@@ -142,4 +157,4 @@ España es un mercado donde la regulación **favorece** a HappyRobot:
 
 ---
 
-*Fuentes: [ASH-HR] jobs.ashbyhq.com, [LUMA-HACK] lu.ma hackathon, [MORDOR-LOG] Mordor Intelligence, [INVESTSP] Invest in Spain, [BCG-ES] BCG report, [CEL-AI] CEL/Accenture, [AUNOA-LOG] aunoa.ai, [DHL-HR] DHL press release, [WEBPICK-AI] webpicking.com, [GETTRANS-EWBN] GetTransport, [CDC-DRIV] CdeComunicacion, [GOPLAN-DIG] Go!Planner, [REGSAI-SPAIN] regulations.ai, [AEPD-AGENTIC] aepd.es, [UPST-HR] upstartsmedia.com, [NA-HR] nuevaalcarria.com, [MANF-26] getmanfred.com, [FDE-26] fde.today, [EUWEEK-AI] euroweeklynews.com*
+*Fuentes: [ASH-HR] jobs.ashbyhq.com, [LUMA-HACK] lu.ma hackathon, [MORDOR-LOG] Mordor Intelligence, [INVESTSP] Invest in Spain, [BCG-ES] BCG report, [CEL-AI] CEL/Accenture, [AUNOA-LOG] aunoa.ai, [DHL-HR] DHL press release, [WEBPICK-AI] webpicking.com, [GETTRANS-EWBN] GetTransport, [CDC-DRIV] CdeComunicacion, [GOPLAN-DIG] Go!Planner, [REGSAI-SPAIN] regulations.ai, [AEPD-AGENTIC] aepd.es, [UPST-HR] upstartsmedia.com, [NA-HR] nuevaalcarria.com, [MANF-26] getmanfred.com, [FDE-26] fde.today, [EUWEEK-AI] euroweeklynews.com, [HR-WEB-APR26] happyrobot.ai (consultado abril 2026), [HR-BLOG-FIN] blog/finance-automation, [HR-BLOG-JT] blog/job-and-talent-case-study, [HR-SERIEB] globenewswire.com Serie B*

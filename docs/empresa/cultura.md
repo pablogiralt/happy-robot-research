@@ -86,11 +86,11 @@ Esta historia es fundacional para la [cultura](cultura.md) — demuestra resilie
 
 ### 2.4 Filosofía de verticalización
 
-Pablo eligió ir vertical (logistics-specific) en vez de construir herramientas horizontales de developer [A: DG-HR]:
+Pablo eligió ir vertical-first (empezando por logistics) en vez de construir herramientas horizontales de developer [A: DG-HR]:
 
 > *"Everyone with coding can build an orchestration platform."*
 
-Convicción de que la ventaja competitiva sostenible viene de **domain expertise profundo**, no tooling horizontal.
+Convicción de que la ventaja competitiva sostenible viene de **domain expertise profundo**, no tooling horizontal. Este enfoque vertical-first se ha expandido: tras dominar logistics (8/10 top freight brokers), la plataforma ahora opera en Airlines, Retail, Financial Services, Utilities — con funciones cross-industry (Customer Support, Sales, Finance, Operations, HR & Recruiting) [B: HR-WEB-APR26].
 
 ### 2.5 Orgullo de engineering in-house
 
@@ -339,7 +339,7 @@ Node.js, JavaScript, Python, Rust, TypeScript, Kubernetes, React, PyTorch
 
 4. **Ritmo intenso, founder-driven** — Siete días a la semana, 20x revenue growth, mentalidad "ready to explode". Burn disciplinado a pesar de capital significativo. Contratan por "founder mindset."
 
-5. **Verticalización first-principles** — Convicción profunda de que domain expertise en logistics supera tooling horizontal. Construir in-house. Los ingenieros se divierten porque construyen infraestructura real, no integraciones.
+5. **Verticalización first-principles, expansión multi-vertical** — Convicción profunda de que domain expertise profundo supera tooling horizontal. Empezaron en logistics y lo dominaron (8/10 top brokers); ahora expanden a Airlines, Retail, Financial Services, Utilities con la misma profundidad. Construir in-house. Los ingenieros se divierten porque construyen infraestructura real, no integraciones.
 
 ---
 

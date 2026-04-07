@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 # Augment (Augie)
 
-Plataforma de AI para logistics que ofrece "Augie", un AI teammate que automatiza workflows operativos de freight de extremo a extremo: quoting, dispatching, tracking, billing, collections y document management. Fundada en 2024 por Harish Abbott (co-founder de Deliverr, adquirida por Shopify por $2.1B), es el **competidor mas directo** de [HappyRobot](../empresa/happyrobot.md) por concepto (AI workers para logistics), multi-canal (voz + email + TMS) y vertical (freight brokerages, 3PLs, shippers, carriers).
+Plataforma de AI para logistics que ofrece "Augie", un AI teammate que automatiza workflows operativos de freight de extremo a extremo: quoting, dispatching, tracking, billing, collections y document management. Fundada en 2024 por Harish Abbott (co-founder de Deliverr, adquirida por Shopify por $2.1B), es el **competidor mas directo EN LOGISTICS** de [HappyRobot](../empresa/happyrobot.md) por concepto (AI workers para logistics), multi-canal (voz + email + TMS) y vertical (freight brokerages, 3PLs, shippers, carriers). Sin embargo, HappyRobot ya opera en mas verticales (Finance, HR, Customer Support, Airlines, Retail, Utilities) donde Augment no tiene presencia — lo que amplia la distancia estrategica entre ambos.
 
 ---
 
@@ -165,7 +165,7 @@ Partnership enterprise anunciada enero 2026 [A: PRNewswire]:
 | **Funding** | ~$62M (Serie B $44M + anteriores) | $110M (Serie A) |
 | **Etapa** | Serie B (mas madura) | Serie A |
 | **Fundacion** | ~2021-2022 | 2024 |
-| **Foco vertical** | Logistics + otras verticales | 100% logistics |
+| **Foco vertical** | Multi-vertical: Logistics (beachhead) + Airlines, Retail, Financial Services, Utilities, CX, Sales, Finance, HR, Operations | 100% logistics |
 | **Multi-canal** | Telefono, email, web chat | Email, voz, SMS, TMS, portales, chat |
 | **TMS integrations** | [verificar] | McLeod, MercuryGate, Turvo, TAI |
 | **Governance/AI auditor** | Si -- AI auditor, evaluations | No visible publicamente |
@@ -192,7 +192,7 @@ Partnership enterprise anunciada enero 2026 [A: PRNewswire]:
 |---|---|---|
 | **Compliance inmaduro** | SOC 2 en proceso. Sin GDPR, HIPAA, EU AI Act | Alta para enterprise EU |
 | **Sin presencia europea** | Solo oficinas US/Canada. Sin compliance EU | Media |
-| **100% logistics** | Sin diversificacion a CX, sales, finance, HR | Media |
+| **100% logistics** | Sin diversificacion a CX, sales, finance, HR — mientras HR ya opera en multiples verticales | Alta |
 | **Modelo forward-deployed costoso** | Shadowing de 90+ profesionales = alto coste delivery | Media |
 | **Producto joven** | ~1 ano en produccion (stealth marzo 2025) | Baja (compensada por traccion) |
 | **Sin governance/AI auditor visible** | No se menciona sistema comparable al de HappyRobot | Media |

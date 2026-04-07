@@ -128,7 +128,7 @@ Instrucciones en **lenguaje natural** que se compilan en logica estructurada. Pe
 
 | Dimension | HappyRobot | Decagon |
 |---|---|---|
-| **Foco vertical** | Logistics & supply chain (vertical-first) | Customer support/CX horizontal |
+| **Foco vertical** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | Customer support/CX horizontal |
 | **Canales** | Phone, email, web chat | Chat, email, SMS, voice (in+outbound) |
 | **Approach tecnico** | Razonamiento agentitico + logica determinista | Multi-model orchestration, AOPs en lenguaje natural |
 | **Governance** | AI auditor, evaluations framework | Watchtower QA, A/B testing |

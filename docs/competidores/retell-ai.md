@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 # Retell AI
 
-Plataforma developer-first de voice AI para automatización de llamadas telefónicas. Fundada en 2023 por un equipo de 5 co-founders ex-ByteDance/Google/Meta (YC W24), destaca por su **capital efficiency excepcional**: con solo $4.6M en seed funding y ~25 empleados, alcanzó **$40M+ ARR** en enero 2026, rentabilidad, y **50M+ llamadas/mes** para 3,000+ empresas. Nombrada en **Wing VC Enterprise Tech 30** (abril 2026). Compite con [HappyRobot](../empresa/happyrobot.md) en voice AI pero con modelo radicalmente distinto: Retell = self-serve developer platform para voz; HappyRobot = AI Workers multi-canal con forward-deployed engineers para enterprise logistics.
+Plataforma developer-first de voice AI para automatización de llamadas telefónicas. Fundada en 2023 por un equipo de 5 co-founders ex-ByteDance/Google/Meta (YC W24), destaca por su **capital efficiency excepcional**: con solo $4.6M en seed funding y ~25 empleados, alcanzó **$40M+ ARR** en enero 2026, rentabilidad, y **50M+ llamadas/mes** para 3,000+ empresas. Nombrada en **Wing VC Enterprise Tech 30** (abril 2026). Compite con [HappyRobot](../empresa/happyrobot.md) en voice AI pero con modelo radicalmente distinto: Retell = self-serve developer platform para voz; HappyRobot = AI Workers multi-canal y multi-vertical con forward-deployed engineers para enterprise.
 
 ---
 
@@ -159,7 +159,7 @@ $10 de crédito al registrarse. Full platform access.
 |---|---|---|
 | **Modelo** | Managed service con forward-deployed engineers | Self-serve platform (API + no-code) |
 | **Foco** | AI Workers multi-modal (phone + email + web chat) | Voice agents phone-first (+ chat/SMS desde 2026) |
-| **Vertical core** | **Logistics & supply chain** (expertise profundo) | Horizontal: healthcare, finserv, insurance, retail |
+| **Vertical core** | Multi-vertical (logistics beachhead + airlines, retail, finserv, utilities) | Horizontal: healthcare, finserv, insurance, retail |
 | **Target buyer** | Enterprise ops leaders (non-technical) | Developers y tech-forward ops teams |
 | **Memory** | **Shared context & memory** entre interacciones | Sin persistent cross-call memory |
 | **Governance** | **AI Auditor + Evaluations** (capa governance única) | SOC2/HIPAA/PCI compliance tools |
@@ -167,7 +167,7 @@ $10 de crédito al registrarse. Full platform access.
 | **Latencia voz** | No publicado | ~600ms (best-in-class) |
 | **Developer experience** | Menos developer-facing | API-first, altamente programable, SDKs |
 | **Pricing** | Enterprise contracts (no público) | PAYG $0.088–$0.19/min transparente |
-| **Escala clientes** | Menos, más grandes (DHL, Samsara, Circle) | 3,000+ empresas (SMB → enterprise) |
+| **Escala clientes** | 70+ enterprise customers (DHL, Samsara, Circle, Job&Talent) | 3,000+ empresas (SMB → enterprise) |
 | **Revenue** | No público | $40-50M ARR (con $5M raised) |
 | **Europa/España** | **Expansión directa** (hiring GM, AEs, FDEs) | Indirecto (partners: Telvia, Sentrovo) |
 | **GDPR/EU AI Act** | GDPR + EU AI Act compliance | GDPR via SCCs (**sin servidores EU**); EU AI Act no mencionado |
@@ -176,7 +176,7 @@ $10 de crédito al registrarse. Full platform access.
 
 **Retell = "AWS de Voice AI":** Provee infraestructura; el cliente construye la solución. Escala horizontalmente con self-serve. Revenue per-minute usage-based.
 
-**HappyRobot = "Palantir de AI Operations":** Despliega engineers on-site para construir soluciones custom. Escala verticalmente con enterprise contracts. Revenue por AI Worker seats.
+**HappyRobot = "Palantir de AI Operations":** Despliega engineers on-site para construir soluciones custom en multiples verticales (logistics, airlines, retail, finserv, utilities). Escala verticalmente con enterprise contracts. Revenue por AI Worker seats.
 
 Retell gana en **volumen de clientes y developer adoption**. HappyRobot gana en **depth of enterprise relationship y stickiness**.
 
@@ -200,7 +200,7 @@ Retell gana en **volumen de clientes y developer adoption**. HappyRobot gana en 
 
 1. **Sin persistent memory cross-call** — Crítico para workflows multi-step (collections series, sales multi-touch)
 2. **Sin governance layer** — Sin equivalente al AI Auditor de HR
-3. **Expertise superficial en logistics** — Solo 1 case study (Spare) vs. DHL, Circle, Samsara de HR
+3. **Expertise superficial en verticales enterprise** — Solo 1 case study en logistics (Spare) vs. 70+ enterprise customers de HR (DHL, Circle, Samsara en logistics; Job&Talent en recruiting)
 4. **Sin orquestación multi-agente** — Single-agent workflows vs. coordinación de múltiples AI Workers
 5. **Dependencia developer** — Enterprise ops buyers quieren soluciones turnkey, no APIs
 
@@ -232,15 +232,15 @@ Retell gana en **volumen de clientes y developer adoption**. HappyRobot gana en 
 
 ### Talking points concretos para Lola
 
-1. **"Retell valida la oportunidad de voice AI, pero su modelo self-serve no resuelve lo que enterprise logistics necesita."** — $40-50M ARR demuestra que el mercado es real, pero solo 1 case study en logistics (Spare: 30% call handling) vs. DHL, Circle (300K+ llamadas) de HappyRobot.
+1. **"Retell valida la oportunidad de voice AI, pero su modelo self-serve no resuelve lo que enterprise necesita."** — $40-50M ARR demuestra que el mercado es real, pero solo 1 case study en logistics (Spare: 30% call handling) vs. 70+ enterprise customers de HappyRobot — DHL, Circle (300K+ llamadas) en logistics, Job&Talent (1M+ AI interviews) en recruiting.
 
-2. **"Su capital efficiency ($5M → $50M ARR) es impresionante, pero el modelo platform tiene techo en enterprise."** — Retell escala en volumen SMB. Para logística española (DHL, SEUR, Correos Express), se necesita forward-deployed: integración TMS, procesos complejos, compliance local.
+2. **"Su capital efficiency ($5M → $50M ARR) es impresionante, pero el modelo platform tiene techo en enterprise."** — Retell escala en volumen SMB. Para enterprise espanol — logistica (DHL, SEUR), retail, utilities, staffing — se necesita forward-deployed: integracion con sistemas legacy, procesos complejos, compliance local.
 
 3. **"En España, Retell depende de Telvia. Una GM con equipo propio gana."** — Mi experiencia en Uber escalando de 7 a 19 ciudades con equipos locales demuestra que presencia directa > partners.
 
 4. **"Retell no tiene servidores EU ni compliance EU AI Act — deal-breaker creciente para enterprise europeo."** — Post-EU AI Act (agosto 2025), enterprise europeo exige data residency y AI governance.
 
-5. **"Governance es el diferenciador definitivo."** — Sin AI Auditor ni persistent memory, Retell no puede auditar decisiones ni mantener contexto en workflows multi-step. Para collections, freight dispatch, customer service logístico: memory + governance = must-have.
+5. **"Governance es el diferenciador definitivo."** — Sin AI Auditor ni persistent memory, Retell no puede auditar decisiones ni mantener contexto en workflows multi-step. Para collections, freight dispatch, AI recruiting interviews, customer service enterprise: memory + governance = must-have.
 
 6. **"El pricing transparente de Retell es buena óptica, pero los costes se apilan a escala."** — $0.088/min básico → $0.19/min en producción → enterprise desde $0.05/min. Contratos AI Worker bundled de HappyRobot dan certeza presupuestaria.
 

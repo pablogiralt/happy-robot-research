@@ -18,12 +18,15 @@ Use case de automatización del ciclo de vida del empleado: desde screening de c
 |---------|-------|------|--------|
 | Candidates captured | **+20%** más candidatos | B | HR-WEB |
 | Shift confirmation | **+60%** incremento en confirmación | B | HR-WEB |
+| Job&Talent — AI interviews | **1M+** entrevistas realizadas por AI | B | HR-JOBTALEN |
+| Job&Talent — hires | **20K+** contrataciones vía AI | B | HR-JOBTALEN |
+| Job&Talent — vacancies filled by AI | **60%** de vacantes cubiertas por AI | B | HR-JOBTALEN |
 
 ---
 
 ## Descripción
 
-AI Workers que automatizan los procesos de recruiting y gestión de workforce más intensivos en comunicación: llamadas a candidatos, screening inicial, confirmación de turnos, seguimiento de no-shows, y onboarding. Especialmente relevante en industrias con alta rotación y volumen masivo de contratación (logistics, warehousing, staffing).
+AI Workers que automatizan los procesos de recruiting y gestión de workforce más intensivos en comunicación: llamadas a candidatos, screening inicial, confirmación de turnos, seguimiento de no-shows, y onboarding. Especialmente relevante en industrias con alta rotación y volumen masivo de contratación (logistics, warehousing, staffing, retail, airlines). HappyRobot ya tiene tracción significativa en este vertical con **Job&Talent** (1M+ AI interviews, 20K+ hires).
 
 ### Use cases específicos
 
@@ -76,7 +79,16 @@ AI Workers que automatizan los procesos de recruiting y gestión de workforce m�
 
 ## Caso de referencia: Job&Talent
 
-HappyRobot publicó un case study con **Job&Talent** (plataforma de workforce management) centrado en AI-powered workforce management [B: HR-JOBTALEN]. Aunque los detalles del case study no son públicos en profundidad, Job&Talent es una empresa europea (fundada en Madrid) con fuerte presencia en logistics staffing.
+HappyRobot publicó un case study con **Job&Talent** (plataforma de workforce management fundada en Madrid) centrado en AI-powered workforce management [B: HR-JOBTALEN]. Job&Talent es el caso de referencia más potente en recruiting — y uno de los clientes no-logísticos más importantes de HappyRobot:
+
+| Métrica | Valor | Conf |
+|---------|-------|------|
+| AI interviews realizadas | **1M+** | B |
+| Contrataciones vía AI | **20K+** | B |
+| Vacantes cubiertas por AI | **60%** | B |
+| Confirmación de turnos | **+60%** | B |
+
+Job&Talent opera en workforce management para múltiples sectores (logistics, retail, hospitality, manufacturing), lo que demuestra que los AI Workers de recruiting funcionan **cross-industry**, no solo en logistics.
 
 ---
 
@@ -143,15 +155,17 @@ El AI Worker en recruiting debe ser **asistente de comunicación**, no **decisor
 
 ### Posicionamiento
 
-Recruiting es un use case **secundario** para los primeros 90 días en España — el foco debe ser logistics operations y collections. Pero es relevante porque:
+Recruiting es un use case que puede priorizarse en paralelo con logistics operations y collections, especialmente dado el caso de referencia de Job&Talent. Es relevante porque:
 
-- Conecta con la **crisis de conductores** en España (30,000 vacantes)
-- Job&Talent (Madrid) ya es referencia
+- Conecta con la **crisis de conductores** en España (30,000 vacantes) para el vertical logistics
+- **Job&Talent (Madrid)** ya es cliente con métricas impresionantes (1M+ AI interviews, 20K+ hires) — referencia local y no-logística
 - El caso de alto riesgo bajo EU AI Act demuestra que HappyRobot entiende la regulación
+- Recruiting es **cross-vertical** — aplica a staffing, retail, airlines, utilities, no solo logistics
 
 ### Dato para memorizar
 
-- **+20% candidatos, +60% confirmación de turnos** — las dos métricas de recruiting
+- **+20% candidatos, +60% confirmación de turnos** — métricas generales de recruiting
+- **Job&Talent: 1M+ AI interviews, 20K+ hires, 60% vacantes por AI** — el caso de referencia no-logístico más potente
 
 ---
 
