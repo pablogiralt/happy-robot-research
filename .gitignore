@@ -1,0 +1,24 @@
+# MkDocs build output
+site/
+
+# Claude Code internal
+.claude/plan.md
+
+# API keys / secrets
+.claude/last30days.env
+
+# Claude auto-memory (private, per-machine)
+.claude/projects/
+
+# macOS
+.DS_Store
+
+# PDFs con CV (datos personales sensibles)
+*.pdf
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
