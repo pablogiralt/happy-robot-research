@@ -68,14 +68,14 @@ nav:
   - Competidores:
     - competidores/index.md
     - Augment: competidores/augment.md
-    - Sierra AI: competidores/sierra-ai.md
     - Parloa: competidores/parloa.md
+    - Sierra AI: competidores/sierra-ai.md
+    - Retell AI: competidores/retell-ai.md
     - Wonderful AI: competidores/wonderful-ai.md
-    - Decagon: competidores/decagon.md
     - PolyAI: competidores/poly-ai.md
+    - Decagon: competidores/decagon.md
     - Bland AI: competidores/bland-ai.md
     - Synthflow: competidores/synthflow.md
-    - Retell AI: competidores/retell-ai.md
     - Lanesurf: competidores/lanesurf.md
     - FleetWorks: competidores/fleetworks.md
     - Pallet: competidores/pallet.md
