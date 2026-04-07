@@ -3,6 +3,7 @@ site_description: "Research y preparación de entrevista para General Manager Es
 
 theme:
   name: material
+  custom_dir: overrides
   language: es
   palette:
     - scheme: default
