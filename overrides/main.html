@@ -3,6 +3,8 @@
 {% block content %}
 {{ super() }}
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <style>
   #chat-toggle {
     position: fixed;
@@ -42,21 +44,67 @@
     flex-direction: column;
     overflow: hidden;
     font-family: var(--md-text-font-family, sans-serif);
+    transition: all 0.3s ease;
   }
   #chat-panel.open { display: flex; }
+  #chat-panel.fullscreen {
+    bottom: 0; right: 0;
+    width: 100vw; max-width: 100vw;
+    height: 100vh; max-height: 100vh;
+    border-radius: 0;
+    z-index: 10000;
+  }
 
+  /* Header */
   #chat-header {
-    padding: 14px 18px;
+    padding: 10px 14px;
     background: var(--md-primary-fg-color, #7b1fa2);
     color: white;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     display: flex;
     align-items: center;
     gap: 8px;
   }
-  #chat-header span { opacity: 0.8; font-weight: 400; font-size: 0.82rem; }
+  #chat-header .spacer { flex: 1; }
+  #chat-header button {
+    background: none; border: none; color: white; cursor: pointer;
+    padding: 4px; display: flex; align-items: center; opacity: 0.8; transition: opacity 0.2s;
+  }
+  #chat-header button:hover { opacity: 1; }
+  #chat-header button svg { width: 18px; height: 18px; }
 
+  /* Tabs */
+  .chat-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest, #ddd);
+    background: var(--md-default-bg-color, #fff);
+  }
+  .chat-tabs button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--md-default-fg-color--light, #888);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .chat-tabs button.active {
+    color: var(--md-primary-fg-color, #7b1fa2);
+    border-bottom-color: var(--md-primary-fg-color, #7b1fa2);
+    font-weight: 600;
+  }
+  .chat-tabs button:hover:not(.active) { color: var(--md-default-fg-color, #333); }
+
+  /* Tab content */
+  .tab-content { display: none; flex: 1; flex-direction: column; overflow: hidden; }
+  .tab-content.active { display: flex; }
+
+  /* Chat messages */
   #chat-messages {
     flex: 1;
     overflow-y: auto;
@@ -65,6 +113,7 @@
     flex-direction: column;
     gap: 12px;
   }
+  #chat-panel.fullscreen #chat-messages { padding: 24px 15%; }
 
   .chat-msg {
     max-width: 85%;
@@ -73,13 +122,14 @@
     font-size: 0.9rem;
     line-height: 1.5;
     word-wrap: break-word;
-    white-space: pre-wrap;
   }
+  #chat-panel.fullscreen .chat-msg { max-width: 70%; font-size: 0.95rem; }
   .chat-msg.user {
     align-self: flex-end;
     background: var(--md-primary-fg-color, #7b1fa2);
     color: white;
     border-bottom-right-radius: 4px;
+    white-space: pre-wrap;
   }
   .chat-msg.assistant {
     align-self: flex-start;
@@ -88,55 +138,48 @@
     border-bottom-left-radius: 4px;
   }
 
+  /* Markdown styles inside assistant messages */
   .chat-msg.assistant :first-child { margin-top: 0; }
   .chat-msg.assistant :last-child { margin-bottom: 0; }
   .chat-msg.assistant p { margin: 0.4em 0; }
   .chat-msg.assistant ul, .chat-msg.assistant ol { margin: 0.4em 0; padding-left: 1.4em; }
+  .chat-msg.assistant li { margin: 0.15em 0; }
   .chat-msg.assistant code {
-    background: rgba(0,0,0,0.06);
-    padding: 1px 5px;
-    border-radius: 3px;
-    font-size: 0.85em;
+    background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 3px; font-size: 0.85em;
   }
   .chat-msg.assistant pre {
-    background: rgba(0,0,0,0.06);
-    padding: 8px 10px;
-    border-radius: 6px;
-    overflow-x: auto;
+    background: rgba(0,0,0,0.06); padding: 8px 10px; border-radius: 6px; overflow-x: auto; white-space: pre-wrap;
   }
   .chat-msg.assistant pre code { background: none; padding: 0; }
   .chat-msg.assistant strong { font-weight: 600; }
   .chat-msg.assistant h1, .chat-msg.assistant h2, .chat-msg.assistant h3 {
-    font-size: 1em;
-    font-weight: 700;
-    margin: 0.6em 0 0.2em;
+    font-size: 1em; font-weight: 700; margin: 0.6em 0 0.2em;
+  }
+  .chat-msg.assistant a { color: var(--md-primary-fg-color, #7b1fa2); text-decoration: underline; }
+  .chat-msg.assistant table { border-collapse: collapse; width: 100%; margin: 0.5em 0; font-size: 0.85em; }
+  .chat-msg.assistant th, .chat-msg.assistant td {
+    border: 1px solid rgba(0,0,0,0.12); padding: 4px 8px; text-align: left;
+  }
+  .chat-msg.assistant th { background: rgba(0,0,0,0.04); font-weight: 600; }
+  .chat-msg.assistant blockquote {
+    border-left: 3px solid var(--md-primary-fg-color, #7b1fa2);
+    margin: 0.5em 0; padding: 0.2em 0.8em; opacity: 0.85;
   }
 
+  /* Thinking indicator */
   #chat-messages .thinking-msg {
     align-self: flex-start !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
+    display: flex !important; align-items: center !important; gap: 10px !important;
     padding: 14px 20px !important;
-    background: #f3e8ff !important;
-    color: #6b21a8 !important;
-    border-radius: 12px !important;
-    border-bottom-left-radius: 4px !important;
-    font-size: 0.92rem !important;
-    font-weight: 500 !important;
-    max-width: 85% !important;
-    border: 1px solid #e9d5ff !important;
+    background: #f3e8ff !important; color: #6b21a8 !important;
+    border-radius: 12px !important; border-bottom-left-radius: 4px !important;
+    font-size: 0.92rem !important; font-weight: 500 !important;
+    max-width: 85% !important; border: 1px solid #e9d5ff !important;
   }
-  #chat-messages .thinking-msg .dots {
-    display: inline-flex !important;
-    gap: 5px !important;
-  }
+  #chat-messages .thinking-msg .dots { display: inline-flex !important; gap: 5px !important; }
   #chat-messages .thinking-msg .dots span {
-    display: inline-block !important;
-    width: 10px !important;
-    height: 10px !important;
-    background: #7c3aed !important;
-    border-radius: 50% !important;
+    display: inline-block !important; width: 10px !important; height: 10px !important;
+    background: #7c3aed !important; border-radius: 50% !important;
     animation: pulse 1.4s infinite !important;
   }
   #chat-messages .thinking-msg .dots span:nth-child(2) { animation-delay: 0.2s !important; }
@@ -146,13 +189,15 @@
     40% { opacity: 1; transform: scale(1.1); }
   }
 
-  #chat-input-area {
+  /* Input area */
+  .chat-input-area {
     padding: 12px;
     border-top: 1px solid var(--md-default-fg-color--lightest, #ddd);
     display: flex;
     gap: 8px;
   }
-  #chat-input {
+  #chat-panel.fullscreen .chat-input-area { padding: 16px 15%; }
+  .chat-input-area textarea {
     flex: 1;
     border: 1px solid var(--md-default-fg-color--lightest, #ccc);
     border-radius: 10px;
@@ -161,23 +206,76 @@
     font-family: inherit;
     background: var(--md-default-bg-color, #fff);
     color: var(--md-default-fg-color, #333);
-    resize: none;
-    outline: none;
-    max-height: 100px;
+    resize: none; outline: none; max-height: 100px;
   }
-  #chat-input:focus { border-color: var(--md-primary-fg-color, #7b1fa2); }
-  #chat-send {
+  .chat-input-area textarea:focus { border-color: var(--md-primary-fg-color, #7b1fa2); }
+  .chat-input-area button {
     background: var(--md-primary-fg-color, #7b1fa2);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 0 16px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
+    color: white; border: none; border-radius: 10px;
+    padding: 0 16px; cursor: pointer; font-size: 0.9rem; font-weight: 600; white-space: nowrap;
   }
-  #chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+  .chat-input-area button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* Research tab */
+  #research-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+  }
+  #chat-panel.fullscreen #research-content { padding: 24px 15%; }
+  #research-content .research-form { margin-bottom: 20px; }
+  #research-content .research-form textarea {
+    width: 100%; box-sizing: border-box;
+    border: 1px solid var(--md-default-fg-color--lightest, #ccc);
+    border-radius: 10px; padding: 10px 14px;
+    font-size: 0.9rem; font-family: inherit;
+    background: var(--md-default-bg-color, #fff);
+    color: var(--md-default-fg-color, #333);
+    resize: none; outline: none; min-height: 60px;
+  }
+  #research-content .research-form textarea:focus { border-color: var(--md-primary-fg-color, #7b1fa2); }
+  #research-content .research-form button {
+    margin-top: 8px; width: 100%;
+    padding: 10px; background: var(--md-primary-fg-color, #7b1fa2);
+    color: white; border: none; border-radius: 10px;
+    font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  }
+  #research-content .research-form button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .research-examples {
+    font-size: 0.8rem; color: var(--md-default-fg-color--light, #888);
+    margin-top: 6px; line-height: 1.6;
+  }
+  .research-examples span {
+    display: inline-block;
+    background: var(--md-default-fg-color--lightest, #f0f0f0);
+    padding: 2px 8px; border-radius: 4px; margin: 2px 2px; cursor: pointer;
+    transition: background 0.2s;
+  }
+  .research-examples span:hover { background: #e9d5ff; }
+
+  .job-list { display: flex; flex-direction: column; gap: 10px; }
+  .job-card {
+    border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+    border-radius: 10px; padding: 12px 14px; font-size: 0.87rem;
+  }
+  .job-card .job-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .job-card .job-topic { font-weight: 600; flex: 1; }
+  .job-card .job-time { font-size: 0.8rem; color: var(--md-default-fg-color--light, #888); }
+  .job-card .job-status {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 0.8rem; font-weight: 500; padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .job-card .job-status.running { background: #fef3c7; color: #92400e; }
+  .job-card .job-status.done { background: #d1fae5; color: #065f46; }
+  .job-card .job-status.error { background: #fee2e2; color: #991b1b; }
+  .job-card .job-link {
+    display: inline-block; margin-top: 6px;
+    color: var(--md-primary-fg-color, #7b1fa2); text-decoration: underline;
+    font-size: 0.85rem;
+  }
+  .job-card .job-error { color: #dc2626; font-size: 0.82rem; margin-top: 4px; }
+  .job-card .job-summary { font-size: 0.82rem; margin-top: 4px; color: var(--md-default-fg-color--light, #666); }
 </style>
 
 <button id="chat-toggle" title="Chat con el asistente">
@@ -189,12 +287,58 @@
 <div id="chat-panel">
   <div id="chat-header">
     Asistente Research
-    <span>Claude &middot; HappyRobot</span>
+    <div class="spacer"></div>
+    <button id="chat-clear" title="Nueva conversación">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="1 4 1 10 7 10"></polyline>
+        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+      </svg>
+    </button>
+    <button id="chat-fullscreen" title="Pantalla completa">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <polyline points="9 21 3 21 3 15"></polyline>
+        <line x1="21" y1="3" x2="14" y2="10"></line>
+        <line x1="3" y1="21" x2="10" y2="14"></line>
+      </svg>
+    </button>
+    <button id="chat-close" title="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
   </div>
-  <div id="chat-messages"></div>
-  <div id="chat-input-area">
-    <textarea id="chat-input" rows="1" placeholder="Pregunta sobre el research..."></textarea>
-    <button id="chat-send">Enviar</button>
+
+  <div class="chat-tabs">
+    <button class="tab-btn active" data-tab="chat">Chat</button>
+    <button class="tab-btn" data-tab="research">Research</button>
+  </div>
+
+  <!-- Chat tab -->
+  <div id="tab-chat" class="tab-content active">
+    <div id="chat-messages"></div>
+    <div class="chat-input-area">
+      <textarea id="chat-input" rows="1" placeholder="Pregunta sobre el research..."></textarea>
+      <button id="chat-send">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Research tab -->
+  <div id="tab-research" class="tab-content">
+    <div id="research-content">
+      <div class="research-form">
+        <textarea id="research-input" rows="2" placeholder="Describe qué quieres investigar..."></textarea>
+        <div class="research-examples">
+          Ejemplos:
+          <span>Competidor: Cognigy</span>
+          <span>Cliente: Maersk</span>
+          <span>Mercado AI healthcare</span>
+        </div>
+        <button id="research-send">Lanzar Research</button>
+      </div>
+      <div class="job-list" id="job-list"></div>
+    </div>
   </div>
 </div>
 
@@ -203,160 +347,221 @@
   const toggle = document.getElementById('chat-toggle');
   const panel = document.getElementById('chat-panel');
   const messagesEl = document.getElementById('chat-messages');
-  const input = document.getElementById('chat-input');
-  const sendBtn = document.getElementById('chat-send');
+  const chatInput = document.getElementById('chat-input');
+  const chatSend = document.getElementById('chat-send');
+  const fullscreenBtn = document.getElementById('chat-fullscreen');
+  const closeBtn = document.getElementById('chat-close');
+  const clearBtn = document.getElementById('chat-clear');
+  const researchInput = document.getElementById('research-input');
+  const researchSend = document.getElementById('research-send');
+  const jobList = document.getElementById('job-list');
 
+  const STORAGE_KEY = 'hr-chat-messages';
   let messages = [];
   let isStreaming = false;
+  let pollInterval = null;
 
-  toggle.addEventListener('click', () => {
-    panel.classList.toggle('open');
-    if (panel.classList.contains('open')) input.focus();
+  marked.setOptions({ breaks: true, gfm: true });
+
+  // --- Tabs ---
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      if (btn.dataset.tab === 'research') startPolling();
+      else stopPolling();
+    });
   });
 
-  // Simple markdown to HTML (handles bold, italic, code, lists, paragraphs)
-  function mdToHtml(md) {
-    let html = md
-      // code blocks
-      .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code>$2</code></pre>')
-      // inline code
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
-      // bold
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      // italic
-      .replace(/\*(.+?)\*/g, '<em>$1</em>')
-      // headers
-      .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-      .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-      .replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  // --- Persistence ---
+  function loadMessages() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        messages = JSON.parse(saved);
+        messages.forEach(m => addMessage(m.role, m.content, true));
+      }
+    } catch(e) {}
+  }
+  function saveMessages() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); } catch(e) {}
+  }
+  function clearChat() {
+    messages = [];
+    messagesEl.innerHTML = '';
+    localStorage.removeItem(STORAGE_KEY);
+  }
 
-    // Process unordered lists
-    html = html.replace(/(?:^|\n)((?:- .+\n?)+)/g, (match, list) => {
-      const items = list.trim().split('\n').map(l => `<li>${l.replace(/^- /, '')}</li>`).join('');
-      return `<ul>${items}</ul>`;
-    });
+  // --- Controls ---
+  toggle.addEventListener('click', () => { panel.classList.add('open'); chatInput.focus(); });
+  closeBtn.addEventListener('click', () => { panel.classList.remove('open', 'fullscreen'); stopPolling(); });
+  fullscreenBtn.addEventListener('click', () => { panel.classList.toggle('fullscreen'); chatInput.focus(); });
+  clearBtn.addEventListener('click', clearChat);
 
-    // Process ordered lists
-    html = html.replace(/(?:^|\n)((?:\d+\. .+\n?)+)/g, (match, list) => {
-      const items = list.trim().split('\n').map(l => `<li>${l.replace(/^\d+\. /, '')}</li>`).join('');
-      return `<ol>${items}</ol>`;
-    });
-
-    // Paragraphs: split by double newlines
-    html = html.split(/\n{2,}/).map(block => {
-      block = block.trim();
-      if (!block) return '';
-      if (/^<[hodup]/.test(block)) return block;
-      return `<p>${block.replace(/\n/g, '<br>')}</p>`;
-    }).join('');
-
+  // --- Markdown ---
+  function fixDocLinks(html) {
+    html = html.replace(/href="docs\/([^"]+)\.md"/g, 'href="/$1/"');
+    html = html.replace(/href="(?:\.\.\/)*([a-z][a-z0-9-]*\/[^"]+)\.md"/g, 'href="/$1/"');
+    html = html.replace(/<code>docs\/([^<]+)\.md<\/code>/g, '<a href="/$1/">$1</a>');
     return html;
   }
+  function renderMarkdown(md) { return fixDocLinks(marked.parse(md)); }
 
-  function scrollToBottom() {
-    messagesEl.scrollTop = messagesEl.scrollHeight;
-  }
+  function scrollToBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
 
-  function addMessage(role, content) {
+  function addMessage(role, content, skipScroll) {
     const div = document.createElement('div');
     div.className = `chat-msg ${role}`;
-    if (role === 'assistant') {
-      div.innerHTML = mdToHtml(content);
-    } else {
-      div.textContent = content;
-    }
+    if (role === 'assistant') div.innerHTML = renderMarkdown(content);
+    else div.textContent = content;
     messagesEl.appendChild(div);
-    scrollToBottom();
+    if (!skipScroll) scrollToBottom();
     return div;
   }
 
   function addThinkingIndicator() {
     const div = document.createElement('div');
     div.className = 'thinking-msg';
-    div.id = 'thinking';
     div.innerHTML = '<div class="dots"><span></span><span></span><span></span></div> Pensando...';
     messagesEl.appendChild(div);
     scrollToBottom();
     return div;
   }
 
+  // --- Chat send ---
   async function sendMessage() {
-    const text = input.value.trim();
+    const text = chatInput.value.trim();
     if (!text || isStreaming) return;
-
     isStreaming = true;
-    sendBtn.disabled = true;
-    input.value = '';
-    input.style.height = 'auto';
-
+    chatSend.disabled = true;
+    chatInput.value = '';
+    chatInput.style.height = 'auto';
     messages.push({ role: 'user', content: text });
+    saveMessages();
     addMessage('user', text);
-
     const thinkingEl = addThinkingIndicator();
     let fullResponse = '';
-
     try {
       const resp = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages }),
       });
-
       let assistantEl = null;
       const reader = resp.body.getReader();
       const decoder = new TextDecoder();
       let sseBuffer = '';
-
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
-
         sseBuffer += decoder.decode(value, { stream: true });
         const lines = sseBuffer.split('\n');
         sseBuffer = lines.pop();
-
         for (const line of lines) {
           if (!line.startsWith('data: ')) continue;
           try {
             const data = JSON.parse(line.slice(6));
             if (data.text) {
-              if (!assistantEl) {
-                thinkingEl.remove();
-                assistantEl = addMessage('assistant', '');
-              }
+              if (!assistantEl) { thinkingEl.remove(); assistantEl = addMessage('assistant', ''); }
               fullResponse += data.text;
-              assistantEl.innerHTML = mdToHtml(fullResponse);
+              assistantEl.innerHTML = renderMarkdown(fullResponse);
               scrollToBottom();
             }
           } catch(e) {}
         }
       }
       if (!assistantEl) thinkingEl.remove();
-
       messages.push({ role: 'assistant', content: fullResponse });
+      saveMessages();
     } catch(err) {
       thinkingEl?.remove();
       addMessage('assistant', 'Error conectando con el asistente. Intenta de nuevo.');
     }
-
     isStreaming = false;
-    sendBtn.disabled = false;
-    input.focus();
+    chatSend.disabled = false;
+    chatInput.focus();
   }
 
-  sendBtn.addEventListener('click', sendMessage);
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
+  chatSend.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  });
+  chatInput.addEventListener('input', () => {
+    chatInput.style.height = 'auto';
+    chatInput.style.height = Math.min(chatInput.scrollHeight, 100) + 'px';
   });
 
-  // Auto-resize textarea
-  input.addEventListener('input', () => {
-    input.style.height = 'auto';
-    input.style.height = Math.min(input.scrollHeight, 100) + 'px';
+  // --- Research ---
+  document.querySelectorAll('.research-examples span').forEach(ex => {
+    ex.addEventListener('click', () => { researchInput.value = ex.textContent; researchInput.focus(); });
   });
+
+  async function launchResearch() {
+    const topic = researchInput.value.trim();
+    if (!topic) return;
+    researchSend.disabled = true;
+    researchSend.textContent = 'Lanzando...';
+    try {
+      const resp = await fetch('/api/research', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic }),
+      });
+      const data = await resp.json();
+      if (data.error) { alert(data.error); }
+      else { researchInput.value = ''; refreshJobs(); }
+    } catch(e) { alert('Error lanzando research'); }
+    researchSend.disabled = false;
+    researchSend.textContent = 'Lanzar Research';
+  }
+
+  researchSend.addEventListener('click', launchResearch);
+  researchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); launchResearch(); }
+  });
+
+  async function refreshJobs() {
+    try {
+      const resp = await fetch('/api/research/status');
+      const data = await resp.json();
+      renderJobs(data.jobs);
+    } catch(e) {}
+  }
+
+  function renderJobs(jobs) {
+    if (!jobs.length) { jobList.innerHTML = '<div style="text-align:center;color:#999;font-size:0.85rem;padding:20px 0;">No hay research todavia</div>'; return; }
+    jobList.innerHTML = jobs.map(j => {
+      const statusClass = j.status;
+      const statusLabel = j.status === 'running' ? 'En curso...' : j.status === 'done' ? 'Completado' : 'Error';
+      const statusIcon = j.status === 'running' ? '&#9997;' : j.status === 'done' ? '&#10003;' : '&#10007;';
+      let extra = '';
+      if (j.status === 'done' && j.doc_path) extra = `<a class="job-link" href="${j.doc_path}">Ver documento &rarr;</a>`;
+      if (j.status === 'error' && j.error) extra = `<div class="job-error">${j.error}</div>`;
+      if (j.status === 'done' && j.summary) extra += `<div class="job-summary">${j.summary.substring(0, 150)}...</div>`;
+      return `<div class="job-card">
+        <div class="job-header">
+          <div class="job-topic">${j.topic}</div>
+          <div class="job-time">${j.started}${j.finished ? ' - ' + j.finished : ''}</div>
+        </div>
+        <span class="job-status ${statusClass}">${statusIcon} ${statusLabel}</span>
+        ${extra}
+      </div>`;
+    }).join('');
+  }
+
+  function startPolling() { refreshJobs(); if (!pollInterval) pollInterval = setInterval(refreshJobs, 10000); }
+  function stopPolling() { if (pollInterval) { clearInterval(pollInterval); pollInterval = null; } }
+
+  // ESC to exit fullscreen
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.classList.contains('fullscreen')) panel.classList.remove('fullscreen');
+  });
+
+  // Init
+  loadMessages();
+  scrollToBottom();
 })();
 </script>
 {% endblock %}

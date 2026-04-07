@@ -1,5 +1,5 @@
 """
-Chat server: serves MkDocs static site + chat API backed by Claude CLI.
+Chat server: serves MkDocs static site + chat API + research API backed by Claude CLI.
 Usage: python chat_server.py [--port 8000]
 """
 
@@ -8,17 +8,21 @@ import hashlib
 import json
 import os
 import secrets
+import subprocess
 import sys
+import uuid
+from datetime import datetime
 from pathlib import Path
 
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.base import BaseHTTPMiddleware
 
 DOCS_DIR = Path(__file__).parent / "docs"
 SITE_DIR = Path(__file__).parent / "site"
-CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "claude")
+PROJECT_DIR = Path(__file__).parent
+CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "/Users/pablo/.local/bin/claude")
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 AUTH_USER = os.environ.get("AUTH_USER", "lola")
 AUTH_PASS = os.environ.get("AUTH_PASS", "happyrobot2026")
@@ -38,17 +42,86 @@ def load_all_docs() -> str:
 
 ALL_DOCS = load_all_docs()
 
-SYSTEM_PROMPT = f"""Eres un asistente experto sobre la investigación de HappyRobot y la preparación de entrevista para Lola Vilas como General Manager España.
+CHAT_SYSTEM_PROMPT = f"""Eres un asistente experto sobre la investigación de HappyRobot y la preparación de entrevista para Lola Vilas como General Manager España.
 
 Tienes acceso a toda la documentación del research. Responde en español salvo que te pregunten en otro idioma. Sé conciso y directo. Si citas datos, menciona la fuente si está disponible en los documentos.
 
 Si te preguntan algo que no está en la documentación, dilo claramente.
+
+IMPORTANTE sobre links: Cuando hagas referencia a documentos del research, usa links web con formato Markdown. Las URLs siguen el patrón: /seccion/nombre-archivo/ (sin .md). Ejemplos:
+- [Sierra AI](/competidores/sierra-ai/)
+- [HappyRobot Overview](/empresa/happyrobot/)
+- [Fit Candidata](/entrevista/fit-candidata/)
+- [Logistics España](/mercado/logistics-espana/)
+NUNCA uses rutas a archivos .md como docs/competidores/sierra-ai.md. Siempre links web.
 
 --- DOCUMENTACIÓN COMPLETA ---
 
 {ALL_DOCS}
 
 --- FIN DOCUMENTACIÓN ---"""
+
+RESEARCH_SYSTEM_PROMPT = """Eres un agente de research experto. Tu trabajo es investigar un tema en profundidad y crear un documento Markdown de alta calidad.
+
+## Metodología
+
+### Niveles de confianza (A/B/C)
+| Nivel | Significado | Criterio |
+|-------|-------------|----------|
+| A | Verificado | Confirmado por 2+ fuentes independientes, o fuente primaria oficial |
+| B | Plausible | Una sola fuente creíble sin contrastar, o estimación de analista reputado |
+| C | No verificado | Fuente anecdótica, estimación propia, dato antiguo, o fuentes contradictorias |
+
+### Reglas
+1. Todo claim cuantitativo lleva fuente y nivel de confianza (A/B/C)
+2. Intentar siempre 2+ fuentes para datos clave (funding, revenue, headcount, market size)
+3. Datos contradictorios: mostrar el rango, no elegir uno
+4. Separar dato de interpretación
+5. Cuando no hay dato: decirlo explícitamente con [dato no disponible públicamente]
+
+### Formato tablas de datos
+| Metric | Value | Conf | Fuente |
+|--------|-------|------|--------|
+| Ejemplo | $44M | A | [SOURCE-ID] |
+
+### Formato texto narrativo
+Ejemplo: "HappyRobot cerró una Serie B de $44M en septiembre 2025 [A: HR-WEB, TC-SERIEB]."
+
+## Convenciones del documento
+
+Cada archivo DEBE tener frontmatter YAML:
+```yaml
+---
+title: "Nombre del nodo"
+type: empresa | persona | competidor | mercado | tecnologia | caso-de-uso | cliente | regulacion
+status: completo
+tags: [tag1, tag2]
+updated: {date}
+---
+```
+
+## Estructura de carpetas
+- docs/competidores/ — Un .md por competidor
+- docs/mercado/ — Análisis de mercado
+- docs/tecnologia/ — Nodo por tecnología/concepto
+- docs/casos-de-uso/ — Un .md por vertical/use case
+- docs/clientes/ — Un .md por cliente conocido
+- docs/personas/ — Nodo por persona relevante
+- docs/empresa/ — HappyRobot en profundidad
+- docs/regulacion/ — Marco regulatorio
+
+## Tu tarea
+
+1. Usa WebSearch y WebFetch para investigar el tema en profundidad
+2. Busca en fuentes oficiales primero (web empresa, press releases)
+3. Contrasta con fuentes secundarias (Tracxn, Crunchbase, prensa)
+4. Busca señales cualitativas (Reddit, G2, Twitter, HN)
+5. Crea el archivo .md en la carpeta correcta de docs/
+6. Clasifica cada dato con nivel A/B/C
+7. Escribe en español con términos técnicos en inglés donde sea natural
+
+IMPORTANTE: El archivo debe ser exhaustivo y bien estructurado. Incluir secciones relevantes según el tipo (para competidores: overview, producto, funding, clientes, diferenciadores, fortalezas, debilidades, comparación con HappyRobot).
+"""
 
 app = FastAPI()
 
@@ -120,6 +193,8 @@ class AuthMiddleware(BaseHTTPMiddleware):
 app.add_middleware(AuthMiddleware)
 
 
+# --- Chat API ---
+
 @app.post("/api/chat")
 async def chat(request: Request):
     body = await request.json()
@@ -128,7 +203,6 @@ async def chat(request: Request):
     if not messages:
         return {"error": "No messages provided"}
 
-    # Build the prompt: last user message + conversation history as context
     conversation = ""
     for msg in messages[:-1]:
         role = "Usuario" if msg["role"] == "user" else "Asistente"
@@ -143,7 +217,7 @@ async def chat(request: Request):
     async def stream_response():
         proc = await asyncio.create_subprocess_exec(
             CLAUDE_BIN, "-p", prompt,
-            "--system-prompt", SYSTEM_PROMPT,
+            "--system-prompt", CHAT_SYSTEM_PROMPT,
             "--model", MODEL,
             "--verbose",
             "--output-format", "stream-json",
@@ -154,7 +228,6 @@ async def chat(request: Request):
         buffer = b""
         async for chunk in proc.stdout:
             buffer += chunk
-            # Process complete lines
             while b"\n" in buffer:
                 line, buffer = buffer.split(b"\n", 1)
                 line = line.strip()
@@ -184,6 +257,183 @@ async def chat(request: Request):
         },
     )
 
+
+# --- Research API ---
+
+research_jobs: dict = {}
+research_lock = asyncio.Lock()
+
+
+def reload_docs():
+    """Reload all docs into memory."""
+    global ALL_DOCS, CHAT_SYSTEM_PROMPT
+    ALL_DOCS = load_all_docs()
+    CHAT_SYSTEM_PROMPT = f"""Eres un asistente experto sobre la investigación de HappyRobot y la preparación de entrevista para Lola Vilas como General Manager España.
+
+Tienes acceso a toda la documentación del research. Responde en español salvo que te pregunten en otro idioma. Sé conciso y directo. Si citas datos, menciona la fuente si está disponible en los documentos.
+
+Si te preguntan algo que no está en la documentación, dilo claramente.
+
+IMPORTANTE sobre links: Cuando hagas referencia a documentos del research, usa links web con formato Markdown. Las URLs siguen el patrón: /seccion/nombre-archivo/ (sin .md). Ejemplos:
+- [Sierra AI](/competidores/sierra-ai/)
+- [HappyRobot Overview](/empresa/happyrobot/)
+- [Fit Candidata](/entrevista/fit-candidata/)
+- [Logistics España](/mercado/logistics-espana/)
+NUNCA uses rutas a archivos .md como docs/competidores/sierra-ai.md. Siempre links web.
+
+--- DOCUMENTACIÓN COMPLETA ---
+
+{ALL_DOCS}
+
+--- FIN DOCUMENTACIÓN ---"""
+
+
+async def run_research(job_id: str, topic: str):
+    """Run research in background using claude CLI with tools."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    prompt = f"""Investiga el siguiente tema y crea un documento de research completo:
+
+TEMA: {topic}
+
+Fecha de hoy: {today}
+
+Instrucciones:
+1. Usa WebSearch para buscar información actualizada sobre el tema
+2. Usa WebFetch para acceder a páginas específicas cuando necesites más detalle
+3. Determina la carpeta correcta en docs/ según el tipo de contenido (competidores/, mercado/, tecnologia/, clientes/, personas/, etc.)
+4. Crea el archivo .md con la investigación completa siguiendo la metodología
+5. El nombre del archivo debe ser kebab-case (ej: nombre-empresa.md)
+6. Asegúrate de incluir frontmatter YAML con updated: {today}
+7. Sé exhaustivo: incluye todas las secciones relevantes
+
+Trabaja directamente en el directorio del proyecto: {PROJECT_DIR}
+Los documentos van en: {DOCS_DIR}
+"""
+
+    try:
+        proc = await asyncio.create_subprocess_exec(
+            CLAUDE_BIN, "-p", prompt,
+            "--system-prompt", RESEARCH_SYSTEM_PROMPT.replace("{date}", today),
+            "--model", MODEL,
+            "--verbose",
+            "--output-format", "stream-json",
+            "--allowedTools", "WebSearch,WebFetch,Write,Read,Bash,Edit,Glob,Grep",
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+            cwd=str(PROJECT_DIR),
+        )
+
+        result_text = ""
+        doc_path = None
+        buffer = b""
+
+        async for chunk in proc.stdout:
+            buffer += chunk
+            while b"\n" in buffer:
+                line, buffer = buffer.split(b"\n", 1)
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    data = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+
+                if data.get("type") == "result":
+                    result_text = data.get("result", "")
+
+        await proc.wait()
+
+        # Find any new .md files created
+        for md_file in DOCS_DIR.rglob("*.md"):
+            if md_file.name.startswith("_"):
+                continue
+            mtime = md_file.stat().st_mtime
+            started = research_jobs[job_id]["started_ts"]
+            if mtime >= started:
+                rel = md_file.relative_to(DOCS_DIR)
+                doc_path = str(rel).replace(".md", "/")
+                research_jobs[job_id]["doc_path"] = f"/{doc_path}"
+                break
+
+        # Rebuild mkdocs
+        subprocess.run(
+            ["mkdocs", "build"],
+            cwd=str(PROJECT_DIR),
+            capture_output=True,
+            timeout=30,
+        )
+
+        # Reload docs in memory
+        reload_docs()
+
+        research_jobs[job_id]["status"] = "done"
+        research_jobs[job_id]["finished"] = datetime.now().strftime("%H:%M")
+        research_jobs[job_id]["summary"] = result_text[:500] if result_text else "Research completado"
+
+    except asyncio.TimeoutError:
+        research_jobs[job_id]["status"] = "error"
+        research_jobs[job_id]["error"] = "Timeout (10 min)"
+    except Exception as e:
+        research_jobs[job_id]["status"] = "error"
+        research_jobs[job_id]["error"] = str(e)[:200]
+
+
+@app.post("/api/research")
+async def start_research(request: Request):
+    body = await request.json()
+    topic = body.get("topic", "").strip()
+
+    if not topic:
+        return JSONResponse({"error": "No topic provided"}, status_code=400)
+
+    # Check if there's already one running
+    running = [j for j in research_jobs.values() if j["status"] == "running"]
+    if running:
+        return JSONResponse(
+            {"error": "Ya hay un research en curso. Espera a que termine."},
+            status_code=429,
+        )
+
+    job_id = uuid.uuid4().hex[:8]
+    now = datetime.now()
+    research_jobs[job_id] = {
+        "id": job_id,
+        "topic": topic,
+        "status": "running",
+        "started": now.strftime("%H:%M"),
+        "started_ts": now.timestamp(),
+        "finished": None,
+        "doc_path": None,
+        "summary": None,
+        "error": None,
+    }
+
+    asyncio.create_task(run_research(job_id, topic))
+
+    return {"job_id": job_id, "status": "started"}
+
+
+@app.get("/api/research/status")
+async def research_status():
+    jobs = sorted(research_jobs.values(), key=lambda j: j["started"], reverse=True)
+    # Clean up internal fields before sending
+    clean = []
+    for j in jobs:
+        clean.append({
+            "id": j["id"],
+            "topic": j["topic"],
+            "status": j["status"],
+            "started": j["started"],
+            "finished": j["finished"],
+            "doc_path": j["doc_path"],
+            "summary": j["summary"],
+            "error": j["error"],
+        })
+    return {"jobs": clean}
+
+
+# --- Middleware ---
 
 class NoCacheMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
