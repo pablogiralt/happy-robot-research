@@ -113,6 +113,13 @@ nav:
     - regulacion/index.md
     - EU AI Act ★: regulacion/eu-ai-act.md
     - GDPR & LOPDGDD ★: regulacion/gdpr-lopdgdd.md
+  - "🎓 AI Essentials":
+    - Roadmap: ia-101/index.md
+    - Fundamentos y LLMs: ia-101/fundamentos-y-llms.md
+    - Agentes y Voz: ia-101/agentes-y-voz.md
+    - IA en Enterprise: ia-101/ia-en-enterprise.md
+    - Riesgos y Governance: ia-101/riesgos-y-governance.md
+    - Glosario: ia-101/glosario.md
   - Entrevista:
     - entrevista/index.md
     - Fit Candidata ★: entrevista/fit-candidata.md
