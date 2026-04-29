@@ -23,8 +23,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 DOCS_DIR = Path(__file__).parent / "docs"
 SITE_DIR = Path(__file__).parent / "site"
 PROJECT_DIR = Path(__file__).parent
-CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "/Users/pablo/.local/bin/claude")
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
+CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "/Users/pablo/.nvm/versions/node/v20.19.1/bin/claude")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-6")
 AUTH_USER = os.environ.get("AUTH_USER", "lola")
 AUTH_PASS = os.environ.get("AUTH_PASS", "happyrobot2026")
 
