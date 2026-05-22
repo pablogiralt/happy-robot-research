@@ -23,3 +23,4 @@ Plataforma de AI enterprise que permite construir, desplegar y gestionar agentes
 - [Producto](producto.md)
 - [Cultura y Valores](cultura.md)
 - [Expansión España](expansion-espana.md)
+- [Palantir como North Star](palantir-northstar.md) — modelo estratégico que HR replica y que [Mia Bjorkenstam](../personas/mia-bjorkenstam.md) (MD EMEA, ex-Palantir) operacionaliza

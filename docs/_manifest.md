@@ -1,23 +1,23 @@
 # Manifest — Estado del Content Graph
 
 > Fuente de verdad cross-sesión. Claude lee esto al inicio de cada sesión y lo actualiza al final.
-> Última actualización: 2026-04-07
+> Última actualización: 2026-05-21 (sesión mia-palantir-v2: Mia LinkedIn + pricing + deal-desk España)
 
 ## Resumen
 
 | Sección | Nodos | Completos | Pendientes |
 |---------|-------|-----------|------------|
-| empresa | 4 | 4 | 0 |
-| personas | 4 | 4 | 0 |
+| empresa | 5 | 5 | 0 |
+| personas | 5 | 5 | 0 |
 | competidores | 12 | 6 | 6 |
 | mercado | 4 | 4 | 0 |
 | tecnologia | 4 | 4 | 0 |
 | regulacion | 2 | 2 | 0 |
 | clientes | 5 | 5 | 0 |
 | casos-de-uso | 5 | 5 | 0 |
-| entrevista | 7 | 7 | 0 |
+| entrevista | 10 | 10 | 0 |
 | fuentes | 5 | 0 | 5 |
-| **Total** | **52** | **41** | **11** |
+| **Total** | **57** | **46** | **11** |
 
 ## Detalle por nodo
 
@@ -29,6 +29,7 @@
 | producto.md | done | done | done | 466 | oleada-1 |
 | cultura.md | done | done | done | 376 | oleada-1 |
 | expansion-espana.md | done | done | done | 145 | oleada-1 |
+| palantir-northstar.md | done | done | — | 721 | mia-palantir |
 
 ### personas/
 
@@ -38,6 +39,7 @@
 | aquilino-pena.md | done | done | done | 234 | oleada-1 |
 | pablo-palafox.md | done | done | done | 180 | oleada-1 |
 | javier-palafox.md | done | done | done | 56 | oleada-1 |
+| mia-bjorkenstam.md | done | done | — | 302 | mia-palantir-v2 (LinkedIn data) |
 
 ### competidores/
 
@@ -111,6 +113,9 @@
 | preguntas-mercado.md | done | done | done | 125 | oleada-2 |
 | preguntas-liderazgo.md | done | done | done | 118 | oleada-2 |
 | preguntas-para-ellos.md | done | done | done | 107 | oleada-2 |
+| preguntas-mia.md | done | done | — | 542 | mia-palantir-v2 |
+| pricing-happyrobot.md | done | done | — | 380 | mia-palantir-v2 |
+| desbloquear-deals-espana.md | done | done | — | 1107 | mia-palantir-v2 |
 | primeros-90-dias.md | done | done | done | 199 | oleada-2 |
 
 ### fuentes/

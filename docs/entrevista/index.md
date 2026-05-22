@@ -6,12 +6,18 @@ updated: 2026-04-07
 
 # Preparación de Entrevista
 
-**Candidata:** [Lola Vilas](../personas/lola-vilas.md) | **Entrevistador:** [Aquilino Peña](../personas/aquilino-pena.md)
+**Candidata:** [Lola Vilas](../personas/lola-vilas.md)
 
-!!! danger "VERIFICAR: ¿Cuál Aquilino Peña?"
+**Entrevistadores conocidos:**
+
+- [**Mia Bjorkenstam**](../personas/mia-bjorkenstam.md) — Managing Director EMEA, HappyRobot (ex-Palantir). **Sería la jefa directa de Lola si la contratan.** Ronda nueva confirmada (mayo 2026). Ver [preparación específica para Mia](preguntas-mia.md).
+- [Aquilino Peña](../personas/aquilino-pena.md) — rondas previas (ver disclaimer abajo).
+
+!!! info "Foco actual: Mia Bjorkenstam"
+    La entrevistadora confirmada para esta ronda es Mia. Su "north star" estratégica es **Palantir** (ella misma viene de allí). Ver [Palantir como North Star](../empresa/palantir-northstar.md) para el modelo mental con el que Mia evaluará a Lola y [preguntas-mia.md](preguntas-mia.md) para la preparación calibrada.
+
+!!! danger "VERIFICAR (rondas previas): ¿Cuál Aquilino Peña?"
     Hay DOS personas llamadas Aquilino Peña vinculadas a HappyRobot. La URL de LinkedIn proporcionada apunta a **Quili Peña Martinez-Avial** (Head of Strategy & Ops, HappyRobot — empleado), NO al VC Aquilino Peña de Kibo Ventures. Ver [perfil completo](../personas/aquilino-pena.md) con ambos perfiles y estrategia para cada escenario.
-
-    **Acción antes de la entrevista:** Confirmar cuál es el entrevistador.
 
 ---
 
@@ -24,6 +30,19 @@ updated: 2026-04-07
 - [x] Preparar [preguntas liderazgo](preguntas-liderazgo.md) — Q14-Q18
 - [x] Preparar [preguntas para ellos](preguntas-para-ellos.md) — P1-P8
 - [x] Desarrollar [plan 90 días](primeros-90-dias.md) — propuesta de valor concreta
+
+## Preparación específica entrevista con Mia (mayo 2026)
+
+!!! tip "Foco confirmado por Lola: Palantir mindset + revenue/deal desk"
+    Mia tiene 15 años de sales institucional (10 FX banking Londres + 6 Palantir BD/Deal Team OCEO), no es engineer/FDE técnica. Su lente: deal-by-deal, named accounts, pricing levers. Ver [perfil completo](../personas/mia-bjorkenstam.md) y los 3 nodos operativos abajo.
+
+- [ ] Leer [perfil de Mia Bjorkenstam](../personas/mia-bjorkenstam.md) — datos LinkedIn confirmados
+- [ ] Leer [Palantir como North Star](../empresa/palantir-northstar.md) — modelo mental de Mia
+- [ ] Trabajar [preguntas-mia.md](preguntas-mia.md) — 10 Q&A calibradas + 10 preguntas DE Lola a Mia
+- [ ] Trabajar [Deal Desk España](desbloquear-deals-espana.md) — playbook tactical por cuenta (Naturgy, BBVA, Iberdrola, Telefónica, Repsol, MAPFRE, SEUR, CMA CGM)
+- [ ] Trabajar [Pricing HappyRobot](pricing-happyrobot.md) — respuesta modelo + vocabulario deal-desk
+- [ ] Buscar conexiones mutuas: LBS / ex-UBS / ex-Barclays / ex-Palantir
+- [ ] Pedir 1 intro warm si encuentra reference que conozca a Mia
 
 ## Preparación adicional
 
@@ -63,6 +82,9 @@ updated: 2026-04-07
 
 | Sección | Descripción | # Preguntas | Status |
 |---------|-------------|-------------|--------|
+| [**Mia Bjorkenstam (Entrevista)**](preguntas-mia.md) | Q&A calibradas al perfil sales-de-15-años de Mia (ex-FX banking + Palantir BD) | 10 + 10 | completo |
+| [**Deal Desk España**](desbloquear-deals-espana.md) | Playbook tactical por cuenta: NRR plays + 6 Tier-1 net new + pilot-to-prod + palancas regulatorias + primeros 30 días | — | completo |
+| [**Pricing HappyRobot**](pricing-happyrobot.md) | Hipótesis pricing + respuesta modelo "How does HR price?" + vocabulario deal-desk + alerta dato falso openmic | — | completo |
 | [Fit Candidata](fit-candidata.md) | Mapeo Lola ↔ HappyRobot + gaps + mitigaciones | — | completo |
 | [Visión Estratégica](preguntas-vision.md) | Por qué HappyRobot, por qué ahora, visión 3-5 años | Q1-Q4 | completo |
 | [GTM España](preguntas-gtm.md) | Montar operación, ventas enterprise, vertical focus | Q5-Q8 | completo |

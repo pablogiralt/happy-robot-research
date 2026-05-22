@@ -64,9 +64,11 @@ nav:
     - Overview ★: empresa/happyrobot.md
     - Producto ★: empresa/producto.md
     - Expansión España ★: empresa/expansion-espana.md
+    - Palantir (North Star) ★: empresa/palantir-northstar.md
     - Cultura: empresa/cultura.md
   - Personas:
     - personas/index.md
+    - Mia Bjorkenstam ★: personas/mia-bjorkenstam.md
     - Aquilino Peña ★: personas/aquilino-pena.md
     - Lola Vilas: personas/lola-vilas.md
     - Pablo Palafox: personas/pablo-palafox.md
@@ -87,7 +89,7 @@ nav:
     - Enterprise AI Europa: mercado/enterprise-ai-europa.md
     - Talento Tech España: mercado/talento-tech-espana.md
     - AI Healthcare: mercado/ai-healthcare.md
-    - Ecosistema de Posicionamiento en España: Eventos, Asociaciones y Medios: mercado/ecosistema-posicionamiento-espana.md
+    - "Ecosistema de Posicionamiento en España: Eventos, Asociaciones y Medios": mercado/ecosistema-posicionamiento-espana.md
   - Tecnología:
     - tecnologia/index.md
     - Forward-Deployed ★: tecnologia/forward-deployed.md
@@ -126,6 +128,9 @@ nav:
     - entrevista/index.md
     - Fit Candidata ★: entrevista/fit-candidata.md
     - Primeros 90 Días ★: entrevista/primeros-90-dias.md
+    - Mia Bjorkenstam (Entrevista) ★: entrevista/preguntas-mia.md
+    - Deal Desk España ★: entrevista/desbloquear-deals-espana.md
+    - Pricing HappyRobot ★: entrevista/pricing-happyrobot.md
     - Visión Estratégica: entrevista/preguntas-vision.md
     - GTM España: entrevista/preguntas-gtm.md
     - Mercado y Producto: entrevista/preguntas-mercado.md
